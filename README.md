@@ -1,7 +1,7 @@
 <p align="center">
   <img src="assets/writing-guild.zh-CN.png" width="960" alt="论文之旅 · 学术写作工坊：星夜图书馆里，初学者与导师一起修改稿件。" />
 </p>
-<h1 align="center">先陈述一个现象，再逐步拓展成文章</h1>
+<h1 align="center">先陈述一个结果，再逐步拓展成文章</h1>
 
 <p align="center">
   PAPER QUEST · 学术写作指南<br />
