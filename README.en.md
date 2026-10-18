@@ -20,7 +20,7 @@
   <a href="academic-manuscript-polish/SKILL.md">Workflow guide</a> ·
   <a href="#quick-start">Quick start</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.7.0 · Bilingual one-sentence entry, course, and workbooks · Complete English model paper · Teaching commentary primarily in Chinese</sub></p>
+<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.7.1 · Bilingual one-sentence entry, course, and workbooks · Complete English model paper · Teaching commentary primarily in Chinese</sub></p>
 <p align="center">Unsure how to begin? <a href="academic-manuscript-polish/references/one-clear-thing.en.md">Say one clear thing</a>. One sentence can be enough for this session.</p>
 
 <a id="try-demo"></a>
@@ -77,6 +77,8 @@ Switch between “just give me the revision” and “explain in more detail” 
 ### Say one clear thing
 
 Leave the whole paper aside for a moment. The assistant begins with: “What is one thing you already know from the material you have?” It uses your answer, identifies what is already clear, and helps with one point affecting understanding. If you only have a topic, you can begin with a question.
+
+A quoted sentence, two versions of an instruction, or existing notes can be enough to start. If you cannot answer, ask the assistant to point to the material and ask something specific. Use your own words without fitting a sentence frame. Personal impressions, questions, and supported descriptions have different uses, which the assistant will explain.
 
 A rough draft can be untidy; facts and sources still need checking. Stop after one sentence, or continue by adding a source, another sentence, or the full course. There are no grades, countdowns, or compulsory learning checklists. [See how this entry works](docs/guide.en.md#one-clear-thing).
 
@@ -250,7 +252,7 @@ The instructions require preserving the original and prohibit publication, submi
 
 **Writing boundaries**: preserve author-supplied facts and research judgments. Do not fabricate data, citations, mechanisms, or ethics information. Acceptance is not guaranteed. Claims about journal preferences require sources; current official author guidelines take priority. Medical content is for reading and academic expression; the bundle does not supply hazardous operational details.
 
-**Verification scope**: all 86 package tests and 10 public-page locale tests passed, covering structure, search, teaching data, and language-specific entry points. No independent model evaluation or student learning-outcome study was conducted. See the [one-sentence entry checks](academic-manuscript-polish/tests/gentle-start-audit.md), [course checks](academic-manuscript-polish/tests/paper-course-audit.md), [usage and journal checks](academic-manuscript-polish/tests/usage-journal-audit.md), and [source record](academic-manuscript-polish/references/sources.md).
+**Verification scope**: all 86 package tests and 10 public-page locale tests passed, covering structure, search, teaching data, and language-specific entry points. Two Chinese walkthroughs used separate student and tutor agents; a short English probe used maintainer-written learner messages. Twelve tutor replies were reviewed, with a fresh retest after repairs. This is AI simulation, with no human learning or emotional-outcome validation. See the [dialogue and repair record](academic-manuscript-polish/tests/novice-session-audit.md), [course checks](academic-manuscript-polish/tests/paper-course-audit.md), [usage and journal checks](academic-manuscript-polish/tests/usage-journal-audit.md), and [source record](academic-manuscript-polish/references/sources.md).
 
 <details>
 <summary><strong>Folder structure and optional local commands</strong></summary>

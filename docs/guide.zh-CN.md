@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/zh-CN/guide.svg" width="960" alt="使用指南 · PAPER QUEST v3.7.0" /></p>
+<p align="center"><img src="../assets/guild/zh-CN/guide.svg" width="960" alt="使用指南 · PAPER QUEST v3.7.1" /></p>
 
 # 中文用户指南
 
@@ -153,6 +153,10 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 ```
 
 有现成句子就用现成句子，无需重新做一遍。有材料时整理一个观察；只有选题时先形成一个问题；没有材料时可选虚构例子。不能为完成任务而编造结果。
+
+一条记录、一句原文、两版通知或自己的笔记都算起步材料，不必先判断它够不够写完整篇。若不知道该看哪里，可以直接说：“请指着我这段材料，问一个具体问题。”回答用平时的话即可，不必填进固定句式。
+
+“我觉得新版更顺”可以先作为个人感受笔记。若要写成分析，继续找原文中能核对的变化，例如句子怎样连接；未经观察的读者反应不能补写成结果。助手应说明当前句子的用途，你也可以问：“这句适合放在笔记里，还是正文里？”
 
 助手会说明这句话可承担什么用途，保留能用的表达。数字、单位或出处缺失时，只问当前需要确认的内容；语言粗糙可以逐项修改。它不会给总分、倒计时，或要求一次补完全文所有内容。
 
@@ -353,7 +357,7 @@ python -B tests/test_bundle.py
 
 请先检查宿主的数据处理规则与稿件授权范围。勿上传未经允许的保密信息，也不要在公开 Issue 中附上私人稿件。本包未附第三方论文全文；通用写作指导不代替专业判断、临床判断或高风险操作审核。
 
-结构与检索测试覆盖词表、用词和期刊卡；课程测试核对虚构计数、计算和双语题目，页面另做中英对应检查。未测独立模型表现或教学成效。查看[课程检查](../academic-manuscript-polish/tests/paper-course-audit.md)与[用词检查](../academic-manuscript-polish/tests/usage-journal-audit.md)。
+结构与检索测试覆盖词表、用词和期刊卡；课程测试核对虚构计数、计算和双语题目，页面另做中英对应检查。[新手试走](../academic-manuscript-polish/tests/novice-session-audit.md)另外记录两轮中文代理对话、一组英文短请求检查及修补后的复测，共 12 次导师回复。这些是 AI 模拟，未验证真实学生学习或情绪效果。另见[课程检查](../academic-manuscript-polish/tests/paper-course-audit.md)与[用词检查](../academic-manuscript-polish/tests/usage-journal-audit.md)。
 
 <a id="reviewer-response"></a>
 ## 12. 收到审稿意见以后

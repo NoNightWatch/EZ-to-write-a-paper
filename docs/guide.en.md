@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.7.0" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.7.1" /></p>
 
 # English user guide
 
@@ -156,6 +156,10 @@ I may request a demonstration, direct editing, or a pause at any time.
 ```
 
 Use an existing sentence if you have one; there is no need to start it again. With materials, describe an observation. With only a topic, form a question. Without materials, you may choose a fictional example. Findings must not be invented to complete a task.
+
+A record, a quoted sentence, two notices, or your own notes count as starting material. You do not need to know whether they support a whole paper yet. If you do not know where to look, say: “Point to something in this passage and ask me one specific question.” Answer in everyday language without fitting a fixed sentence frame.
+
+“I think the new version flows better” can begin as a note about your impression. For analysis, look for a change that can be checked in the text, such as how sentences are connected; unobserved reader reactions cannot become results. The assistant should explain the sentence's current use. You can ask: “Does this belong in my notes or in the paper?”
 
 The assistant explains what the sentence can do and retains usable wording. If numbers, units, or sources are missing, it asks about what needs checking now; untidy language can be revised gradually. It does not give a total score, a countdown, or a demand to complete every part of the paper at once.
 
@@ -362,7 +366,7 @@ The search script reads local resources; it does not call a model or upload text
 
 Review the host's data-processing rules and your authority to share the manuscript. Do not provide confidential information without permission or attach private drafts to public Issues. This bundle contains no third-party paper full texts. General writing guidance does not replace specialist judgment, clinical judgment, or review of high-risk operations.
 
-Structure and search tests cover the glossaries, usage layer, and journal cards. Course tests check fictional counts, calculations, and bilingual tasks, with separate public-page locale checks. They do not establish independent model performance or educational outcomes. See the [course check record](../academic-manuscript-polish/tests/paper-course-audit.md) and [usage checks](../academic-manuscript-polish/tests/usage-journal-audit.md).
+Structure and search tests cover the glossaries, usage layer, and journal cards. Course tests check fictional counts, calculations, and bilingual tasks, with separate public-page locale checks. The [novice walkthrough record](../academic-manuscript-polish/tests/novice-session-audit.md) separately documents two Chinese agent dialogues, an English probe with maintainer-written learner messages, and a fresh retest after repairs: 12 tutor replies in total. These AI simulations do not validate human learning or emotional outcomes. See also the [course check record](../academic-manuscript-polish/tests/paper-course-audit.md) and [usage checks](../academic-manuscript-polish/tests/usage-journal-audit.md).
 
 <a id="reviewer-response"></a>
 ## 12. After receiving reviewer comments

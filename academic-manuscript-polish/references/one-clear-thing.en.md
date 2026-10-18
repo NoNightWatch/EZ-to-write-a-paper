@@ -8,7 +8,11 @@ For now, try one small action: say something from your materials in everyday lan
 
 If you have already written a sentence, send it without rewriting it. If you only have a topic, say what you want to understand; we can start with a question. If you have no materials, ask for a fictional example.
 
+“Material” can mean a quoted sentence, two versions of an instruction, a record, or notes you already have. You can send it before knowing whether it supports a whole paper. If the question above feels too broad, say: “I cannot see what to notice. Point to something in this passage and ask me one specific question.”
+
 The assistant will identify what your sentence already communicates and help with one point that affects understanding. Clear wording can stay unchanged. Unconfirmed numbers, units, and sources will be identified rather than guessed.
+
+An “I think…” statement can be a starting note. The assistant will explain whether it records your impression, asks a question, or describes something supported by the material, so a note is not mistaken for a paper's conclusion. You can keep answering in your own words; you do not have to fit a sentence frame.
 
 You can send:
 

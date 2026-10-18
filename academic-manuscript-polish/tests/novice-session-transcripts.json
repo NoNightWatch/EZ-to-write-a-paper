@@ -1,0 +1,115 @@
+{
+  "version": "3.7.1",
+  "date": "2026-10-18",
+  "kind": "AI role-play usage observation, not a human learning-outcome study",
+  "method": "Separate fresh student and tutor agent contexts for each Chinese run. Maintainer relayed messages without coaching during each run. Student received only its fictional persona and learner entry; tutor received the execution guide and relevant routed resources, with no expected answer or suspected defect. English probe used maintainer-authored learner messages and a fresh tutor. No model or reasoning override was set. Agent tool messages and redundant blank lines are omitted; dialogue wording is retained.",
+  "student_setup": "Second-year undergraduate, first course paper, worried about a roughly 1500-character Chinese paper. Instructor permits comparing campus service wording. Only two versions of the same library booking text exist; no reader interviews or timing data. The student thinks the new version reads more smoothly, does not know whether the texts count as material, and wants to start with one sentence. Student may naturally ask questions or pause; cannot invent records.",
+  "raw_materials": {
+    "old": "进入预约页面。选择日期。选择座位。确认预约。",
+    "new": "进入预约页面，选择日期和座位后确认预约。"
+  },
+  "runs": [
+    {
+      "id": "baseline",
+      "guide_version": "3.7.0",
+      "source_commit": "864962afcd62c06c8382c4ae1cd838946d15f993",
+      "student_entry": "references/one-clear-thing.md",
+      "tutor_entry": "SKILL.md",
+      "turns": [
+        {
+          "turn": 1,
+          "student": "老师要写一篇1500字左右的小论文，我看到要求就有点慌，不知道怎么开头。我手里只有图书馆预约说明的两版文字：\n旧版：“进入预约页面。选择日期。选择座位。确认预约。”\n新版：“进入预约页面，选择日期和座位后确认预约。”\n我觉得新版读起来顺一点，但只是我自己的感觉。这也算材料吗？能不能先带我写一句，暂时别讲整篇怎么写？",
+          "tutor": "算材料，两版文字可以用来比较表达方式。沿用你已经说出的感受，我们先整理成一句：\n> 阅读这两版图书馆预约说明时，我觉得新版读起来更连贯。\n这句话记录了你的个人感受，暂时不能代表其他读者。这里的“更连贯”贴近你说的“顺一点”吗？"
+        },
+        {
+          "turn": 2,
+          "student": "对，我说的“顺一点”就是这个意思，感觉新版能一口气读下来。不过“我觉得”这种话也能写进论文吗？会不会太像读后感？",
+          "tutor": "“我觉得”可以用来交代个人体验或选题缘由。但分析两版文字时，正文可以先写能从原文核对的变化：\n> 旧版用四个独立句子描述预约步骤，新版将这些步骤合并为一个句子，并保留了原有的操作顺序。\n这句描述了文字怎样变化。“读起来更连贯”可以作为接下来讨论的问题，目前还不能据此认定其他读者也有相同感受。"
+        },
+        {
+          "turn": 3,
+          "student": "那我先把这句记下来，至少有一句能写了。可是我能看出来的好像就这些，下一句还能写什么？我怕写着写着又只剩下“我觉得更顺”。",
+          "tutor": "下一句可以看新版怎样连接步骤，先关注“选择日期和座位**后**确认预约”中的“后”。\n它表示先完成什么，再做什么？你可以试着补一句：\n> 新版用“后”字，直接说明了________的先后关系。\n这里只描述文字中能看见的关系，暂时不用判断读者是否觉得顺。"
+        },
+        {
+          "turn": 4,
+          "student": "就是先选好日期和座位，再确认预约。填进你给的句子里，我反而有点不知道怎么说了，可以直接写成“新版说明了先选择日期和座位，再确认预约”吗？",
+          "tutor": "可以。你已经写清了两步的先后关系，与原文一致，不必套用我给的句式。稍微调整一下衔接即可：\n> 新版说明了操作顺序：先选择日期和座位，再确认预约。\n这句描述了说明的内容，没有把个人感受写成读者普遍的反应。"
+        },
+        {
+          "turn": 5,
+          "student": "那我先留着这两句，今天想先写到这里。我还是有点担心，这么短的两版文字怎么写到1500字。下次回来，我该继续看它们，还是先找别的材料？",
+          "tutor": "今天就停在这两句：\n> 旧版用四个独立句子描述预约步骤，新版将这些步骤合并为一个句子，并保留了原有的操作顺序。\n> 新版说明了操作顺序：先选择日期和座位，再确认预约。\n下次先带老师的作业要求，尤其是文章类型和引用要求，再决定补什么材料。两版文字可以继续作为分析对象，目前还不能判断是否足够支撑1500字。\n回来时把作业要求、两版原文和这两句一起贴来，我们从这里继续，每次处理一个小问题。"
+        }
+      ],
+      "student_closing": "好，我今天先停在这两句。下次把老师的完整要求找出来，和两版原文一起发来。这样我知道回来要先做什么了。",
+      "student_debrief": [
+        "填空句式让我需要额外询问；理解内容，却不知道怎样填进句式。",
+        "‘新版读起来顺一点’和‘先选好日期和座位，再确认预约’是学生表达；比较句及整理后的措辞来自导师。",
+        "下一步找作业要求，连同原文和已有句子继续。"
+      ]
+    },
+    {
+      "id": "retest",
+      "guide_version": "3.7.1 working tree",
+      "student_entry": "references/one-clear-thing.md",
+      "tutor_entry": "SKILL.md",
+      "turns": [
+        {
+          "turn": 1,
+          "student": "老师要我们写一篇约1500字的小论文，我第一次写，有点不知道从哪儿开始。我存了图书馆预约说明的两个版本：\n旧版：“进入预约页面。选择日期。选择座位。确认预约。”\n新版：“进入预约页面，选择日期和座位后确认预约。”\n我觉得新版读起来顺一些。这也算材料吗？能不能先带我写出一句，先别讲整篇怎么写。",
+          "tutor": "算，这两个版本就是可以对照的材料。“新版读起来顺一些”可以先记作你的阅读感受。\n我们先找一个能从原文核对的变化：旧版分成几个句子，新版分成几个？用自己的话把这个变化说成一句就行。"
+        },
+        {
+          "turn": 2,
+          "student": "旧版把预约步骤分成了四句话，新版把这些步骤写在一句话里。这样也算写出一句了吗？感觉我只是在描述原文。",
+          "tutor": "算。你这句可以直接保留：\n> 旧版把预约步骤分成了四句话，新版把这些步骤写在一句话里。\n它交代了两个版本在句子划分上的差异，是一句有原文依据的比较。描述原文可以作为分析的起点，暂时不用急着解释“为什么更顺”。\n如果想继续，我们只看新版中的“和”与“后”分别表达了什么关系。"
+        },
+        {
+          "turn": 3,
+          "student": "“和”是把日期和座位连起来，“后”是说选完日期和座位再确认。是这个意思吗？我还不太明白这跟我觉得它读起来顺有什么关系。",
+          "tutor": "是。“和”并列了日期与座位，没有说明两者谁先选；“后”表示两项选择完成后，再确认预约。\n旧版用句号逐项列出操作，新版用“后”直接连接选择与确认。这种连接方式可能与你觉得读起来顺有关，但仅凭两段原文还不能确定阅读效果。\n你可以把刚才的观察写成：\n> 新版将预约步骤合为一句，并用“后”明确了选择日期、座位与确认预约之间的先后关系。\n这句已经具体指出了新版怎样连接步骤。“我觉得更顺”可以作为你的阅读感受另行保留。"
+        },
+        {
+          "turn": 4,
+          "student": "这句我能看懂了。我没有问过别人，所以先不写“新版更好”。不过老师要求1500字，我现在就这两段说明，还是有点慌。下一步我能先做什么？",
+          "tutor": "刚才的比较句先留着。现有材料可以支持局部文字分析，能否支撑这次小论文，还要看老师的具体要求。\n下一步只做一件事：找到作业说明，把涉及选题、材料或引用要求的那几句贴过来。\n如果老师只说了“约1500字”，可以问：\n> 我想比较图书馆预约说明两个版本的表达方式，这个选题可以吗？需要结合文献或其他材料吗？\n先确认文章要完成什么，暂时不用为了字数扩写。"
+        },
+        {
+          "turn": 5,
+          "student": "老师说可以比较校园服务里的文字，写1500字左右，其他要求我还没弄清楚。我先去找找作业说明，找不到就问老师。今天先到这里吧，刚才那句我会留着。",
+          "tutor": "好，今天先到这里。刚才的比较句先保留。\n下次把作业说明或老师的回复贴过来，我们再确定需要补哪些材料。"
+        }
+      ],
+      "student_debrief": [
+        "询问描述原文是否算写作、连接词与阅读感受的联系、如何继续1500字作业。",
+        "四句合成一句及‘和’‘后’的解释由学生表达；整合句和用途说明来自导师。",
+        "保留比较句，查作业要求；不清楚就问老师，再确定材料需求。"
+      ]
+    },
+    {
+      "id": "english-probe",
+      "guide_version": "3.7.1 working tree",
+      "learner_messages": "Written by maintainer, not an independent student agent.",
+      "tutor_entry": "SKILL.md",
+      "turns": [
+        {
+          "turn": 1,
+          "student": "I opened 'Say one clear thing', but I don't know what I already know. I'm in my second year and I've never written a paper. I freeze when I see the assignment. I only have these two fictional museum labels from our class worksheet: A: 'The cup was made in 1920. It was donated in 1980.' B: 'Made in 1920, the cup was donated in 1980.' I haven't asked visitors anything. Could you look at this with me? Just one small step, please.",
+          "tutor": "Yes. We can start with the wording in these fictional labels. We don’t have evidence about visitors’ reactions.\nLook just after “1920” in each version: what punctuation mark do you see in A, and what do you see in B? A few words are enough."
+        },
+        {
+          "turn": 2,
+          "student": "A has a full stop and B has a comma. I can say that, but I don't know how to turn it into a paper sentence. Can you show me one? Then I'd like to stop for today.",
+          "tutor": "Using your observation, one possible sentence is:\n“Label A presents the cup’s production and donation dates in two separate sentences, while label B combines them into one sentence.”\nThis describes a visible difference between the fictional labels without claiming anything about visitors’ reactions. We can stop here for today."
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Two short Chinese runs with one fictional text-comparison persona and one two-turn English probe.",
+    "No real students, emotional measurements, causal comparison, learning transfer test, or complete-paper outcome was evaluated.",
+    "Student debriefs above are concise summaries of agent reports, not independent human observations.",
+    "The same guide author reviewed outcomes; broad model reliability and all disciplines remain untested."
+  ]
+}

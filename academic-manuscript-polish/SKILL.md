@@ -73,3 +73,5 @@ description: Edit academic drafts, help beginners start with one clear statement
 版本与边界见 [README](README.md)、[来源说明](references/sources.md)、[通用分类与资料来源](references/foundation-sources.md)。本包基于既有资料重新组织，基础词表是编辑整理的入门材料。
 
 维护时运行 `python -B scripts/validate_bundle.py`、`python -B tests/test_bundle.py`、`python -B tests/test_usage.py`、`python -B tests/test_paper_course.py`，并参照 [情景检查](tests/scenarios.md)、[用词及期刊检查](tests/usage-journal-audit.md)、[整篇课程检查](tests/paper-course-audit.md)与[一句话入口检查](tests/gentle-start-audit.md)。私人稿件不随包分发。作者提供的文献仅用于当前稿件，进入共享版本须另有明确授权。
+
+涉及新手交互的维护，可参照[实际对话试走](tests/novice-session-audit.md)的隔离方式进行行为复查；既有记录仅支持其限定场景，不能代替真实学生观察。
