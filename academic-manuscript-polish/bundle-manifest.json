@@ -1,7 +1,7 @@
 {
-  "version": "3.3.0",
+  "version": "3.4.0",
   "date": "2026-10-18",
-  "scope": "first-session-controls-reviewer-response",
+  "scope": "field-natural-style-and-author-voice",
   "domains": [
     {
       "id": "g01",

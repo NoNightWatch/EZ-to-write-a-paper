@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="用户指南 · Academic Manuscript Polish v3.3.0" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="用户指南 · Academic Manuscript Polish v3.4.0" /></p>
 
 # 中文用户指南
 
@@ -13,6 +13,7 @@
 | 想先试试效果 | [免安装文件试用](#try-without-install) |
 | 准备长期使用 | [安装](#install)或[更新旧版](#update) |
 | 已有一段文字 | [第一次改稿](#first-session)与[修改控制](#controls) |
+| 觉得文字机械或缺少领域文风 | [自然文风与作者声音](#field-style) |
 | 要写综述 | [文献综述](#review) |
 | 收到审稿意见 | [修回回应](#reviewer-response) |
 | 想继续上次长稿 | [版本与续接](#long-drafts) |
@@ -168,6 +169,22 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 
 局部恢复依赖可访问的原稿。无法确认版本时，重新提供原句即可。纯文本差异表与 Word 原生追踪修订不同；后者需要宿主具备对应文件能力并实际生成。详见[修改控制](../academic-manuscript-polish/references/session-controls.md)。
 
+<a id="field-style"></a>
+### 让表达贴近本领域，也保留自己的声音
+
+可以要求自然、native-like 的学术表达。助手会具体检查主语承接、句子主干、限定位置和段落节奏，保留清楚的长句，合并重复起头，也保留承担转折或范围提醒的短句。没有统一的句长分数，不会为了简洁删去条件或引用。
+
+```text
+请按本领域成熟论文的表达方式润色这一段，保留我的语气。
+不要机械拆短句；需要时合并重复主语，保留全部信息和限定。
+可参考这些论文的对应章节：［可选，提供材料或链接］。
+先给一版干净稿，再解释两处句子保留、合并或拆分的理由。
+```
+
+有样文时，使用同领域、同体裁、同章节的实际文本；只读到摘要就只校准摘要。没有样文也能开始，但应说明尚未做领域校准。作者姓名或单位无法证明其母语和语言质量。期刊明确要求、一般建议与样文观察分别处理，已经写得清楚的句子可以不改。
+
+例如，`We examined X. We compared Y. We reported Z.` 在主体与条件一致时可合成 `We examined X, compared Y, and reported Z.`；主体不同或引用范围改变时就需要保留区分。详细的[判断流程](../academic-manuscript-polish/references/field-natural-style.md)和[八组示例](../academic-manuscript-polish/references/field-style-examples.md)随包提供。讲解可以简单，稿件仍按目标读者保留专业信息。
+
 ## 5. 让术语匹配你的稿件
 
 给出研究对象、核心问题和相关段落，通常比只报一个学科名称更有用。跨学科任务可同时使用主领域与必要的交叉领域。
@@ -276,7 +293,7 @@ python -B tests/test_bundle.py
 
 请先检查宿主的数据处理规则与稿件授权范围。勿上传未经允许的保密信息，也不要在公开 Issue 中附上私人稿件。本包未附第三方论文全文；通用写作指导不代替专业判断、临床判断或高风险操作审核。
 
-本版 46 项测试验证结构与检索，未测独立模型表现或教学成效。[检查记录](../academic-manuscript-polish/tests/experience-audit.md)可供查看。
+本版沿用的 46 项测试验证结构与检索，文风情景另做维护者走查，未测独立模型表现或教学成效。[检查记录](../academic-manuscript-polish/tests/field-style-audit.md)可供查看。
 
 <a id="reviewer-response"></a>
 ## 12. 收到审稿意见以后

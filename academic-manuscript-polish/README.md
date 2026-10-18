@@ -1,4 +1,4 @@
-# Academic Manuscript Polish · v3.3 使用体验版
+# Academic Manuscript Polish · v3.4 领域文风版
 
 [从这里开始](START-HERE.zh-CN.md) · [Start in English](START-HERE.en.md) · [虚构试用稿](assets/first-session-demo.md)
 
@@ -30,6 +30,7 @@
 | 可选模板 | 稿件任务、补充文献、术语卡、期刊卡、修订交付及学习续接卡 |
 | 离线工具 | 词条检索、结构校验与自动测试，仅 Python 标准库 |
 | 首次体验与修回 | 中英启动页、虚构试用稿、修改控制、审稿意见回应流程与工作表 |
+| 领域自然文风 | 按需使用实际样文校准句段节奏；八组示例区分合并、保留与拆分 |
 
 基础词表与详细词条有交叉，数量不可简单相加为独立术语总数。52 个入口提供基础覆盖；细分学科仍需作者参考文献。基础短释义未逐条经外部专业核验，正式定义以稿件来源为准。
 
@@ -61,6 +62,7 @@
 - 已有目标期刊：[适配流程](references/journal-adaptation.md) 与 [资料卡](references/journal-cards.md)。
 - 学科或词语缺失：[补充文献流程](references/author-literature.md)。
 - 收到审稿意见：[修回回应流程](references/reviewer-response.md) 与 [可选工作表](assets/reviewer-response-table.md)。
+- 想减少机械句型、保留领域文风：[领域自然文风](references/field-natural-style.md) 与 [对照示例](references/field-style-examples.md)。
 
 不要一次让助手读取所有词表。先给已有文字或材料，选择主领域和必要的交叉领域即可。
 
@@ -98,11 +100,17 @@ python tests/test_bundle.py
 
 默认 JSON 输出保持兼容；加 `--format text` 可得到便于阅读的词条列表，`--list-domains --format text` 可查看领域目录。
 
+## v3.4 的领域文风修订
+
+新增按需使用的自然文风模块，处理重复主语、信息衔接、条件归属和作者声音。保留清楚的长句，也保留有作用的短句；句长不作为统一质量指标。当前期刊硬性要求、一般教材建议和实际样文观察分别处理。教学解释可以简单，稿件仍保留目标读者所需的信息。
+
+八组原创示例及 12 个维护情景见 [文风示例](references/field-style-examples.md)，实际验证范围见 [本轮检查](tests/field-style-audit.md)。未增加术语或期刊卡数量，没有按作者母语建立语料库。
+
 ## v3.3 的使用体验修订
 
 新增中英启动页、无私人材料的首次试用、统一修改控制和修回回应流程；检索增加可读文本格式。可分开指定正文与解释语言，保留作者措辞，并依据可访问原稿局部恢复。修回工作明确区分完成与计划状态。
 
-[本轮走查与检查记录](tests/experience-audit.md) 说明发现、修补、测试与未验证部分。旧版本的五轮检查保留如下，不改写成新版本的效果证据。
+[v3.3 走查与检查记录](tests/experience-audit.md) 说明该轮发现、修补、测试与未验证部分。旧版本的五轮检查保留如下，不改写成新版本的效果证据。
 
 ## v3.2 的五轮修订
 
@@ -126,6 +134,6 @@ python tests/test_bundle.py
 
 ## 维护与验证
 
-[分发清单](bundle-manifest.json) 记录数量和版本；[测试情景](tests/scenarios.md) 说明预期行为；[v3.2 检查记录](tests/release-checks.md) 与 [v3.3 体验检查](tests/experience-audit.md) 区分各版本实际检查和未验证部分。
+[分发清单](bundle-manifest.json) 记录数量和版本；[测试情景](tests/scenarios.md) 说明预期行为；[v3.2 检查记录](tests/release-checks.md)、[v3.3 体验检查](tests/experience-audit.md) 与 [v3.4 文风检查](tests/field-style-audit.md) 区分各版本实际检查和未验证部分。
 
 结构脚本只检查计数、链接、路径、索引和文件结构。它无法证明专业释义全部正确，也不能替代真实稿件的编辑质量评估。导师对话为原创示范，未开展独立模型教学效果测试。

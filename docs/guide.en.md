@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · Academic Manuscript Polish v3.3.0" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · Academic Manuscript Polish v3.4.0" /></p>
 
 # English user guide
 
@@ -13,6 +13,7 @@ This guide takes you from installation to your first revision with `academic-man
 | Try the workflow | [File-based trial without installation](#try-without-install) |
 | Use it regularly | [Install](#install) or [update an older version](#update) |
 | Revise a paragraph | [First session](#first-session) and [editing controls](#controls) |
+| Address mechanical or generic prose | [Disciplinary style and author voice](#field-style) |
 | Write a review | [Literature reviews](#review) |
 | Address reviewer comments | [Revision responses](#reviewer-response) |
 | Resume a long draft | [Versions and continuation](#long-drafts) |
@@ -171,6 +172,23 @@ With only a topic, request a working outline or a materials checklist. Without d
 
 Restoring text requires the original. If the version is unclear, provide the sentence again. A plain-text comparison differs from native Word tracked changes, which require suitable host capabilities and an actual generated file. See [session controls](../academic-manuscript-polish/references/session-controls.md).
 
+<a id="field-style"></a>
+### Write naturally in your field, with your own voice
+
+You can request natural or native-like academic prose. The assistant checks subject continuity, sentence structure, the placement of qualifications, and paragraph rhythm. It keeps clear long sentences, combines repetitive openings, and retains short sentences that mark a contrast or scope boundary. There is no universal sentence-length score, and concision must preserve conditions and citations.
+
+```text
+Revise this paragraph in a natural style suited to my field, keeping my voice.
+Do not split sentences mechanically. Combine repeated subjects where useful,
+while preserving every claim and qualification.
+Reference passages: [optional materials or links to comparable sections].
+Give one clean version and explain two choices to keep, combine, or split sentences.
+```
+
+When examples are available, use actual text from the same field, genre, and section. An abstract-only sample supports abstract-level observations. Editing can start without examples, but field-specific calibration should then be marked as unperformed. Names and affiliations do not establish an author's first language or writing quality. Journal requirements, general advice, and observed usage are handled separately; a clear original sentence can stay unchanged.
+
+For example, `We examined X. We compared Y. We reported Z.` can become `We examined X, compared Y, and reported Z.` when the subject and conditions are shared. Different actors or citation scopes may require explicit separation. The package includes the [decision workflow](../academic-manuscript-polish/references/field-natural-style.md) and [eight sets of examples](../academic-manuscript-polish/references/field-style-examples.md). Explanations can be simple while the manuscript retains the technical information its readers need.
+
 ## 5. Match terminology to your manuscript
 
 Provide the research object, main question, and relevant passage. This is usually more informative than a field name alone. Cross-disciplinary work can use a main field and the necessary secondary fields.
@@ -283,7 +301,7 @@ The search script reads local resources; it does not call a model or upload text
 
 Review the host's data-processing rules and your authority to share the manuscript. Do not provide confidential information without permission or attach private drafts to public Issues. This bundle contains no third-party paper full texts. General writing guidance does not replace specialist judgment, clinical judgment, or review of high-risk operations.
 
-The 46 tests in this version check structure and search, not independent model performance or educational outcomes. See the [check record](../academic-manuscript-polish/tests/experience-audit.md).
+The existing 46 tests check structure and search; style scenarios received a separate maintainer walkthrough. Neither establishes independent model performance or educational outcomes. See the [check record](../academic-manuscript-polish/tests/field-style-audit.md).
 
 <a id="reviewer-response"></a>
 ## 12. After receiving reviewer comments

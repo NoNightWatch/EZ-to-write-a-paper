@@ -20,7 +20,7 @@
   <a href="academic-manuscript-polish/SKILL.md">Skill 入口</a> ·
   <a href="#quick-start">快速开始</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.3.0 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
+<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.4.0 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/first-quest.svg" width="960" alt="01 · 先看一次修改" />
@@ -163,6 +163,8 @@
 
 恢复需要可访问的原稿；纯文本比较不等于 Word 原生追踪修订。助手会区分必要修改和可选风格建议。
 
+**贴近领域，保留你的声音**：根据实际样文调整句子节奏与信息衔接，保留清楚的长句，合并不必要的重复。短句和教材句型都按用途选择。[领域自然文风](docs/guide.zh-CN.md#field-style)
+
 **收到审稿意见时**：逐条对照意见、作者实际修改与稿件位置。计划工作保留待办状态，正式回应中的“已修改”需要当前材料支持。[修回使用方法](docs/guide.zh-CN.md#reviewer-response)
 
 <img src="assets/guild/workflow.svg" width="960" alt="06 · 从材料到修订稿" />
@@ -227,7 +229,7 @@
 
 **写作边界**：保留作者事实与研究判断，不编造数据、引用、机制或伦理信息，不保证录用。期刊偏好要有来源；当前官方作者指南优先。医学内容限于阅读与学术表达，危险操作细节不由本包补全。
 
-**检查范围**：v3.3.0 的 46 项结构与检索测试通过，并完成维护者使用情景走查。未开展独立模型评估或真实用户教学实验。查看[本轮检查记录](academic-manuscript-polish/tests/experience-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
+**检查范围**：v3.4.0 沿用的 46 项结构与检索测试通过；文风模块另做维护者情景走查。未开展独立模型评估或真实用户教学实验。查看[本轮检查记录](academic-manuscript-polish/tests/field-style-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
 
 <details>
 <summary><strong>展开：目录与可选本地命令</strong></summary>

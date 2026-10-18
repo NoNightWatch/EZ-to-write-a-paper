@@ -20,7 +20,7 @@
   <a href="academic-manuscript-polish/SKILL.md">Skill entry</a> ·
   <a href="#quick-start">Quick start</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.3.0 · Try through file access before installing · Chinese and English start pages included · Teaching resources primarily in Chinese</sub></p>
+<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.4.0 · Try through file access before installing · Chinese and English start pages included · Teaching resources primarily in Chinese</sub></p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/first-quest.svg" width="960" alt="01 · Try one paragraph" />
@@ -163,6 +163,8 @@ Paths can be combined. They support textual organization; technical theory and r
 
 Restoring text requires access to the original. Plain-text comparisons are not native Word tracked changes. The assistant distinguishes necessary corrections from optional style preferences.
 
+**Fit your field. Keep your voice.** Use relevant published passages to guide rhythm and information flow, keep clear long sentences, and combine unnecessary repetition. Short sentences and textbook patterns have specific uses, not universal priority. [Natural disciplinary style](docs/guide.en.md#field-style)
+
 **For reviewer comments**: connect each comment to the author's actual changes and the current manuscript location. Planned work remains pending; a response saying “we have revised” needs support from the supplied material. [Using the reviewer-response workflow](docs/guide.en.md#reviewer-response)
 
 <img src="assets/guild/workflow.svg" width="960" alt="06 · From material to revised draft" />
@@ -227,7 +229,7 @@ The instructions require preserving the original and prohibit publication, submi
 
 **Writing boundaries**: preserve author-supplied facts and research judgments. Do not fabricate data, citations, mechanisms, or ethics information. Acceptance is not guaranteed. Claims about journal preferences require sources; current official author guidelines take priority. Medical content is for reading and academic expression; the bundle does not supply hazardous operational details.
 
-**Verification scope**: v3.3.0 has 46 passing structure and search tests plus a maintainer walkthrough of usage scenarios. No independent model evaluation or real-user teaching experiment was conducted. See the [current check record](academic-manuscript-polish/tests/experience-audit.md) and [source record](academic-manuscript-polish/references/sources.md).
+**Verification scope**: v3.4.0 passes the existing 46 structure and search tests; the style module also received a maintainer scenario walkthrough. No independent model evaluation or real-user teaching experiment was conducted. See the [current check record](academic-manuscript-polish/tests/field-style-audit.md) and [source record](academic-manuscript-polish/references/sources.md).
 
 <details>
 <summary><strong>Folder structure and optional local commands</strong></summary>
