@@ -1,7 +1,7 @@
 {
-  "version": "3.4.0",
+  "version": "3.4.1",
   "date": "2026-10-18",
-  "scope": "field-natural-style-and-author-voice",
+  "scope": "paper-quest-guide-presentation",
   "domains": [
     {
       "id": "g01",

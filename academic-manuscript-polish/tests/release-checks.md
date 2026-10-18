@@ -18,7 +18,7 @@
 
 | 项目 | 结果与范围 |
 |---|---|
-| Skill 入口 | `quick_validate.py` 通过，核对入口元数据格式 |
+| 执行入口 | `quick_validate.py` 通过，核对入口元数据格式 |
 | 包结构 | `scripts/validate_bundle.py` 通过，错误数 0；112 个文件，其中 107 个 Markdown 文件 |
 | 自动测试 | `python -B tests/test_bundle.py` 的 38 项结构及检索测试通过 |
 | 内部链接 | 相对路径、显式锚点、索引对应与入口可达性检查通过 |

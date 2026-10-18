@@ -1,4 +1,4 @@
 interface:
-  display_name: "Academic Writing Mentor · 学术写作导师"
+  display_name: "PAPER QUEST · 学术写作指南"
   short_description: "Draft editing, literature reviews & reviewer responses"
   default_prompt: "Use $academic-manuscript-polish to help with my supplied draft or notes, preserve meaning, and explain key edits in our conversation language."

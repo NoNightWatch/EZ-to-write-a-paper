@@ -4,23 +4,23 @@
 <h1 align="center">带上你的稿件，先改好一个段落。</h1>
 
 <p align="center">
-  EZ to Write a Paper · 学术写作导师技能包<br />
+  PAPER QUEST · 学术写作指南<br />
   改稿件、讲理由、理文献、回审稿。你决定改多少、怎样学。
 </p>
 
 <p align="center">
   <a href="#try-demo"><img src="assets/guild/zh-CN/try.svg" width="280" alt="先试改一段：无需提供私人稿件" /></a>
   &nbsp;
-  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip"><img src="assets/guild/zh-CN/download.svg" width="280" alt="直接下载完整技能包 ZIP" /></a>
+  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip"><img src="assets/guild/zh-CN/download.svg" width="280" alt="直接下载完整写作指南 ZIP" /></a>
 </p>
 <p align="center">
   <a href="docs/guide.zh-CN.md">中文指南</a> ·
   <a href="README.en.md">English</a> ·
   <a href="docs/guide.en.md">English guide</a> ·
-  <a href="academic-manuscript-polish/SKILL.md">技能入口</a> ·
+  <a href="academic-manuscript-polish/SKILL.md">执行指南</a> ·
   <a href="#quick-start">快速开始</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.4.0 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
+<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.4.1 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/zh-CN/first-quest.svg" width="960" alt="01 · 先试改一段" />
@@ -80,21 +80,21 @@
 
 ### 1. 下载完整文件夹
 
-[直接下载技能 ZIP](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip) 并解压。打开其中的 `START-HERE.zh-CN.md` 或 `START-HERE.en.md`。保留完整文件夹；[版本记录](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases)可查看旧版。GitHub 的 **Code → Download ZIP** 则会下载整个仓库。
+[直接下载指南 ZIP](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip) 并解压。打开其中的 `START-HERE.zh-CN.md` 或 `START-HERE.en.md`。保留完整文件夹；[版本记录](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases)可查看旧版。GitHub 的 **Code → Download ZIP** 则会下载整个仓库。
 
-### 2. 先试用，需要时再安装
+### 2. 让助手读取启动页
 
-把完整文件夹放在助手能读取的工作目录，告诉它：“读取 `academic-manuscript-polish/SKILL.md`，按流程处理虚构试用稿，不安装、不改配置。”这种方式需要文件读取能力；聊天界面不能读目录时，需要另行提供相关内容。
+把完整文件夹放在助手能读取的工作目录，告诉它：“读取 `academic-manuscript-polish/START-HERE.zh-CN.md`，按其中链接进入执行指南，处理虚构试用稿，不修改配置。”聊天界面不能读目录时，需要另行提供相关内容。
 
-经常使用时，将完整文件夹放入对应项目位置：
+按使用环境选择读取方式：
 
-| 使用环境 | 项目内安装位置 |
+| 使用环境 | 怎样开始 |
 | :--- | :--- |
-| Codex | `<你的项目>/.agents/skills/academic-manuscript-polish/` |
-| Claude Code | `<你的项目>/.claude/skills/academic-manuscript-polish/` |
-| 其他可读文件的助手 | 保持目录完整，请它读取 `SKILL.md` 并按需访问相对链接 |
+| Codex 或 Claude Code | 在指南所在的工作目录开始会话，提供启动页的实际位置 |
+| 其他可读文件的助手 | 保持目录完整，请它读取启动页并访问相对链接 |
+| 仅支持上传或粘贴的聊天界面 | 提供执行指南、当前所需资料和稿件片段，确认助手实际能读到 |
 
-支持范围取决于宿主与组织设置。[安装与排错](docs/guide.zh-CN.md#install) 包含用户级目录和检查方法；路径依据 [OpenAI](https://learn.chatgpt.com/docs/build-skills) 与 [Claude Code](https://code.claude.com/docs/en/skills) 官方说明。
+支持范围取决于宿主与组织设置。首次使用无需改动配置；[配置与排错](docs/guide.zh-CN.md#install)提供长期使用的方法。
 
 ### 3. 给它一个真实片段
 
@@ -105,7 +105,7 @@
 ［粘贴文字］
 ```
 
-期刊未定也可开始。安装后，Codex CLI / IDE 可用 `$academic-manuscript-polish`，Claude Code 可用 `/academic-manuscript-polish`；桌面端可按宿主技能选择器或自然语言调用。先确认助手读到了文件，随后扩大范围。[已有旧版？查看更新方法](docs/guide.zh-CN.md#update)。
+期刊未定也可开始。先确认助手读到了执行指南及相关资料，随后扩大范围。[已有旧版？查看更新方法](docs/guide.zh-CN.md#update)。
 
 <img src="assets/guild/zh-CN/library.svg" width="960" alt="04 · 写作资料室" />
 
@@ -216,14 +216,14 @@
 <details>
 <summary><strong>需要 Python 吗？能离线使用吗？</strong></summary>
 
-阅读教材和让助手按流程编辑无需运行脚本。离线查词与校验工具需要 Python 3.9+，只用标准库。AI 助手是否联网、如何处理稿件，由你使用的宿主和账户设置决定；本地存放技能包不意味着模型在本地运行。
+阅读教材和让助手按流程编辑无需运行脚本。离线查词与校验工具需要 Python 3.9+，只用标准库。AI 助手是否联网、如何处理稿件，由你使用的宿主和账户设置决定；本地存放指南包不意味着模型在本地运行。
 
 </details>
 
 <details>
 <summary><strong>会自动上传稿件、投稿或改动我的原文件吗？</strong></summary>
 
-技能指令要求保留原稿，未经明确要求不发布、投稿或把稿件写入共享包。请检查宿主权限、机构保密要求和目标期刊的 AI 使用政策，再提供未发表材料。不要把私人稿件贴到本仓库的公开 Issue 中。
+指南指令要求保留原稿，未经明确要求不发布、投稿或把稿件写入共享包。请检查宿主权限、机构保密要求和目标期刊的 AI 使用政策，再提供未发表材料。不要把私人稿件贴到本仓库的公开 Issue 中。
 
 </details>
 
@@ -236,7 +236,8 @@
 
 ```text
 academic-manuscript-polish/
-  SKILL.md               技能入口
+  START-HERE.zh-CN.md     中文启动页
+  START-HERE.en.md        英文启动页
   references/            术语、教程、期刊与写作资料
   assets/                可选任务卡与交付模板
   agents/                宿主显示元数据
@@ -245,7 +246,7 @@ academic-manuscript-polish/
   bundle-manifest.json   版本与内容清单
 ```
 
-在技能文件夹内运行：
+在指南文件夹内运行：
 
 ```sh
 python scripts/search_terms.py "validity" --exact --format text
@@ -258,5 +259,5 @@ python -B tests/test_bundle.py
 
 <p align="center"><img src="assets/guild/zh-CN/next.svg" width="960" alt="下一段，从这里开始。" /></p>
 <p align="center"><strong>准备一个段落，选一个小目标，然后开始。</strong></p>
-<p align="center"><a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="docs/guide.en.md">English guide</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip">直接下载技能包</a></p>
+<p align="center"><a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="docs/guide.en.md">English guide</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip">直接下载指南包</a></p>
 <p align="center"><sub>觉得有用，可以点击 Star 收藏。发现问题，欢迎提交不含私人稿件的 <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/issues">问题反馈</a>。</sub></p>

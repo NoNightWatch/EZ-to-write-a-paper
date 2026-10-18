@@ -1,4 +1,4 @@
-"""Read-only structural checks for this portable skill bundle (Python 3)."""
+"""Read-only structural checks for this portable writing guide (Python 3)."""
 from collections import Counter, deque
 import argparse
 import ast
@@ -111,11 +111,11 @@ def check_bundle(root):
     stats["files"] = len(files)
     stats["markdown_files"] = len(docs)
     stats["bytes"] = sum(p.stat().st_size for p in files)
-    skill = root / "SKILL.md"
-    if skill not in docs:
+    entry_path = root / "SKILL.md"
+    if entry_path not in docs:
         errors.append("SKILL.md is missing")
     else:
-        entry = docs[skill]
+        entry = docs[entry_path]
         front = re.match(r"\A---\r?\n(.*?)\r?\n---(?:\r?\n|$)", entry, re.S)
         if not front:
             errors.append("SKILL.md frontmatter is missing")
@@ -124,7 +124,7 @@ def check_bundle(root):
             name = re.search(r"^name:\s*(.+)$", fields, re.M)
             desc = re.search(r"^description:\s*(.+)$", fields, re.M)
             if not name or name.group(1).strip() != "academic-manuscript-polish":
-                errors.append("Unexpected skill name")
+                errors.append("Unexpected guide identifier")
             if not desc or len(desc.group(1).strip()) < 20:
                 errors.append("Description is missing or uninformative")
     total_terms = 0
@@ -207,7 +207,7 @@ def check_bundle(root):
                 graph[p].add(dest)
     stats["internal_links"] = internal_links
     reached = set()
-    queue = deque([skill])
+    queue = deque([entry_path])
     while queue:
         p = queue.popleft()
         if p not in reached:
@@ -228,7 +228,7 @@ def check_bundle(root):
     else:
         ui_text = ui.read_text(encoding="utf-8-sig")
         if "$academic-manuscript-polish" not in ui_text:
-            errors.append("UI default prompt does not name the skill")
+            errors.append("UI default prompt does not name the guide")
         short = re.search(r'^\s+short_description:\s*"([^"]+)"', ui_text, re.M)
         if not short or not 25 <= len(short.group(1)) <= 64:
             errors.append("UI short description length must be 25 to 64 characters")

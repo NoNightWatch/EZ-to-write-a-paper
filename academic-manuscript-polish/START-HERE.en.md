@@ -16,7 +16,7 @@ Use the fictional paragraph in assets/first-session-demo.md for
 a demonstration. Revise and explain in English. Do not save files.
 ```
 
-Supply the actual location if the folder is elsewhere. Reading a local file does not mean a native skill has been installed. A chat interface without file access requires you to provide the relevant content separately. You can try the workflow without sharing a private draft.
+Supply the actual location if the folder is elsewhere. Reading a local file does not configure automatic loading. A chat interface without file access requires you to provide the relevant content separately. You can try the workflow without sharing a private draft.
 
 ## Bring your own text
 
@@ -43,7 +43,7 @@ The assistant should preserve the original and state the work actually completed
 
 Copy the whole folder into `.agents/skills/` in a Codex project or `.claude/skills/` in a Claude Code project, and start a session there. Follow your host's current instructions. Do not copy only `SKILL.md`. Ask the assistant to report the entry file it actually read, then use the demo to check resource access.
 
-If a version with the same name exists, compare versions and custom edits first. Keep an old copy outside the host's skill-discovery folders before replacing the confirmed target. Do not merge versions or leave backups in a folder that automatically loads skills. Downloading this bundle does not install or update an existing skill.
+If a version with the same name exists, compare versions and custom edits first. Keep an old copy outside the host's automatic-loading folders before replacing the confirmed target. Do not merge versions or leave backups in a folder that automatically loads guides. Downloading this bundle does not install or update an existing guide.
 
 ## Choose the resource for your current task
 

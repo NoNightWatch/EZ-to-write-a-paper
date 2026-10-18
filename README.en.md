@@ -4,23 +4,23 @@
 <h1 align="center">Bring a draft. Start with one clearer paragraph.</h1>
 
 <p align="center">
-  EZ to Write a Paper · An academic writing mentor skill<br />
+  PAPER QUEST · An academic writing guide<br />
   Revise drafts, understand edits, organize sources, and respond to reviewers. You choose the editing scope and learning pace.
 </p>
 
 <p align="center">
   <a href="#try-demo"><img src="assets/guild/try.svg" width="280" alt="Try an example without sharing a private draft" /></a>
   &nbsp;
-  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip"><img src="assets/guild/download.svg" width="280" alt="Download the complete skill ZIP directly" /></a>
+  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip"><img src="assets/guild/download.svg" width="280" alt="Download the complete writing guide ZIP directly" /></a>
 </p>
 <p align="center">
   <a href="docs/guide.en.md">English guide</a> ·
   <a href="README.md">中文</a> ·
   <a href="docs/guide.zh-CN.md">中文指南</a> ·
-  <a href="academic-manuscript-polish/SKILL.md">Skill entry</a> ·
+  <a href="academic-manuscript-polish/SKILL.md">Workflow guide</a> ·
   <a href="#quick-start">Quick start</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.4.0 · Try through file access before installing · Chinese and English start pages included · Teaching resources primarily in Chinese</sub></p>
+<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.4.1 · Start through file access · Chinese and English start pages included · Teaching resources primarily in Chinese</sub></p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/first-quest.svg" width="960" alt="01 · Try one paragraph" />
@@ -80,21 +80,21 @@ Switch between “just give me the revision” and “explain in more detail” 
 
 ### 1. Download the complete folder
 
-[Download the skill ZIP directly](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip) and extract it. Open `START-HERE.en.md` or `START-HERE.zh-CN.md` inside. Keep the complete folder. [Release history](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases) provides earlier versions; GitHub's **Code → Download ZIP** downloads the entire repository instead.
+[Download the guide ZIP directly](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip) and extract it. Open `START-HERE.en.md` or `START-HERE.zh-CN.md` inside. Keep the complete folder. [Release history](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases) provides earlier versions; GitHub's **Code → Download ZIP** downloads the entire repository instead.
 
-### 2. Try it first; install when useful
+### 2. Have your assistant read the start page
 
-Place the complete folder in a workspace your assistant can read. Ask: “Read `academic-manuscript-polish/SKILL.md` and follow its workflow for the fictional demo. Do not install anything or change settings.” This needs file access. A chat interface that cannot read directories requires the relevant content separately.
+Place the complete folder in a workspace your assistant can read. Ask: “Read `academic-manuscript-polish/START-HERE.en.md`, follow its link to the workflow guide, and use the fictional demo. Do not change settings.” A chat interface that cannot read directories requires the relevant content separately.
 
-For regular use, put the complete folder in the relevant project location:
+Choose the reading method supported by your environment:
 
-| Environment | Project installation path |
+| Environment | How to begin |
 | :--- | :--- |
-| Codex | `<your-project>/.agents/skills/academic-manuscript-polish/` |
-| Claude Code | `<your-project>/.claude/skills/academic-manuscript-polish/` |
-| Another file-reading assistant | Keep the directory intact and ask it to read `SKILL.md` and the relative references it needs |
+| Codex or Claude Code | Open a session in the workspace containing the guide and provide the start page's actual location |
+| Another file-reading assistant | Keep the directory intact and ask it to read the start page and its relative links |
+| A chat interface with uploads or pasted text only | Supply the workflow guide, relevant resources, and draft excerpt; confirm what the assistant can read |
 
-Availability depends on your host and organization settings. [Installation and troubleshooting](docs/guide.en.md#install) covers user-level locations and checks. Paths follow the official [OpenAI](https://learn.chatgpt.com/docs/build-skills) and [Claude Code](https://code.claude.com/docs/en/skills) documentation.
+Availability depends on your host and organization settings. You can start without changing configuration. [Setup and troubleshooting](docs/guide.en.md#install) covers regular use.
 
 ### 3. Bring a real piece of writing
 
@@ -105,9 +105,9 @@ Revise and explain in English. Give the clean version first.
 [Paste text.]
 ```
 
-You can start without a target journal. After installation, use `$academic-manuscript-polish` in Codex CLI / IDE or `/academic-manuscript-polish` in Claude Code. In desktop hosts, use the skill selector or a natural-language request supported there. Confirm file access before expanding the task. [Already installed an older version?](docs/guide.en.md#update)
+You can start without a target journal. Confirm that the assistant read the workflow guide and relevant resources before expanding the task. [Already have an older version?](docs/guide.en.md#update)
 
-<img src="assets/guild/library.svg" width="960" alt="04 · Inside the skill bundle" />
+<img src="assets/guild/library.svg" width="960" alt="04 · Inside the writing guide" />
 
 ## Open the writing library
 
@@ -216,7 +216,7 @@ The homepage and user guide have full Chinese and English versions. Terms includ
 <details>
 <summary><strong>Do I need Python? Can I use it offline?</strong></summary>
 
-Reading the resources and following the editing workflow do not require scripts. Optional offline lookup and validation need Python 3.9+ and use only its standard library. Network access and manuscript processing depend on your AI host and account settings. A locally stored skill does not mean the model runs locally.
+Reading the resources and following the editing workflow do not require scripts. Optional offline lookup and validation need Python 3.9+ and use only its standard library. Network access and manuscript processing depend on your AI host and account settings. A locally stored guide does not mean the model runs locally.
 
 </details>
 
@@ -236,7 +236,8 @@ The instructions require preserving the original and prohibit publication, submi
 
 ```text
 academic-manuscript-polish/
-  SKILL.md               Skill entry
+  START-HERE.zh-CN.md     Chinese start page
+  START-HERE.en.md        English start page
   references/            Terminology, lessons, journals, writing resources
   assets/                Optional task cards and delivery templates
   agents/                Host display metadata
@@ -245,7 +246,7 @@ academic-manuscript-polish/
   bundle-manifest.json   Version and content inventory
 ```
 
-Run from inside the skill folder:
+Run from inside the guide folder:
 
 ```sh
 python scripts/search_terms.py "validity" --exact --format text
@@ -258,5 +259,5 @@ python -B tests/test_bundle.py
 
 <p align="center"><img src="assets/guild/next.svg" width="960" alt="Your next sentence starts here." /></p>
 <p align="center"><strong>Bring one paragraph. Choose one small goal. Begin.</strong></p>
-<p align="center"><a href="docs/guide.en.md">Read the English guide</a> · <a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip">Download the skill directly</a></p>
+<p align="center"><a href="docs/guide.en.md">Read the English guide</a> · <a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip">Download the guide directly</a></p>
 <p align="center"><sub>Find it useful? Star the repository to keep it handy. Report problems in an <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/issues">Issue</a> without including private manuscript content.</sub></p>

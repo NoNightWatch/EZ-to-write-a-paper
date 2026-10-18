@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · Academic Manuscript Polish v3.4.0" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.4.1" /></p>
 
 # English user guide
 
@@ -20,11 +20,11 @@ This guide takes you from installation to your first revision with `academic-man
 
 ## 1. What you are downloading
 
-A skill is a collection of instructions and resources for an AI assistant. This bundle contains writing workflows, terminology, lessons, journal references, and optional scripts. A file-reading assistant can follow it, and you can read the materials directly as Markdown.
+PAPER QUEST is an academic writing guide for use with an AI assistant or for self-study. It brings together writing workflows, terminology, lessons, journal references, and optional lookup tools. Have a file-reading assistant consult the relevant resources for your draft, or read them directly as Markdown.
 
 Prepare:
 
-- An AI assistant that supports local skills or file access.
+- An AI assistant that can read the guide and your writing.
 - Some text, notes, an outline, or references you have permission to share.
 - Your target journal and article type, if decided. You can start without them.
 
@@ -39,11 +39,11 @@ Download and extract the complete bundle into a workspace your assistant can rea
 Read academic-manuscript-polish/SKILL.md and follow its workflow.
 Confirm that the entry and required resources are accessible.
 Do not install anything or change settings.
-Use assets/first-session-demo.md inside that skill folder.
+Use assets/first-session-demo.md inside that guide folder.
 Revise and explain in English. Do not save files.
 ```
 
-This uses file access; the native skill is not installed yet. Supply the actual path if your working directory differs. If your chat tool cannot read folders, provide the relevant content or use a local-file assistant. A claim to know the skill does not prove that its files were loaded.
+This uses file access without configuring automatic loading. Supply the actual path if your working directory differs. If your chat tool cannot read folders, provide the relevant content or use a local-file assistant. A claim to know the guide does not prove that its files were loaded.
 
 Expect a clean revision and two explanations, with participant numbers and attribution preserved. Then ask to restore the first sentence while keeping the second revision. The [fictional demo](../academic-manuscript-polish/assets/first-session-demo.md) includes a reference output. No private manuscript is needed.
 
@@ -87,18 +87,18 @@ my-paper/
 
 For a Claude Code project, the corresponding directory is `.claude`. Check that `SKILL.md` is directly inside `academic-manuscript-polish/`, without an extra nested folder of the same name.
 
-Paths were checked on 2026-10-18 against the official [OpenAI skill documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude Code documentation](https://code.claude.com/docs/en/skills). Organization policies and cloud sessions can differ from local sessions; follow your host's current instructions.
+Paths were checked on 2026-10-18 against the official [OpenAI host documentation](https://learn.chatgpt.com/docs/build-skills) and [Claude Code documentation](https://code.claude.com/docs/en/skills). Organization policies and cloud sessions can differ from local sessions; follow your host's current instructions.
 
 ### Check that the assistant can read it
 
 Start a session in the relevant project and try:
 
-- Codex CLI / IDE: `$academic-manuscript-polish`. In desktop hosts, use the supported skill selector or a natural-language request.
+- Codex CLI / IDE: `$academic-manuscript-polish`. In desktop hosts, use the supported guide selector or a natural-language request.
 - Claude Code: `/academic-manuscript-polish`
 
-You can also say: “Read the installed academic-manuscript-polish skill and use its workflow for the paragraph below.” If the list has not refreshed, check in a new session. Ask the assistant which entry file it actually read; saying it knows the skill is not evidence that it loaded your files.
+You can also say: “Read the installed academic-manuscript-polish guide and use its workflow for the paragraph below.” If the list has not refreshed, check in a new session. Ask the assistant which entry file it actually read; saying it knows the guide is not evidence that it loaded your files.
 
-For another assistant with directory access, point it directly to `SKILL.md`. If it accepts only pasted chat text, provide the entry instructions and relevant resources manually, but automatic access to all relative links is not guaranteed. Ordinary chat uploads and native skill installation may have different capabilities.
+For another assistant with directory access, point it directly to `SKILL.md`. If it accepts only pasted chat text, provide the entry instructions and relevant resources manually, but automatic access to all relative links is not guaranteed. Ordinary chat uploads and host-managed loading may have different capabilities.
 
 ### Want your assistant to copy it for you?
 
@@ -113,7 +113,7 @@ deleting, or merging. Check the copied files and report the
 installed version and entry path.
 ```
 
-This request authorizes copying to that location; downloading alone does not. Start with project scope unless you specifically want the skill across projects.
+This request authorizes copying to that location; downloading alone does not. Start with project scope unless you specifically want the guide across projects.
 
 <a id="first-session"></a>
 ## 3. First session: bring one paragraph
@@ -263,7 +263,7 @@ Provide that card and the correct manuscript version in the next session. If you
 
 ## 9. Optional offline term lookup
 
-With Python 3.9 or newer installed, open a terminal inside the skill folder:
+With Python 3.9 or newer installed, open a terminal inside the guide folder:
 
 ```sh
 python scripts/search_terms.py "validity" --exact --format text
@@ -282,7 +282,7 @@ The search script reads local resources; it does not call a model or upload text
 
 | Symptom | Check first |
 | :--- | :--- |
-| Skill not found | ZIP extracted; correct `SKILL.md` depth; session opened in the relevant project; organization policy permits it |
+| Guide not found | ZIP extracted; correct `SKILL.md` depth; session opened in the relevant project; organization policy permits it |
 | References unavailable | Complete folder copied; relative paths intact; assistant has read access |
 | Responses in Chinese | Explicitly request English revisions and explanations; internal teaching materials are primarily Chinese |
 | Too much rewriting | Restrict edits to language and list terms, sentences, or arguments that must remain |
@@ -324,8 +324,8 @@ The assistant distinguishes completed changes, planned work, requests for clarif
 ## 13. Update while preserving your own work
 
 1. Download the new release to a separate temporary location and read the version in `bundle-manifest.json`.
-2. Confirm the skill directory you actually use. Compare and save custom edits separately before replacing anything.
-3. Back up the old version outside the host's skill-discovery folders, avoiding simultaneous loading of two same-name versions. Keep private manuscripts and temporary glossaries in your manuscript workspace.
+2. Confirm the guide directory you actually use. Compare and save custom edits separately before replacing anything.
+3. Back up the old version outside the host's automatic-loading folders, avoiding simultaneous loading of two same-name versions. Keep private manuscripts and temporary glossaries in your manuscript workspace.
 4. Copy the complete new folder to the confirmed destination. Avoid mixing new files with leftovers or creating an extra nested folder.
 5. Start a new session, ask which version and entry file were actually read, and use the fictional demo to check access.
 
