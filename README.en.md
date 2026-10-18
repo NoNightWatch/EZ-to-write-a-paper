@@ -1,7 +1,7 @@
 <p align="center">
   <img src="assets/writing-guild.png" width="960" alt="Paper Quest · The Writing Guild: a beginner and mentor revise a manuscript in a starlit library." />
 </p>
-<h1 align="center">Say one clear thing. Build from there.</h1>
+<h1 align="center">Describe a phenomenon, then develop it into a paper.</h1>
 
 <p align="center">
   PAPER QUEST · An academic writing guide<br />
