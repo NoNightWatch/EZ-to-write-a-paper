@@ -25,6 +25,7 @@
 | 写作路径 | 十类引言、主体和讨论的组织方式 |
 | 新手教材 | 入门流程、逐章节手册、英语表达工具页、原有 12 个修改示例 |
 | 导师教学 | 按材料阶段引导、九节带参考答案的小课、六组连续对话示例 |
+| 整篇论文课程 | 一份材料贯穿八阶段、完整英文稿、中英练习册、具体反馈和重写、新材料练习、缺材料时的下一步指导 |
 | 综述写作 | 九份教材评估、分层阅读与综合流程、可选工作表、一组完整示范与三项小练习，另有四个跨学科练习 |
 | 领域练习 | 每领域一例，共 52 个例句和易混点 |
 | 期刊资料 | 40 份官方资料卡，注明类型、核验范围、日期与缺口 |
@@ -52,6 +53,7 @@
 ## 按需要阅读
 
 - 第一次写论文：[新手入口](references/beginner-guide.md)。
+- 从零学完整篇：[中文课程](references/first-paper-course.md) / [English course](references/first-paper-course.en.md)，[中文练习](references/paper-workbook.zh-CN.md) / [English workbook](references/paper-workbook.en.md)。
 - 想边写边学：[九节小课](references/mentor-lessons.md) 与 [六组连续对话](references/mentor-dialogues.md)。
 - 文献读了几篇却不会组织：[综述导师](references/literature-review-mentor.md) 与 [完整练习](references/review-worked-example.md)。
 - 材料属于历史、哲学、数学或不同基准记录：[跨学科练习](references/review-transfer-cases.md)。
@@ -97,6 +99,7 @@ python scripts/search_usage.py "重建" --domain a04 --format text
 python scripts/validate_bundle.py
 python tests/test_bundle.py
 python -B tests/test_usage.py
+python -B tests/test_paper_course.py
 ```
 
 检索覆盖基础词表和原有详细词条，显示匹配数、领域、释义与相对文件位置。缩写可以有多种解释，例如 SOC 同时指土壤有机碳或电池荷电状态；工具保留多个匹配，不替作者选义。
@@ -104,6 +107,14 @@ python -B tests/test_usage.py
 检索接受全角英文、常见连字符变体和等价的重音字符编码，保留上下标与数学减号的区别。它未执行模糊拼写或全部同义词检索；没有命中不能证明本领域没有这个概念。命令行 JSON 统一使用 UTF-8，脚本仅查询本地资料。
 
 默认 JSON 输出保持兼容；加 `--format text` 可得到便于阅读的词条列表，`--list-domains --format text` 可查看领域目录。
+
+## v3.6 的整篇带写与反馈
+
+新增一组原创虚构材料，含六对完整说明卡、计数定义、两份教学阅读卡和材料支持的解释。八个任务连续形成标题、摘要、引言、方法、结果表、讨论、结论及参考资料，可对照完整英文范文。练习与答案分开，学生尝试后获得具体反馈，再重写；T01 换一组方向不同且仅有计数记录的材料，检查迁移和访问范围。
+
+中英课程入口和练习册均随包分发。缺口桥接说明要找什么记录、在哪里找、怎样向导师询问以及哪些文字可先完成。直接润色和立即看答案继续可用。原有学科、用词和期刊卡保留。
+
+[本轮自审记录](tests/paper-course-audit.md)区分五轮内容检查、86 项包内测试和未进行的真实教学验证。完整案例为教学虚构，不可作为真实论文发表；完成练习不保证独立研究能力或录用。
 
 ## v3.5 的学科用词与期刊扩展
 

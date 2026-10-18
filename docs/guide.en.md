@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.5.0" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.6.0" /></p>
 
 # English user guide
 
@@ -140,6 +140,33 @@ Expect a revised paragraph, a few important explanations, and questions that gen
 If the output changes your meaning, be specific: “Here, X means […]. Restore that definition and keep the other changes.”
 
 If you prefer less setup, “Polish this paragraph and preserve its meaning” is enough. The default preserves the supplied passage's content and structure, keeps its language, and explains in the conversation's language. Add a journal later if needed.
+
+<a id="first-paper"></a>
+### Learn to write a whole paper from the beginning
+
+You can edit an existing draft directly. For a structured practice route, open the [complete-paper course](../academic-manuscript-polish/references/first-paper-course.en.md); no private manuscript is needed. Six pairs of fictional service cards support one complete descriptive comparison paper. All original card texts and counting rules are included.
+
+```text
+Read first-paper-course.en.md in the complete bundle.
+I have never written a paper. Use the fictional case and teach in English.
+Start with E01 in the English workbook, showing only the current task.
+Let me try, then identify a specific passage, its evidence, and one revision.
+Give a hint if I am stuck; give the answer when I request it.
+Do not transfer teaching data or fictional readings into my real paper.
+```
+
+| How you want to start | Open |
+|---|---|
+| Try first, then receive feedback | [English workbook](../academic-manuscript-polish/references/paper-workbook.en.md), with E01 to E08 and T01 |
+| Follow one paper section by section | [Continuous walkthrough](../academic-manuscript-polish/references/paper-case-walkthrough.md), primarily Chinese; request English explanations |
+| Read the finished manuscript | [Complete English model](../academic-manuscript-polish/references/paper-case-manuscript.md), including abstract, sections, results table, and references |
+| Find what is missing | [Missing-materials guidance](../academic-manuscript-polish/references/missing-materials.md), primarily Chinese; request English explanations |
+
+The eight stages produce an evidence inventory, question and outline, methods, results, introduction, discussion and conclusion, title and abstract, then a full-paper consistency check. Feedback points to your actual wording and evidence, followed by a reattempt and recheck. The [reference answers](../academic-manuscript-polish/references/paper-answer-key.md) are stored separately and available whenever you ask.
+
+The final task uses new event-notice records. Directions differ from the original case, and original texts are unavailable, requiring different conclusions and an honest access statement. Record what you did independently and what needed hints; completing these tasks does not establish general research competence.
+
+For your own manuscript, supply real materials and use the structure appropriate to its genre. This case illustrates one genre; mathematics, history, reviews, and others may need different organization. Fictional data must not be submitted as research. No student learning-outcome study has been conducted. You may leave practice and request direct editing at any point.
 
 <a id="controls"></a>
 ## 4. Choose how you want to work
@@ -315,7 +342,7 @@ The search script reads local resources; it does not call a model or upload text
 
 Review the host's data-processing rules and your authority to share the manuscript. Do not provide confidential information without permission or attach private drafts to public Issues. This bundle contains no third-party paper full texts. General writing guidance does not replace specialist judgment, clinical judgment, or review of high-risk operations.
 
-Structure and search tests cover the original glossaries, new usage layer, and journal cards, with separate public-page locale checks. They do not establish independent model performance or educational outcomes. See the [check record](../academic-manuscript-polish/tests/usage-journal-audit.md).
+Structure and search tests cover the glossaries, usage layer, and journal cards. Course tests check fictional counts, calculations, and bilingual tasks, with separate public-page locale checks. They do not establish independent model performance or educational outcomes. See the [course check record](../academic-manuscript-polish/tests/paper-course-audit.md) and [usage checks](../academic-manuscript-polish/tests/usage-journal-audit.md).
 
 <a id="reviewer-response"></a>
 ## 12. After receiving reviewer comments

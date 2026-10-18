@@ -1,11 +1,11 @@
 <p align="center">
   <img src="assets/writing-guild.zh-CN.png" width="960" alt="论文之旅 · 学术写作工坊：星夜图书馆里，初学者与导师一起修改稿件。" />
 </p>
-<h1 align="center">带上你的稿件，先改好一个段落。</h1>
+<h1 align="center">从一个段落，写到一篇论文。</h1>
 
 <p align="center">
   PAPER QUEST · 学术写作指南<br />
-  改稿件、讲理由、理文献、回审稿。你决定改多少、怎样学。
+  改稿件、讲理由、练整篇。带上你的材料，或从虚构案例开始。
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
   <a href="academic-manuscript-polish/SKILL.md">执行指南</a> ·
   <a href="#quick-start">快速开始</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.5.0 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
+<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.6.0 · 中英课程入口与练习册 · 完整英文范文 · 教学讲解主体为中文</sub></p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/zh-CN/first-quest.svg" width="960" alt="01 · 先试改一段" />
@@ -48,10 +48,10 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="assets/guild/zh-CN/mentor.svg" width="460" alt="和导师一起写：先给修订，再讲理由" />
+<img src="assets/guild/zh-CN/mentor.svg" width="460" alt="和导师一起写：自己尝试，反馈后重写" />
 <h3>有东西想说，却不知道怎样写</h3>
-<p>从中文笔记、零散句子或一个段落开始。先得到一版可用修改，再了解一两处关键改动。愿意练习时，导师带你完成一个小目标。</p>
-<p><a href="academic-manuscript-polish/references/beginner-guide.md">新手入口</a> · <a href="academic-manuscript-polish/references/mentor-lessons.md">九节小课</a></p>
+<p>有稿件就直接修改；想从零学，可以用同一份虚构材料走完八阶段，读完整范文，自己尝试，再根据具体反馈重写。</p>
+<p><a href="academic-manuscript-polish/references/first-paper-course.md">整篇课程</a> · <a href="academic-manuscript-polish/references/paper-workbook.zh-CN.md">中文练习册</a></p>
 </td>
 <td width="50%" valign="top">
 <img src="assets/guild/zh-CN/review.svg" width="460" alt="写好文献综述：比较材料，连贯表达" />
@@ -72,6 +72,18 @@
 | 收到审稿意见 | “对应当前稿件逐条整理，区分已做和计划。” | 回应草稿、修改位置与待办 |
 
 你可以随时说“直接给稿”或“讲细一点”。无需先学会写作分类，也无需填完一套表格。
+
+### 第一次写整篇，从这里开始
+
+**同一份材料，连续写成一篇文章。** 从六对虚构说明卡出发，整理事实、写问题和方法、核算结果，再完成引言、讨论、摘要与全文核对。可查看[完整英文范文](academic-manuscript-polish/references/paper-case-manuscript.md)，也可先做[中文练习](academic-manuscript-polish/references/paper-workbook.zh-CN.md)。
+
+练习采用“尝试 → 定位问题 → 给提示 → 重写 → 换材料再试”。缺材料时会说明去哪里找、怎样问导师，以及哪部分可以先写。你可随时直接看答案。
+
+> 请用整篇课程带我做 E01。先让我试，再给具体反馈，中文讲解。
+
+[开始整篇课程](docs/guide.zh-CN.md#first-paper) · [看连续带写过程](academic-manuscript-polish/references/paper-case-walkthrough.md)
+
+<sub>案例与数据均为虚构教学材料，不可作为真实研究投稿。课程尚未进行真实学生学习成效验证。</sub>
 
 <a id="quick-start"></a>
 <img src="assets/guild/zh-CN/start-here.svg" width="960" alt="03 · 第一次使用" />
@@ -122,6 +134,7 @@
 | **文章组织** | [十类写作路径](academic-manuscript-polish/references/writing-framework.md)，分别讲引言如何进入、主体如何排序、讨论如何组织已有解释 |
 | **逐节写作** | [章节手册](academic-manuscript-polish/references/section-handbook.md)、[英语表达工具页](academic-manuscript-polish/references/language-toolkit.md)、12 个[修改示例](academic-manuscript-polish/references/worked-examples.md) |
 | **边写边学** | [九节小课](academic-manuscript-polish/references/mentor-lessons.md)、[六组导师对话](academic-manuscript-polish/references/mentor-dialogues.md)、[52 个领域练习](academic-manuscript-polish/references/domain-practice.md) |
+| **整篇带写** | [八阶段连续课程](academic-manuscript-polish/references/first-paper-course.md)、[完整英文稿](academic-manuscript-polish/references/paper-case-manuscript.md)、中英练习册、具体反馈、新材料练习与[材料缺口指导](academic-manuscript-polish/references/missing-materials.md) |
 | **文献综述** | [阅读与综合流程](academic-manuscript-polish/references/literature-review-mentor.md)、[完整练习](academic-manuscript-polish/references/review-worked-example.md)、[四个跨学科练习](academic-manuscript-polish/references/review-transfer-cases.md) |
 | **学科用词** | [208 组用词与搭配](academic-manuscript-polish/references/usage-selection.md)，覆盖 52 个入口，说明 `restructure`、`rebuild` 等词的适用对象与替换边界 |
 | **期刊适配** | [40 份资料卡](academic-manuscript-polish/references/journal-cards.md)与[适配流程](academic-manuscript-polish/references/journal-adaptation.md)，区分文章类型、投稿阶段、刊方要求和样文观察 |
@@ -230,7 +243,7 @@
 
 **写作边界**：保留作者事实与研究判断，不编造数据、引用、机制或伦理信息，不保证录用。期刊偏好要有来源；当前官方作者指南优先。医学内容限于阅读与学术表达，危险操作细节不由本包补全。
 
-**检查范围**：70 项包内结构与检索测试、8 项中英页面测试通过。未开展独立模型评估或真实用户教学实验，用词对照也未建立使用频率统计。查看[本轮检查记录](academic-manuscript-polish/tests/usage-journal-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
+**检查范围**：86 项包内测试、9 项中英页面测试通过，覆盖结构、检索、教学数据与语言入口。未开展独立模型评估或真实学生教学实验。查看[本轮课程检查](academic-manuscript-polish/tests/paper-course-audit.md)、[用词及期刊检查](academic-manuscript-polish/tests/usage-journal-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
 
 <details>
 <summary><strong>展开：目录与可选本地命令</strong></summary>

@@ -1,11 +1,11 @@
 <p align="center">
   <img src="assets/writing-guild.png" width="960" alt="Paper Quest · The Writing Guild: a beginner and mentor revise a manuscript in a starlit library." />
 </p>
-<h1 align="center">Bring a draft. Start with one clearer paragraph.</h1>
+<h1 align="center">From one paragraph to a complete paper.</h1>
 
 <p align="center">
   PAPER QUEST · An academic writing guide<br />
-  Revise drafts, understand edits, organize sources, and respond to reviewers. You choose the editing scope and learning pace.
+  Revise, understand, and practice a whole paper. Bring your materials or begin with a fictional case.
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
   <a href="academic-manuscript-polish/SKILL.md">Workflow guide</a> ·
   <a href="#quick-start">Quick start</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.5.0 · Start through file access · Chinese and English start pages included · Teaching resources primarily in Chinese</sub></p>
+<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.6.0 · Bilingual course entries and workbooks · Complete English model paper · Teaching commentary primarily in Chinese</sub></p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/first-quest.svg" width="960" alt="01 · Try one paragraph" />
@@ -48,10 +48,10 @@ Then try: “Restore the original first sentence and keep the revised second sen
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="assets/guild/mentor.svg" width="460" alt="Write with a mentor: a useful revision, then a clear explanation" />
+<img src="assets/guild/mentor.svg" width="460" alt="Write with a mentor: try, revise, and learn, from one task to a whole paper" />
 <h3>You know what you mean, but cannot get it onto the page</h3>
-<p>Start with notes, loose sentences, or one paragraph. Receive a usable revision and an explanation of the most important changes. If you want practice, work through one small writing task with the mentor.</p>
-<p><a href="academic-manuscript-polish/references/beginner-guide.md">Beginner entry</a> · <a href="academic-manuscript-polish/references/mentor-lessons.md">Nine short lessons</a></p>
+<p>Edit an existing draft directly, or learn through eight stages using one fictional evidence packet. Read a complete model, try writing yourself, and revise with specific feedback.</p>
+<p><a href="academic-manuscript-polish/references/first-paper-course.en.md">Complete-paper course</a> · <a href="academic-manuscript-polish/references/paper-workbook.en.md">English workbook</a></p>
 </td>
 <td width="50%" valign="top">
 <img src="assets/guild/review.svg" width="460" alt="Build your review: compare sources and write a connected account" />
@@ -72,6 +72,18 @@ Then try: “Restore the original first sentence and keep the revised second sen
 | Respond to reviewers | “Work through these comments against the current draft; separate completed and planned work.” | Response drafts, manuscript locations, and remaining work |
 
 Switch between “just give me the revision” and “explain in more detail” whenever you want. You do not need to learn a writing taxonomy or complete a form before starting.
+
+### Writing your first whole paper? Start here.
+
+**One evidence packet, developed into one connected paper.** Work from six pairs of fictional service cards: organize facts, define the question and methods, calculate results, then write the introduction, discussion, abstract, and final checks. Read the [complete English model](academic-manuscript-polish/references/paper-case-manuscript.md), or try the [English workbook](academic-manuscript-polish/references/paper-workbook.en.md) first.
+
+Practice follows “attempt → locate the issue → receive a hint → rewrite → try new material.” When evidence is missing, the guide explains what to find, where to look, what to ask your supervisor, and what you can write now. Model answers remain available on request.
+
+> Use the complete-paper course for E01. Let me try before giving specific feedback. Teach in English.
+
+[Start the complete-paper course](docs/guide.en.md#first-paper) · [See the walkthrough, primarily Chinese](academic-manuscript-polish/references/paper-case-walkthrough.md)
+
+<sub>All case data are fictional teaching material and must not be submitted as research. No student learning-outcome study has been conducted.</sub>
 
 <a id="quick-start"></a>
 <img src="assets/guild/start-here.svg" width="960" alt="03 · Your first session" />
@@ -122,6 +134,7 @@ You can start without a target journal. Confirm that the assistant read the work
 | **Article organization** | [Ten writing paths](academic-manuscript-polish/references/writing-framework.md) covering how to enter an introduction, order the body, and organize explanations already supplied by the author |
 | **Section-level writing** | [Section handbook](academic-manuscript-polish/references/section-handbook.md), [English language toolkit](academic-manuscript-polish/references/language-toolkit.md), and 12 [worked revisions](academic-manuscript-polish/references/worked-examples.md) |
 | **Learning through editing** | [Nine lessons](academic-manuscript-polish/references/mentor-lessons.md), [six mentor dialogues](academic-manuscript-polish/references/mentor-dialogues.md), and [52 domain exercises](academic-manuscript-polish/references/domain-practice.md) |
+| **A whole paper, step by step** | [Eight-stage course](academic-manuscript-polish/references/first-paper-course.en.md), [complete English model](academic-manuscript-polish/references/paper-case-manuscript.md), bilingual workbooks, specific feedback, new-material practice, and [help finding missing evidence](academic-manuscript-polish/references/missing-materials.md) |
 | **Literature reviews** | [Reading and synthesis workflow](academic-manuscript-polish/references/literature-review-mentor.md), a [worked exercise](academic-manuscript-polish/references/review-worked-example.md), and [four cross-disciplinary exercises](academic-manuscript-polish/references/review-transfer-cases.md) |
 | **Field-sensitive wording** | [208 wording and collocation contrasts](academic-manuscript-polish/references/usage-selection.md) across 52 entries, with objects and meaning boundaries for choices such as `restructure` and `rebuild` |
 | **Journal adaptation** | [40 journal cards](academic-manuscript-polish/references/journal-cards.md) and an [adaptation workflow](academic-manuscript-polish/references/journal-adaptation.md), distinguishing article types, submission stages, publisher requirements, and observations from sample articles |
@@ -230,7 +243,7 @@ The instructions require preserving the original and prohibit publication, submi
 
 **Writing boundaries**: preserve author-supplied facts and research judgments. Do not fabricate data, citations, mechanisms, or ethics information. Acceptance is not guaranteed. Claims about journal preferences require sources; current official author guidelines take priority. Medical content is for reading and academic expression; the bundle does not supply hazardous operational details.
 
-**Verification scope**: all 70 package structure/search tests and 8 public-page locale tests passed. No independent model evaluation or real-user teaching experiment was conducted, and usage contrasts do not establish corpus frequencies. See the [current check record](academic-manuscript-polish/tests/usage-journal-audit.md) and [source record](academic-manuscript-polish/references/sources.md).
+**Verification scope**: all 86 package tests and 9 public-page locale tests passed, covering structure, search, teaching data, and language-specific entry points. No independent model evaluation or student learning-outcome study was conducted. See the [course check record](academic-manuscript-polish/tests/paper-course-audit.md), [usage and journal checks](academic-manuscript-polish/tests/usage-journal-audit.md), and [source record](academic-manuscript-polish/references/sources.md).
 
 <details>
 <summary><strong>Folder structure and optional local commands</strong></summary>

@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/zh-CN/guide.svg" width="960" alt="使用指南 · PAPER QUEST v3.5.0" /></p>
+<p align="center"><img src="../assets/guild/zh-CN/guide.svg" width="960" alt="使用指南 · PAPER QUEST v3.6.0" /></p>
 
 # 中文用户指南
 
@@ -137,6 +137,33 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 如果输出与原意有差异，直接指出：“这里的 X 指的是……，请恢复这个定义，其余部分保留。”
 
 不想填上面的信息时，一句“只润色这一段，保留原意”即可。默认保持片段的内容与结构，修订沿用原稿语言，解释沿用当前对话语言；期刊可以之后再补。
+
+<a id="first-paper"></a>
+### 从零学写整篇论文
+
+已有稿件可以直接修改。希望系统练习时，打开[整篇课程](../academic-manuscript-polish/references/first-paper-course.md)，无需先提供私人材料。课程用六对虚构服务说明卡演示一篇完整的描述性比较论文，所有原文和计数定义都随包提供。
+
+```text
+请读取完整论文课程 first-paper-course.md。
+我从未写过论文，先用虚构案例学习，用中文讲解。
+从中文练习册的 E01 开始，一次只给当前任务。
+让我先尝试，再指出具体位置、依据和一个改进动作。
+我卡住时给提示；我要求答案时直接给。
+不要把教学数值或文献放进我的真实论文。
+```
+
+| 你想怎么开始 | 打开什么 |
+|---|---|
+| 自己先试，再看反馈 | [中文练习册](../academic-manuscript-polish/references/paper-workbook.zh-CN.md)，含 E01 至 E08 与 T01 |
+| 先看同一篇怎样逐节写 | [连续带写](../academic-manuscript-polish/references/paper-case-walkthrough.md) |
+| 想通读一篇完整成稿 | [完整英文范文](../academic-manuscript-polish/references/paper-case-manuscript.md)，含摘要、各节、结果表和参考资料 |
+| 写不下去，不知道该找什么 | [材料缺口桥接](../academic-manuscript-polish/references/missing-materials.md) |
+
+八阶段依次完成事实清单、问题和提纲、方法、结果、引言、讨论和结论、标题摘要、全文核对。每轮反馈指向学生原句和具体材料；重写后再核对。题目与[参考答案](../academic-manuscript-polish/references/paper-answer-key.md)分开存放，答案可随时索取。
+
+最后换一组活动通知记录练习。新数据有不同方向，且不提供原文，需要调整结论并说明访问范围。记录本次哪些动作自己完成、哪些用过提示即可；完成题目不等于证明掌握所有研究和写作能力。
+
+转到自己的稿件时，提供实际材料，按其研究类型安排章节。此案例只是一个体裁；数学、历史、综述等有各自组织方式。虚构数据不可投稿。教程尚无真实学生学习效果验证。只想直接改稿时可随时退出练习，无需完成课程。
 
 <a id="controls"></a>
 ## 4. 选一种合作方式
@@ -306,7 +333,7 @@ python -B tests/test_bundle.py
 
 请先检查宿主的数据处理规则与稿件授权范围。勿上传未经允许的保密信息，也不要在公开 Issue 中附上私人稿件。本包未附第三方论文全文；通用写作指导不代替专业判断、临床判断或高风险操作审核。
 
-结构与检索测试覆盖原词表、新增用词和期刊卡，页面另做中英对应检查；未测独立模型表现或教学成效。[检查记录](../academic-manuscript-polish/tests/usage-journal-audit.md)可供查看。
+结构与检索测试覆盖词表、用词和期刊卡；课程测试核对虚构计数、计算和双语题目，页面另做中英对应检查。未测独立模型表现或教学成效。查看[课程检查](../academic-manuscript-polish/tests/paper-course-audit.md)与[用词检查](../academic-manuscript-polish/tests/usage-journal-audit.md)。
 
 <a id="reviewer-response"></a>
 ## 12. 收到审稿意见以后

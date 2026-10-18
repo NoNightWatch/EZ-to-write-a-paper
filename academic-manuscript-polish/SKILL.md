@@ -1,6 +1,6 @@
 ---
 name: academic-manuscript-polish
-description: Edit academic drafts, guide beginners from notes, and organize literature reviews or reviewer responses using author-supplied evidence. Use for manuscript polishing, section coaching, discipline-sensitive word choice and collocations, terminology consistency, and journal adaptation. 学术润色、学科用词搭配、综述写作、修回回应与新手教学。
+description: Edit academic drafts, teach beginners through a complete-paper case with practice and feedback, and organize literature reviews or reviewer responses using supplied evidence. Use for manuscript polishing, section coaching, discipline-sensitive word choice, terminology consistency, and journal adaptation. 学术润色、整篇带写、练习反馈、综述写作与期刊适配。
 ---
 
 # PAPER QUEST · 学术写作执行指南
@@ -19,13 +19,15 @@ description: Edit academic drafts, guide beginners from notes, and organize lite
 
 作者自称初学者、要求解释或表达“不知道从哪里开始”时启用 [导师流程](references/mentor-workflow.md)。默认给可用修改并解释少量关键处；只有作者希望共同练习时才放慢到逐步练写。要求直接给稿或赶时间时简化教学。不得把本科生身份当作理解能力判断。
 
+明确要求从零学写整篇时，进入[整篇课程](references/first-paper-course.md)或 [English course](references/first-paper-course.en.md)。可用虚构案例起步，无需私人稿件。按学生选择走“示范、尝试、具体反馈、重写、新材料练习”，不要在学生作答前自动展开答案；要求看答案或直接交稿时立即切换。没材料可查[缺口桥接](references/missing-materials.md)，给出查找位置和询问示例。教学材料不得移植为真实研究结果。
+
 ## 2. 按需读取资料
 
 按当前任务选择入口，无需逐项执行。普通句子的拼写或语法修改可直接处理；领域术语、章节组织或投稿要求确实影响修改时，再读取相应资料。
 
 1. 需要领域术语支持时读 [领域路由](references/domain-routing.md)，从 [52 个学科入口](references/discipline-map.md) 选主领域及必要的交叉领域。按研究对象、问题和稿件自述选择，不依作者身份、单位、国籍或既有知识库的篇数分配权重。
 2. 只读当前需要的词条及上下文。概念含义查基础词表或 [详细词条](references/glossary-index.md)；研究动词、近义词和搭配选择查 [学科用词](references/usage-selection.md)，按动作对象、实际含义与文章位置判断。词表为工作资料，未逐条经外部审定；不得当成标准原文或使用频率证据。专业疑点查正式标准、作者文献或请作者确认。
-3. 新手按 [导师流程](references/mentor-workflow.md) 判断材料阶段，可向作者提供 [入门说明](references/beginner-guide.md)。具体卡点查 [小课与练习](references/mentor-lessons.md)；需要连续教学示范时查 [六组对话](references/mentor-dialogues.md)。只读取当前需要的部分。
+3. 新手按 [导师流程](references/mentor-workflow.md) 判断材料阶段，可向作者提供 [入门说明](references/beginner-guide.md)。具体卡点查 [小课与练习](references/mentor-lessons.md)；独立短场景查 [六组对话](references/mentor-dialogues.md)；同一材料贯穿全文查[整篇课程](references/first-paper-course.md)。练习反馈查[反馈流程](references/paper-feedback.md)。只读取当前需要的部分。
 4. 要处理哪个章节，再读 [章节手册](references/section-handbook.md)。需要重排时才读 [十类写作路径](references/writing-framework.md)。期刊适配任务读 [适配流程](references/journal-adaptation.md) 及 [期刊资料卡](references/journal-cards.md)，核对与本轮相关的当前官方规则；单句语法任务不强制做完整投稿审查。
 5. 缺少学科、术语或特定体裁时，用 [作者补充文献](references/author-literature.md) 建立稿件专用资料。不要求作者为普通润色先补齐全部资源。
 6. 要写文献综述、related work，或有多篇材料却不会组织时，读 [综述导师](references/literature-review-mentor.md)。先区分短段、学位论文章节与独立综述；按实际已读材料完成比较和表达，不给短段强加完整系统综述流程。只纠正综述段的语法时无需加载整套课程。
@@ -58,7 +60,7 @@ description: Edit academic drafts, guide beginners from notes, and organize lite
 
 ## 5. 交付
 
-先给本轮可用修订或材料提纲，再给少量重要修改理由和影响下一步的问题。术语表、期刊核对表仅在有内容时附上。可按 [交付模板](assets/revision-delivery.md) 组织；短段落合并回复，不生成空表。
+修订任务先给本轮可用修订或材料提纲，再给少量重要修改理由和影响下一步的问题。学生选择“先让我练”时，先给任务与必要提示，收到作答再反馈；不给尚未提交的作答虚构评语。术语表、期刊核对表仅在有内容时附上。可按 [交付模板](assets/revision-delivery.md) 组织；短段落合并回复，不生成空表。
 
 导师模式补充一个具体的下一步，练习由作者自愿选择；可直接索要示范答案。作者要求暂停或续接时用 [学习续接卡](assets/learning-checkpoint.md) 记录已完成范围与未决问题，不声称跨会话自动记忆。卡片只有作者要求保存时才写入作者工作区。
 
@@ -68,4 +70,4 @@ description: Edit academic drafts, guide beginners from notes, and organize lite
 
 版本与边界见 [README](README.md)、[来源说明](references/sources.md)、[通用分类与资料来源](references/foundation-sources.md)。本包基于既有资料重新组织，基础词表是编辑整理的入门材料。
 
-维护时运行 `python -B scripts/validate_bundle.py`、`python -B tests/test_bundle.py`、`python -B tests/test_usage.py`，并参照 [情景检查](tests/scenarios.md) 与 [用词及期刊检查](tests/usage-journal-audit.md)。正文材料不随包分发。作者提供的文献仅用于当前稿件，进入共享版本须另有明确授权。
+维护时运行 `python -B scripts/validate_bundle.py`、`python -B tests/test_bundle.py`、`python -B tests/test_usage.py`、`python -B tests/test_paper_course.py`，并参照 [情景检查](tests/scenarios.md)、[用词及期刊检查](tests/usage-journal-audit.md)与[整篇课程检查](tests/paper-course-audit.md)。私人稿件不随包分发。作者提供的文献仅用于当前稿件，进入共享版本须另有明确授权。

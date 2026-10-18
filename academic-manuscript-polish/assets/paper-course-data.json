@@ -1,0 +1,27 @@
+{
+  "fictional": true,
+  "case_id": "service-cards",
+  "unit": "one version of one service card",
+  "pairs": [
+    {"id": "C01", "earlier_items": 4, "later_items": 3, "earlier_contact": 0, "later_contact": 1},
+    {"id": "C02", "earlier_items": 5, "later_items": 4, "earlier_contact": 1, "later_contact": 1},
+    {"id": "C03", "earlier_items": 4, "later_items": 3, "earlier_contact": 0, "later_contact": 0},
+    {"id": "C04", "earlier_items": 6, "later_items": 4, "earlier_contact": 0, "later_contact": 1},
+    {"id": "C05", "earlier_items": 5, "later_items": 4, "earlier_contact": 1, "later_contact": 1},
+    {"id": "C06", "earlier_items": 6, "later_items": 3, "earlier_contact": 0, "later_contact": 1}
+  ],
+  "transfer": {
+    "fictional": true,
+    "case_id": "event-notices",
+    "unit": "one version of one event notice",
+    "pairs": [
+      {"id": "N01", "earlier_items": 2, "later_items": 3, "earlier_contact": 1, "later_contact": 1},
+      {"id": "N02", "earlier_items": 4, "later_items": 4, "earlier_contact": 1, "later_contact": 0},
+      {"id": "N03", "earlier_items": 3, "later_items": 2, "earlier_contact": 0, "later_contact": 0},
+      {"id": "N04", "earlier_items": 5, "later_items": 3, "earlier_contact": 1, "later_contact": 1}
+    ]
+  },
+  "reading_cards": ["L1", "L2"],
+  "unmeasured": ["completion_time", "comprehension", "satisfaction", "service_quality"],
+  "exercises": ["E01", "E02", "E03", "E04", "E05", "E06", "E07", "E08", "T01"]
+}

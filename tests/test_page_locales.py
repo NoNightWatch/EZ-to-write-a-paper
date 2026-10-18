@@ -124,6 +124,18 @@ class PageLocaleTests(unittest.TestCase):
             self.assertIn(other_home, Page((ROOT/home).read_text(encoding='utf-8')).links)
             self.assertIn(Path(other_guide).name, Page((ROOT/guide).read_text(encoding='utf-8')).links)
 
+    def test_course_links_follow_learner_language(self):
+        for locale, (home, guide) in PAGES.items():
+            course = 'first-paper-course.en.md' if locale == 'en' else 'first-paper-course.md'
+            workbook = f'paper-workbook.{locale}.md'
+            home_links = Page((ROOT/home).read_text(encoding='utf-8')).links
+            guide_links = Page((ROOT/guide).read_text(encoding='utf-8')).links
+            self.assertIn(f'{guide}#first-paper', home_links)
+            self.assertIn(f'academic-manuscript-polish/references/{course}', home_links)
+            self.assertIn(f'academic-manuscript-polish/references/{workbook}', home_links)
+            self.assertIn(f'../academic-manuscript-polish/references/{course}', guide_links)
+            self.assertIn(f'../academic-manuscript-polish/references/{workbook}', guide_links)
+
     def test_hero_images_keep_matching_aspect_ratio(self):
         dimensions = []
         for name in ('writing-guild.png', 'writing-guild.zh-CN.png'):

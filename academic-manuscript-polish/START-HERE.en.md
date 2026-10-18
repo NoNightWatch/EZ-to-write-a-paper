@@ -31,6 +31,8 @@ A target journal is optional. When available, supply its name, article type, and
 
 ## Change the editing controls at any time
 
+To learn a whole paper from the beginning, open the [complete-paper course](references/first-paper-course.en.md) and say: “Use the fictional case for E01. Let me try before giving specific feedback. Teach in English.” It includes a full model paper, an [English workbook](references/paper-workbook.en.md), and a new-material exercise. You may request an answer at any time.
+
 - “Diagnose only. Do not revise yet.”
 - “Give a clean version and the important before/after changes.”
 - “Keep this term and restore the original second sentence.”
