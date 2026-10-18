@@ -1,7 +1,7 @@
 {
-  "version": "3.4.1",
+  "version": "3.5.0",
   "date": "2026-10-18",
-  "scope": "paper-quest-guide-presentation",
+  "scope": "field-usage-and-journal-expansion",
   "domains": [
     {
       "id": "g01",
@@ -371,7 +371,9 @@
   "foundation_term_records": 2080,
   "unique_english_headwords": 2043,
   "legacy_detailed_terms": 308,
-  "journal_cards": 15,
+  "journal_cards": 40,
+  "usage_domains": 52,
+  "usage_records": 208,
   "domain_examples": 52,
   "worked_examples": 12,
   "writing_paths": 10,
@@ -379,6 +381,6 @@
   "review_core_resources": 5,
   "review_transfer_cases": 4,
   "audit_rounds": 5,
-  "automated_tests": 46,
-  "verification": "Foundation definitions are editorial working glosses, not individually externally verified."
+  "automated_tests": 70,
+  "verification": "Definitions and usage rows are editorial working aids, not individually externally verified or corpus-frequency claims. Journal cards distinguish verified scope from gaps; current official requirements must be checked per task."
 }

@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/zh-CN/guide.svg" width="960" alt="使用指南 · PAPER QUEST v3.4.1" /></p>
+<p align="center"><img src="../assets/guild/zh-CN/guide.svg" width="960" alt="使用指南 · PAPER QUEST v3.5.0" /></p>
 
 # 中文用户指南
 
@@ -199,6 +199,19 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 
 作者提供的文献与临时词表默认供当前稿件使用，不自动加入共享包。词表中的工作释义不应冒充标准原文。
 
+### 同一个意思，本领域怎样表达
+
+[学科用词资料](../academic-manuscript-polish/references/usage-selection.md) 提供 208 组对照，覆盖全部 52 个入口。每组说明候选词、搭配对象、选择条件、原创例句和替换边界。例如重新构建软件可用 `rebuild a project`，重组组织可用 `restructure an organization`；渔业也有 `rebuild a stock`。先判断句子中的实际动作，学科名称本身不能决定用词。
+
+```text
+请检查这段的研究动词和搭配是否符合本文对象。
+对 restructure、rebuild、reconstruct 等近义词说明选择原因。
+保持专业含义和结论强度；原词合适就保留。
+可参考我提供的同领域论文，但不要把少量例子说成全领域偏好。
+```
+
+可在包根目录运行 `python scripts/search_usage.py "rebuild" --exact --format text`，加 `--domain n10` 可限定计算机入口。不会命令行也可以直接让助手查资料。例句展示编辑选择，没有建立“母语者常用词”的频率排名。
+
 <a id="review"></a>
 ## 6. 文献综述怎么用
 
@@ -235,7 +248,7 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 保留我的结论强度，不增加首创性或录用保证。
 ```
 
-15 份资料卡可作为查找入口，实际要求以当前官方指南为准。无法联网或页面不可访问时，请提供指南文件；未验证部分应留在“未核验”状态。检索刊方规则只需公开的刊名与规则信息，无需把未发表正文发送给搜索服务。
+40 份资料卡可作为查找入口，实际要求以当前官方指南为准。需分清文章类型、初投或返修、硬性要求或建议，以及 words 与 characters。无法联网或页面不可访问时，请提供指南文件；未验证部分保留“未核验”状态。检索刊方规则只需公开信息，无需发送未发表正文。期刊适配可以调整结构、受众和篇幅，不能改变研究本身的含义。
 
 <a id="long-drafts"></a>
 ## 8. 长稿、文件与下一次续接
@@ -293,7 +306,7 @@ python -B tests/test_bundle.py
 
 请先检查宿主的数据处理规则与稿件授权范围。勿上传未经允许的保密信息，也不要在公开 Issue 中附上私人稿件。本包未附第三方论文全文；通用写作指导不代替专业判断、临床判断或高风险操作审核。
 
-本版沿用的 46 项测试验证结构与检索，文风情景另做维护者走查，未测独立模型表现或教学成效。[检查记录](../academic-manuscript-polish/tests/field-style-audit.md)可供查看。
+结构与检索测试覆盖原词表、新增用词和期刊卡，页面另做中英对应检查；未测独立模型表现或教学成效。[检查记录](../academic-manuscript-polish/tests/usage-journal-audit.md)可供查看。
 
 <a id="reviewer-response"></a>
 ## 12. 收到审稿意见以后

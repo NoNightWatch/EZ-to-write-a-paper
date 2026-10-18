@@ -5,6 +5,7 @@ import ast
 import json
 from pathlib import Path
 import re
+import runpy
 import sys
 from urllib.parse import unquote, urlsplit
 
@@ -82,13 +83,30 @@ def check_foundation(root, docs, errors, stats):
     if Counter(HTML_ID.findall(practice)) != Counter(ids):
         errors.append("Domain example coverage differs")
     journal = docs.get(root / "references" / "journal-cards.md", "")
-    if re.findall(r'<a id="(j\d{2})"></a>', journal) != [f"j{i:02d}" for i in range(1, 16)]:
+    journal_count = manifest.get("journal_cards")
+    if not isinstance(journal_count, int) or journal_count < 40:
+        errors.append("Expected at least 40 journal cards in manifest")
+        journal_count = 40
+    if re.findall(r'<a id="(j\d{2})"></a>', journal) != [f"j{i:02d}" for i in range(1, journal_count + 1)]:
         errors.append("Journal card set differs")
+    cards = re.split(r'<a id="j\d{2}"></a>', journal)[1:]
+    for i, card in enumerate(cards, 1):
+        for label in ("- 适用类型：", "- 核验范围：", "- 官方信息：", "- 编辑动作：", "- 未完成核验："):
+            if label not in card:
+                errors.append(f"Journal card j{i:02d} missing {label}")
+        if not re.search(r'\]\(https://', card.split("- 编辑动作：")[0]):
+            errors.append(f"Journal card j{i:02d} missing source link")
+    try:
+        usage_reader = runpy.run_path(str(root / "scripts" / "search_usage.py"))["read_records"]
+        usage = usage_reader(root)
+        stats.update(usage_records=len(usage), usage_domains=len({r["domain_id"] for r in usage}))
+    except (OSError, ValueError, KeyError) as exc:
+        errors.append("Usage validation: " + str(exc))
     worked = docs.get(root / "references" / "worked-examples.md", "")
     if len(re.findall(r"^## \d+\.", worked, re.M)) != 12:
         errors.append("Expected 12 worked editing examples")
     stats.update(foundation_domains=len(domains), foundation_term_records=actual_count,
-                 unique_english_headwords=len(set(headwords)), journal_cards=15,
+                 unique_english_headwords=len(set(headwords)), journal_cards=journal_count,
                  domain_examples=len(HTML_ID.findall(practice)))
 
 def check_bundle(root):

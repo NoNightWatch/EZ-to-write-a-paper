@@ -20,7 +20,7 @@
   <a href="academic-manuscript-polish/SKILL.md">Workflow guide</a> ·
   <a href="#quick-start">Quick start</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.4.1 · Start through file access · Chinese and English start pages included · Teaching resources primarily in Chinese</sub></p>
+<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.5.0 · Start through file access · Chinese and English start pages included · Teaching resources primarily in Chinese</sub></p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/first-quest.svg" width="960" alt="01 · Try one paragraph" />
@@ -111,7 +111,7 @@ You can start without a target journal. Confirm that the assistant read the work
 
 ## Open the writing library
 
-<img src="assets/guild/inventory.svg" width="960" alt="52 domain entries · 2,080 foundation term records · 10 writing paths · 15 journal reference cards" />
+<img src="assets/guild/inventory.svg" width="960" alt="52 domain entries · 2,080 foundation term records · 10 writing paths · 40 journal reference cards" />
 
 <sub>The 2,080 records include cross-field repetitions, with 2,043 distinct English headwords by literal deduplication. Counts describe coverage, not performance scores. See scope and verification limits below.</sub>
 
@@ -123,7 +123,8 @@ You can start without a target journal. Confirm that the assistant read the work
 | **Section-level writing** | [Section handbook](academic-manuscript-polish/references/section-handbook.md), [English language toolkit](academic-manuscript-polish/references/language-toolkit.md), and 12 [worked revisions](academic-manuscript-polish/references/worked-examples.md) |
 | **Learning through editing** | [Nine lessons](academic-manuscript-polish/references/mentor-lessons.md), [six mentor dialogues](academic-manuscript-polish/references/mentor-dialogues.md), and [52 domain exercises](academic-manuscript-polish/references/domain-practice.md) |
 | **Literature reviews** | [Reading and synthesis workflow](academic-manuscript-polish/references/literature-review-mentor.md), a [worked exercise](academic-manuscript-polish/references/review-worked-example.md), and [four cross-disciplinary exercises](academic-manuscript-polish/references/review-transfer-cases.md) |
-| **Journal adaptation** | [15 journal cards](academic-manuscript-polish/references/journal-cards.md) and an [adaptation workflow](academic-manuscript-polish/references/journal-adaptation.md), distinguishing publisher requirements, observations from sample articles, and unverified points |
+| **Field-sensitive wording** | [208 wording and collocation contrasts](academic-manuscript-polish/references/usage-selection.md) across 52 entries, with objects and meaning boundaries for choices such as `restructure` and `rebuild` |
+| **Journal adaptation** | [40 journal cards](academic-manuscript-polish/references/journal-cards.md) and an [adaptation workflow](academic-manuscript-polish/references/journal-adaptation.md), distinguishing article types, submission stages, publisher requirements, and observations from sample articles |
 | **A field that is not covered** | Use the [author-supplied literature workflow](academic-manuscript-polish/references/author-literature.md) to build a manuscript-specific terminology and genre reference |
 | **Revisions and editing controls** | [Point-by-point reviewer responses](academic-manuscript-polish/references/reviewer-response.md) and [session controls](academic-manuscript-polish/references/session-controls.md), preserving author decisions and manuscript correspondence |
 
@@ -229,7 +230,7 @@ The instructions require preserving the original and prohibit publication, submi
 
 **Writing boundaries**: preserve author-supplied facts and research judgments. Do not fabricate data, citations, mechanisms, or ethics information. Acceptance is not guaranteed. Claims about journal preferences require sources; current official author guidelines take priority. Medical content is for reading and academic expression; the bundle does not supply hazardous operational details.
 
-**Verification scope**: v3.4.0 passes the existing 46 structure and search tests; the style module also received a maintainer scenario walkthrough. No independent model evaluation or real-user teaching experiment was conducted. See the [current check record](academic-manuscript-polish/tests/field-style-audit.md) and [source record](academic-manuscript-polish/references/sources.md).
+**Verification scope**: all 70 package structure/search tests and 8 public-page locale tests passed. No independent model evaluation or real-user teaching experiment was conducted, and usage contrasts do not establish corpus frequencies. See the [current check record](academic-manuscript-polish/tests/usage-journal-audit.md) and [source record](academic-manuscript-polish/references/sources.md).
 
 <details>
 <summary><strong>Folder structure and optional local commands</strong></summary>

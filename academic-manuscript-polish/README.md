@@ -21,12 +21,13 @@
 | 通用学科目录 | 六大学科群，加通用写作与统计表达，共 52 个入口 |
 | 基础中英词表 | 2,080 条分领域短释义；英文词头字面去重 2,043 项 |
 | 详细专题词条 | 保留原有九册 308 条，含用法、边界及用例入口 |
+| 学科用词与搭配 | 52 个入口、208 组动词及近义词对照，含对象、条件、原创例句、替换边界及依据标记 |
 | 写作路径 | 十类引言、主体和讨论的组织方式 |
 | 新手教材 | 入门流程、逐章节手册、英语表达工具页、原有 12 个修改示例 |
 | 导师教学 | 按材料阶段引导、九节带参考答案的小课、六组连续对话示例 |
 | 综述写作 | 九份教材评估、分层阅读与综合流程、可选工作表、一组完整示范与三项小练习，另有四个跨学科练习 |
 | 领域练习 | 每领域一例，共 52 个例句和易混点 |
-| 期刊资料 | 15 份官方资料卡，注明类型、核验范围、日期与缺口 |
+| 期刊资料 | 40 份官方资料卡，注明类型、核验范围、日期与缺口 |
 | 可选模板 | 稿件任务、补充文献、术语卡、期刊卡、修订交付及学习续接卡 |
 | 离线工具 | 词条检索、结构校验与自动测试，仅 Python 标准库 |
 | 首次体验与修回 | 中英启动页、虚构试用稿、修改控制、审稿意见回应流程与工作表 |
@@ -56,6 +57,7 @@
 - 材料属于历史、哲学、数学或不同基准记录：[跨学科练习](references/review-transfer-cases.md)。
 - 提供给执行助手：[导师流程](references/mentor-workflow.md)。
 - 查本领域用语：[通用学科目录](references/discipline-map.md)。
+- 选择研究动词、近义词和搭配：[学科用词](references/usage-selection.md)。
 - 想理解一节怎么写：[章节手册](references/section-handbook.md)。
 - 想看具体怎么改：[教学示例](references/worked-examples.md)。
 - 想调整整体结构：[十类写作路径](references/writing-framework.md)。
@@ -90,8 +92,11 @@ python scripts/search_terms.py "SOC" --exact
 python scripts/search_terms.py "SOC" --exact --format text
 python scripts/search_terms.py "yield" --domain agronomy-horticulture
 python scripts/search_terms.py --list-domains
+python scripts/search_usage.py "rebuild" --exact --format text
+python scripts/search_usage.py "重建" --domain a04 --format text
 python scripts/validate_bundle.py
 python tests/test_bundle.py
+python -B tests/test_usage.py
 ```
 
 检索覆盖基础词表和原有详细词条，显示匹配数、领域、释义与相对文件位置。缩写可以有多种解释，例如 SOC 同时指土壤有机碳或电池荷电状态；工具保留多个匹配，不替作者选义。
@@ -99,6 +104,14 @@ python tests/test_bundle.py
 检索接受全角英文、常见连字符变体和等价的重音字符编码，保留上下标与数学减号的区别。它未执行模糊拼写或全部同义词检索；没有命中不能证明本领域没有这个概念。命令行 JSON 统一使用 UTF-8，脚本仅查询本地资料。
 
 默认 JSON 输出保持兼容；加 `--format text` 可得到便于阅读的词条列表，`--list-domains --format text` 可查看领域目录。
+
+## v3.5 的学科用词与期刊扩展
+
+补充 52 个学科入口的写作关注点与 208 组用词对照，保留原有概念释义。比如软件中的 `rebuild a project`、渔业中的 `rebuild a stock`、组织研究中的 `restructure an organization`，需按对象及实际动作选择。每行有替换边界，检索返回候选，不自动改稿。
+
+期刊卡由 15 份增至 40 份，新增条款依据本轮可读的官方页面，区分文章类型、投稿阶段、要求与建议。未覆盖的期刊可依据作者提供的指南建立临时卡。用词例句为原创，未建立母语作者频率语料库，不能宣称某学科或期刊普遍偏好某个词。
+
+[本轮检查记录](tests/usage-journal-audit.md) 列出检索、覆盖及文档检查范围。已发布版本与下载包见 [GitHub 版本页](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases)。
 
 ## v3.4.1 的指南定位
 
@@ -132,7 +145,7 @@ python tests/test_bundle.py
 
 作者提供的稿件、参考材料与临时词表默认只在作者工作区使用，不自动进入共享包。包内不含论文全文、私人稿件、账户信息或原知识库路径。检索期刊指南不发送未发表正文。生物医学词条用于阅读与表达，不构成临床或高风险生物操作指导。
 
-期刊资料沿用 v2 中注明 2026-10-18 的核验记录，各卡覆盖范围不同；本轮导师升级未重新联网核验。实际使用必须重查与任务相关的当前要求。未访问成功的项目明确留为未核验。资料卡不承诺送审或录用。
+期刊资料保留原 15 份记录，本轮新增 25 份官方资料卡，各卡覆盖范围不同。实际使用必须重查与任务相关的当前要求。未访问成功或只取得片段的项目注明缺口。资料卡不承诺送审或录用。
 
 来源与限制见 [原资料记录](references/sources.md)、[通用来源说明](references/foundation-sources.md) 和 [综述教材评估](references/review-source-assessment.md)。教材与释义为编辑整理；引用题名不附带第三方全文再分发许可。本包未新增开源许可证；公开可读不自动授予额外再分发权利。
 

@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.4.1" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.5.0" /></p>
 
 # English user guide
 
@@ -204,6 +204,20 @@ The 52 entries provide foundation coverage. For missing terms, specialized defin
 
 Author-supplied references and temporary glossaries are for the current manuscript by default. They are not automatically added to the shared bundle. Working glossary definitions should not be presented as verbatim standards.
 
+### How does this field express the intended action?
+
+The [field-usage resources](../academic-manuscript-polish/references/usage-selection.md) provide 208 contrasts across all 52 entries. Each includes candidates, collocations, selection conditions, an original example, and meaning boundaries. For instance, `rebuild a project` fits a software build task, `restructure an organization` concerns organization, and fisheries also uses `rebuild a stock`. The actual object and action control the choice; a discipline label alone is insufficient.
+
+```text
+Check the research verbs and collocations against the objects in this paragraph.
+Explain choices among terms such as restructure, rebuild, and reconstruct.
+Preserve technical meaning and claim strength. Keep suitable original wording.
+You may consult my field-specific references, but do not treat a few examples
+as evidence of a universal disciplinary preference.
+```
+
+From the bundle root, optionally run `python scripts/search_usage.py "rebuild" --exact --format text`; add `--domain n10` for computing. You can also ask the assistant to read the resources without using commands. The examples illustrate editorial choices; they are not a frequency ranking of native-speaker usage.
+
 <a id="review"></a>
 ## 6. Use it for a literature review
 
@@ -242,7 +256,7 @@ articles, and unverified items. Preserve the strength of my claims;
 do not add novelty claims or promises of acceptance.
 ```
 
-The 15 reference cards offer a starting point; current official guidance controls the actual requirements. If browsing is unavailable, provide the guideline file. Unchecked items should remain labelled unverified. Searching journal rules requires public journal and policy information, not unpublished manuscript text.
+The 40 reference cards offer a starting point; current official guidance controls the requirements. Distinguish article type, initial submission or revision, requirements or recommendations, and words or characters. If browsing is unavailable, provide the guideline file. Unchecked items remain labelled unverified. Search with public journal information, without sending unpublished text. Adaptation may change structure, audience framing, and length, while preserving the meaning of the research.
 
 <a id="long-drafts"></a>
 ## 8. Long drafts, files, and continuing later
@@ -301,7 +315,7 @@ The search script reads local resources; it does not call a model or upload text
 
 Review the host's data-processing rules and your authority to share the manuscript. Do not provide confidential information without permission or attach private drafts to public Issues. This bundle contains no third-party paper full texts. General writing guidance does not replace specialist judgment, clinical judgment, or review of high-risk operations.
 
-The existing 46 tests check structure and search; style scenarios received a separate maintainer walkthrough. Neither establishes independent model performance or educational outcomes. See the [check record](../academic-manuscript-polish/tests/field-style-audit.md).
+Structure and search tests cover the original glossaries, new usage layer, and journal cards, with separate public-page locale checks. They do not establish independent model performance or educational outcomes. See the [check record](../academic-manuscript-polish/tests/usage-journal-audit.md).
 
 <a id="reviewer-response"></a>
 ## 12. After receiving reviewer comments

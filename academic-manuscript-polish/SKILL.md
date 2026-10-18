@@ -1,6 +1,6 @@
 ---
 name: academic-manuscript-polish
-description: Edit academic drafts, guide beginners from notes, and organize literature reviews or reviewer responses using author-supplied evidence. Use for manuscript polishing, section coaching, terminology consistency, and journal adaptation. 学术润色、综述写作、修回回应与新手教学。
+description: Edit academic drafts, guide beginners from notes, and organize literature reviews or reviewer responses using author-supplied evidence. Use for manuscript polishing, section coaching, discipline-sensitive word choice and collocations, terminology consistency, and journal adaptation. 学术润色、学科用词搭配、综述写作、修回回应与新手教学。
 ---
 
 # PAPER QUEST · 学术写作执行指南
@@ -24,7 +24,7 @@ description: Edit academic drafts, guide beginners from notes, and organize lite
 按当前任务选择入口，无需逐项执行。普通句子的拼写或语法修改可直接处理；领域术语、章节组织或投稿要求确实影响修改时，再读取相应资料。
 
 1. 需要领域术语支持时读 [领域路由](references/domain-routing.md)，从 [52 个学科入口](references/discipline-map.md) 选主领域及必要的交叉领域。按研究对象、问题和稿件自述选择，不依作者身份、单位、国籍或既有知识库的篇数分配权重。
-2. 只读当前需要的词条及上下文。基础词表是简要工作释义，未逐条经外部专业审定；不得当成标准原文引用。术语疑点查正式标准、原始文献或请作者确认。已有九册详细词条见 [补充索引](references/glossary-index.md)。
+2. 只读当前需要的词条及上下文。概念含义查基础词表或 [详细词条](references/glossary-index.md)；研究动词、近义词和搭配选择查 [学科用词](references/usage-selection.md)，按动作对象、实际含义与文章位置判断。词表为工作资料，未逐条经外部审定；不得当成标准原文或使用频率证据。专业疑点查正式标准、作者文献或请作者确认。
 3. 新手按 [导师流程](references/mentor-workflow.md) 判断材料阶段，可向作者提供 [入门说明](references/beginner-guide.md)。具体卡点查 [小课与练习](references/mentor-lessons.md)；需要连续教学示范时查 [六组对话](references/mentor-dialogues.md)。只读取当前需要的部分。
 4. 要处理哪个章节，再读 [章节手册](references/section-handbook.md)。需要重排时才读 [十类写作路径](references/writing-framework.md)。期刊适配任务读 [适配流程](references/journal-adaptation.md) 及 [期刊资料卡](references/journal-cards.md)，核对与本轮相关的当前官方规则；单句语法任务不强制做完整投稿审查。
 5. 缺少学科、术语或特定体裁时，用 [作者补充文献](references/author-literature.md) 建立稿件专用资料。不要求作者为普通润色先补齐全部资源。
@@ -32,6 +32,8 @@ description: Edit academic drafts, guide beginners from notes, and organize lite
 7. 要处理审稿意见、response letter 或修回清单时读 [修回回应流程](references/reviewer-response.md)，把已完成的稿件变更、计划工作与作者尚未决定的事项分开。只改回应句子的语法时无需展开整个流程。
 
 不一次加载全部词表。词条查找可用文本搜索，或只读脚本 `python scripts/search_terms.py "query"`。不依赖该脚本也能使用所有资料。
+
+用词搭配可查 `python scripts/search_usage.py "rebuild" --domain n10 --format text`。它提供候选、对象和替换边界，不自动改稿。相同中文在不同对象中可对应不同英文；同一技术概念也可能需要保持重复。只在原意明确时替换，不按领域标签批量换词。
 
 ## 3. 明确编辑层级
 
@@ -66,4 +68,4 @@ description: Edit academic drafts, guide beginners from notes, and organize lite
 
 版本与边界见 [README](README.md)、[来源说明](references/sources.md)、[通用分类与资料来源](references/foundation-sources.md)。本包基于既有资料重新组织，基础词表是编辑整理的入门材料。
 
-维护时运行 `python scripts/validate_bundle.py` 并参照 [情景检查](tests/scenarios.md)。正文材料不随包分发。作者提供的文献仅用于当前稿件，进入共享版本须另有明确授权。
+维护时运行 `python -B scripts/validate_bundle.py`、`python -B tests/test_bundle.py`、`python -B tests/test_usage.py`，并参照 [情景检查](tests/scenarios.md) 与 [用词及期刊检查](tests/usage-journal-audit.md)。正文材料不随包分发。作者提供的文献仅用于当前稿件，进入共享版本须另有明确授权。

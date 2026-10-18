@@ -20,7 +20,7 @@
   <a href="academic-manuscript-polish/SKILL.md">执行指南</a> ·
   <a href="#quick-start">快速开始</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.4.1 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
+<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.5.0 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/zh-CN/first-quest.svg" width="960" alt="01 · 先试改一段" />
@@ -111,7 +111,7 @@
 
 ## 打开这间写作资料室
 
-<img src="assets/guild/zh-CN/inventory.svg" width="960" alt="52 个学科入口 · 2,080 条基础词表记录 · 10 类写作路径 · 15 份期刊资料卡" />
+<img src="assets/guild/zh-CN/inventory.svg" width="960" alt="52 个学科入口 · 2,080 条基础词表记录 · 10 类写作路径 · 40 份期刊资料卡" />
 
 <sub>2,080 条记录含跨领域重复，英文词头字面去重为 2,043 项。基础覆盖与专业核验范围见下表；数量不代表效果评分。</sub>
 
@@ -123,7 +123,8 @@
 | **逐节写作** | [章节手册](academic-manuscript-polish/references/section-handbook.md)、[英语表达工具页](academic-manuscript-polish/references/language-toolkit.md)、12 个[修改示例](academic-manuscript-polish/references/worked-examples.md) |
 | **边写边学** | [九节小课](academic-manuscript-polish/references/mentor-lessons.md)、[六组导师对话](academic-manuscript-polish/references/mentor-dialogues.md)、[52 个领域练习](academic-manuscript-polish/references/domain-practice.md) |
 | **文献综述** | [阅读与综合流程](academic-manuscript-polish/references/literature-review-mentor.md)、[完整练习](academic-manuscript-polish/references/review-worked-example.md)、[四个跨学科练习](academic-manuscript-polish/references/review-transfer-cases.md) |
-| **期刊适配** | [15 份资料卡](academic-manuscript-polish/references/journal-cards.md)与[适配流程](academic-manuscript-polish/references/journal-adaptation.md)，区分刊方要求、样文观察和未核验内容 |
+| **学科用词** | [208 组用词与搭配](academic-manuscript-polish/references/usage-selection.md)，覆盖 52 个入口，说明 `restructure`、`rebuild` 等词的适用对象与替换边界 |
+| **期刊适配** | [40 份资料卡](academic-manuscript-polish/references/journal-cards.md)与[适配流程](academic-manuscript-polish/references/journal-adaptation.md)，区分文章类型、投稿阶段、刊方要求和样文观察 |
 | **你的领域尚未覆盖** | 用[作者补充文献流程](academic-manuscript-polish/references/author-literature.md)建立本稿专用术语与体裁参考 |
 | **修回与修改控制** | [逐条审稿回应](academic-manuscript-polish/references/reviewer-response.md)、[本轮控制](academic-manuscript-polish/references/session-controls.md)，保留作者决定与稿件对应 |
 
@@ -229,7 +230,7 @@
 
 **写作边界**：保留作者事实与研究判断，不编造数据、引用、机制或伦理信息，不保证录用。期刊偏好要有来源；当前官方作者指南优先。医学内容限于阅读与学术表达，危险操作细节不由本包补全。
 
-**检查范围**：v3.4.0 沿用的 46 项结构与检索测试通过；文风模块另做维护者情景走查。未开展独立模型评估或真实用户教学实验。查看[本轮检查记录](academic-manuscript-polish/tests/field-style-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
+**检查范围**：70 项包内结构与检索测试、8 项中英页面测试通过。未开展独立模型评估或真实用户教学实验，用词对照也未建立使用频率统计。查看[本轮检查记录](academic-manuscript-polish/tests/usage-journal-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
 
 <details>
 <summary><strong>展开：目录与可选本地命令</strong></summary>

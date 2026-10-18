@@ -21,6 +21,8 @@
 
 ## 常用动词怎样选
 
+下面列通用功能。遇到 `restructure / rebuild / reconstruct / restore` 等选词问题，按 [学科用词与搭配](usage-selection.md) 检查动作对象及实际操作；同一个中文词可以指不同任务。不要为消除重复而改变技术概念，也不要仅依据期刊档次换成更强的动词。
+
 - describe：描述现象或材料。
 - compare：比较明确对象。
 - examine / investigate：考察问题，含义相对宽。

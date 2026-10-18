@@ -6,6 +6,8 @@
 
 查具体词可使用 [基础英文索引](foundation-index.md)，或在包根目录运行 `python scripts/search_terms.py "validity"`。不使用脚本时直接搜索 Markdown 即可。词表中的词不必全部出现在稿件中。
 
+动词与搭配另查 [52 个对应入口的用词对照](usage-selection.md)，含 208 组候选词、动作对象和替换边界；入口编号沿用下表。期刊要求按 [40 份资料卡](journal-cards.md) 查具体文章类型，细分学科缺少刊物时使用作者提供的当前指南。
+
 ## 通用
 
 | 编号 | 学科入口 | 基础词条 | 用法练习 |
