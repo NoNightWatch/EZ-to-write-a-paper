@@ -1,17 +1,21 @@
 ---
 name: academic-manuscript-polish
-description: Revise academic manuscripts or help beginners turn notes and references into a draft through guided editing, discipline-specific terminology, and target-journal checks. Use for academic polishing, literature-review writing, section coaching, terminology consistency, or journal adaptation; accept author-supplied references for any field. 学术润色、文献综述写作、术语核对、期刊适配与新手导师教学。
+description: Edit academic drafts, guide beginners from notes, and organize literature reviews or reviewer responses using author-supplied evidence. Use for manuscript polishing, section coaching, terminology consistency, and journal adaptation. 学术润色、综述写作、修回回应与新手教学。
 ---
 
 # Academic Manuscript Polish
 
 接收作者已有文字或材料，识别当前阶段、领域和目标期刊，按本轮要求推进写作。把专业表达解释清楚；研究内容和专业判断需有作者材料支持。
 
+首次使用可提供 [中文启动页](START-HERE.zh-CN.md) 或 [English start](START-HERE.en.md)，无需要求作者先阅读。只想体验时可用 [虚构试用稿](assets/first-session-demo.md)，不得混入作者真实研究。
+
 ## 1. 接收材料
 
 有稿件时读取本轮相关部分。只有中文笔记、提纲或零散句子也可开始，先整理作者已知内容；完全没有材料时只索取一个可用片段或简短研究说明，不生成研究事实。只有摘要就处理摘要，不推测全文。可编辑文字优先；图、表、公式无法读取时说明具体缺口。
 
 从现有信息提取本轮范围、输出语言、目标期刊和文章类型，不重复询问。作者无需懂术语或选择写作“门派”，也无需填满表格。缺少期刊时先做通用修改，期刊适配保持未核验状态。可选 [稿件任务卡](assets/manuscript-brief.md)。
+
+一段文字加“帮我润色”已经足够开始：默认只改所给片段的语言，修订稿沿用原稿语言，解释沿用对话语言。作者指定的语言优先。只要求诊断或点评时给建议，不直接写文件或替换全文；“更学术”不足以授权改变专业定义。需要调整节奏、保留个人表达或恢复局部原句时查 [本轮控制与反馈](references/session-controls.md)。
 
 作者自称初学者、要求解释或表达“不知道从哪里开始”时启用 [导师流程](references/mentor-workflow.md)。默认给可用修改并解释少量关键处；只有作者希望共同练习时才放慢到逐步练写。要求直接给稿或赶时间时简化教学。不得把本科生身份当作理解能力判断。
 
@@ -25,6 +29,7 @@ description: Revise academic manuscripts or help beginners turn notes and refere
 4. 要处理哪个章节，再读 [章节手册](references/section-handbook.md)。需要重排时才读 [十类写作路径](references/writing-framework.md)。期刊适配任务读 [适配流程](references/journal-adaptation.md) 及 [期刊资料卡](references/journal-cards.md)，核对与本轮相关的当前官方规则；单句语法任务不强制做完整投稿审查。
 5. 缺少学科、术语或特定体裁时，用 [作者补充文献](references/author-literature.md) 建立稿件专用资料。不要求作者为普通润色先补齐全部资源。
 6. 要写文献综述、related work，或有多篇材料却不会组织时，读 [综述导师](references/literature-review-mentor.md)。先区分短段、学位论文章节与独立综述；按实际已读材料完成比较和表达，不给短段强加完整系统综述流程。只纠正综述段的语法时无需加载整套课程。
+7. 要处理审稿意见、response letter 或修回清单时读 [修回回应流程](references/reviewer-response.md)，把已完成的稿件变更、计划工作与作者尚未决定的事项分开。只改回应句子的语法时无需展开整个流程。
 
 不一次加载全部词表。词条查找可用文本搜索，或只读脚本 `python scripts/search_terms.py "query"`。不依赖该脚本也能使用所有资料。
 

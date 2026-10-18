@@ -1,10 +1,21 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="用户指南 · Academic Manuscript Polish v3.2.0" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="用户指南 · Academic Manuscript Polish v3.3.0" /></p>
 
 # 中文用户指南
 
-[返回首页](../README.md) · [English guide](guide.en.md) · [下载技能包](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest)
+[返回首页](../README.md) · [English guide](guide.en.md) · [直接下载 ZIP](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip)
 
 这份指南从安装到第一次修改，帮助你使用 `academic-manuscript-polish`。你可以从一个句子开始，也可以给出一份完整稿件。专业内容由作者材料支持，助手负责约定范围内的表达、组织与解释。
+
+**先选当前需要的入口，无需从头读完。**
+
+| 现在要做什么 | 直接进入 |
+| :--- | :--- |
+| 想先试试效果 | [免安装文件试用](#try-without-install) |
+| 准备长期使用 | [安装](#install)或[更新旧版](#update) |
+| 已有一段文字 | [第一次改稿](#first-session)与[修改控制](#controls) |
+| 要写综述 | [文献综述](#review) |
+| 收到审稿意见 | [修回回应](#reviewer-response) |
+| 想继续上次长稿 | [版本与续接](#long-drafts) |
 
 ## 1. 先理解你下载的是什么
 
@@ -18,12 +29,28 @@ Skill 是一组给 AI 助手读取的指令与资料。本包包含写作流程�
 
 无需先安装 Python。脚本只用于可选查词和维护检查。AI 服务本身的账户、费用、联网与隐私设置由对应服务提供方管理。
 
+<a id="try-without-install"></a>
+### 先体验，不动原稿和配置
+
+下载并解压完整包，把文件夹放进助手可读取的工作目录。打开 `START-HERE.zh-CN.md`，或直接发：
+
+```text
+读取 academic-manuscript-polish/SKILL.md 并按流程工作。
+先确认入口和所需资料能读取，不安装、不修改配置。
+使用该技能文件夹内 assets/first-session-demo.md 的虚构段落试用。
+英文修订，中文解释，暂不保存文件。
+```
+
+这是通过文件访问试用，原生技能尚未安装。工作目录不同就提供实际路径。若聊天工具无法读取文件夹，应提供相关内容或改用支持本地文件的助手，不要把“已经知道这个技能”当成加载成功。
+
+你应得到干净稿和两处解释，人数及陈述归属保留。再要求“第一句恢复，第二句保留”，看看修改是否符合自己的习惯。参考输出见[虚构试用稿](../academic-manuscript-polish/assets/first-session-demo.md)。无需提供私人论文。
+
 <a id="install"></a>
 ## 2. 下载与安装
 
 ### 下载完整包
 
-打开 [Releases](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest)，下载 `academic-manuscript-polish-v3.2.0.zip` 并解压。也可在仓库首页选择 **Code → Download ZIP**，从中取出 `academic-manuscript-polish` 文件夹。
+[直接下载 `academic-manuscript-polish.zip`](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip) 并解压。这个入口指向最新发布包；版本在文件夹内 `bundle-manifest.json` 的 `version` 字段查看。也可在仓库首页选择 **Code → Download ZIP**，从中取出 `academic-manuscript-polish` 文件夹。
 
 不要仅复制 `SKILL.md`。其他资料通过相对路径加载，需要保留目录层级。ZIP 是压缩包，必须先解压后使用本地目录安装方式。
 
@@ -45,6 +72,8 @@ my-paper/
     skills/
       academic-manuscript-polish/
         SKILL.md
+        START-HERE.zh-CN.md
+        START-HERE.en.md
         references/
         assets/
         scripts/
@@ -62,13 +91,27 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 
 在安装位置对应的项目中启动会话，尝试：
 
-- Codex：`$academic-manuscript-polish`
+- Codex CLI / IDE：`$academic-manuscript-polish`；桌面端使用宿主技能选择器或自然语言请求。
 - Claude Code：`/academic-manuscript-polish`
 
 也可用自然语言说明：“请读取已安装的 academic-manuscript-polish，按它的流程处理下面的段落。”若列表尚未更新，开启新会话后检查。请助手说明实际读取的入口路径；只回答“我知道这个技能”不足以确认加载成功。
 
 其他助手可以读取完整文件夹时，请直接指定 `SKILL.md` 的位置。如果它只能接收聊天文字，可手动提供入口和当前需要的资料，但这种方式无法保证自动读取所有相对链接。普通聊天界面与原生 skill 安装的能力范围可能不同。
 
+### 想让助手帮你复制文件？
+
+对可操作本地文件的 Codex 可发送以下请求。Claude Code 对应的项目目录为 `.claude/skills/`。
+
+```text
+请把我已解压的 academic-manuscript-polish 完整文件夹
+安装到当前项目的 .agents/skills/ 中，不改其他设置。
+先确认源目录和目标目录；已有同名目录时先报告版本和差异，
+不要覆盖、删除或合并。完成后核对文件完整性并报告版本与入口路径。
+```
+
+这一请求授权复制到指定目录，下载操作本身不包含这项授权。首次使用先选项目范围，只有希望跨项目使用时再采用个人目录。
+
+<a id="first-session"></a>
 ## 3. 第一次使用：先给一个段落
 
 复制这段话，把括号替换成你的信息：
@@ -80,7 +123,8 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 我的材料：［粘贴一个段落，或给出可访问的文件］
 目标期刊：［刊名 / 未定］
 本轮范围：只处理这一个段落。
-输出语言：［中文 / 英文］
+正文语言：［原稿语言 / 英文 / 中文］
+解释语言：［中文 / 英文］
 
 先给可用修订，再解释两处最重要的改动。
 保留数字、引文和原意。不要补写研究事实。
@@ -91,6 +135,9 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 
 如果输出与原意有差异，直接指出：“这里的 X 指的是……，请恢复这个定义，其余部分保留。”
 
+不想填上面的信息时，一句“只润色这一段，保留原意”即可。默认保持片段的内容与结构，修订沿用原稿语言，解释沿用当前对话语言；期刊可以之后再补。
+
+<a id="controls"></a>
 ## 4. 选一种合作方式
 
 | 你的时间与需求 | 可以这样要求 |
@@ -108,6 +155,18 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 - **依据材料形成初稿**：只整理已提供的事实、解释与文献，缺口列给作者。
 
 只有选题时，可请求工作提纲或材料清单。若没有数据或结果，助手不能把预想写成已经完成的研究。
+
+### 用普通话控制输出
+
+| 你想调整什么 | 可以直接说 |
+| :--- | :--- |
+| 先做诊断 | “只指出两处最影响理解的问题，先别改文件。” |
+| 保留声音 | “保留我的措辞和段落顺序，可选风格建议另列。” |
+| 比较改动 | “先给可复制的干净稿，再列关键改前改后。” |
+| 恢复一句 | “这版的第二句恢复为原稿，其余保留。” |
+| 降低讲解量 | “只解释这次最重要的一处，不给练习。” |
+
+局部恢复依赖可访问的原稿。无法确认版本时，重新提供原句即可。纯文本差异表与 Word 原生追踪修订不同；后者需要宿主具备对应文件能力并实际生成。详见[修改控制](../academic-manuscript-polish/references/session-controls.md)。
 
 ## 5. 让术语匹配你的稿件
 
@@ -161,6 +220,7 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 
 15 份资料卡可作为查找入口，实际要求以当前官方指南为准。无法联网或页面不可访问时，请提供指南文件；未验证部分应留在“未核验”状态。检索刊方规则只需公开的刊名与规则信息，无需把未发表正文发送给搜索服务。
 
+<a id="long-drafts"></a>
 ## 8. 长稿、文件与下一次续接
 
 长稿可按摘要、引言、方法、结果、讨论分批处理，并维护术语与修改清单。每批说明实际完成了哪些段落，未读章节不能标为已审查。
@@ -181,15 +241,17 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 安装 Python 3.9 或更新版本后，在技能文件夹中打开终端：
 
 ```sh
-python scripts/search_terms.py "validity" --exact
-python scripts/search_terms.py "SOC" --exact
+python scripts/search_terms.py "validity" --exact --format text
+python scripts/search_terms.py "SOC" --exact --format text
 python scripts/search_terms.py "yield" --domain agronomy-horticulture
-python scripts/search_terms.py --list-domains
+python scripts/search_terms.py --list-domains --format text
 python scripts/validate_bundle.py
 python -B tests/test_bundle.py
 ```
 
 检索脚本只读本地资料，不调用模型或上传文字。它返回领域、释义与位置；同名术语可能有多条结果。没有命中时可以检查拼写、词形或手动查阅资料；零结果不能证明该概念不存在。
+
+`--format text` 便于直接阅读；省略它会保留原来的 JSON 输出，供其他程序使用。
 
 ## 10. 常见问题排查
 
@@ -214,7 +276,34 @@ python -B tests/test_bundle.py
 
 请先检查宿主的数据处理规则与稿件授权范围。勿上传未经允许的保密信息，也不要在公开 Issue 中附上私人稿件。本包未附第三方论文全文；通用写作指导不代替专业判断、临床判断或高风险操作审核。
 
-本版 38 项测试验证结构与检索，未测独立模型表现或教学成效。[检查记录](../academic-manuscript-polish/tests/release-checks.md)可供查看。
+本版 46 项测试验证结构与检索，未测独立模型表现或教学成效。[检查记录](../academic-manuscript-polish/tests/experience-audit.md)可供查看。
+
+<a id="reviewer-response"></a>
+## 12. 收到审稿意见以后
+
+给出原意见、当前稿件涉及片段和你实际做过的修改。一条意见也能开始，不必先整理全部修回信。
+
+```text
+请按 academic-manuscript-polish 整理这一条审稿意见。
+原意见：［粘贴］
+当前稿件相关段落：［粘贴或给文件位置］
+已经做过的修改：［实际内容；没做就写未做］
+我希望怎样处理：［可选；尚未决定也可以］
+请给回应草稿及对应稿件位置，把计划工作和可提交文字分开。
+```
+
+助手会区分已完成修改、计划处理、需要澄清、作者决定不采纳。没有真实行号时用章节和段落开头定位。对专业分歧，需要你提供判断与依据；它不会虚构实验、分析或已经完成的工作。参考[修回流程](../academic-manuscript-polish/references/reviewer-response.md)。
+
+<a id="update"></a>
+## 13. 更新旧版，保留自己的东西
+
+1. 下载新版到另一个临时位置，先查看 `bundle-manifest.json` 的版本。
+2. 确认你当前实际使用的技能目录。若做过自定义修改，先比较并另存，勿直接覆盖。
+3. 将旧版本完整备份到技能扫描目录之外，防止同时加载两版同名技能。私人稿件和临时词表应留在稿件工作区。
+4. 将新版完整文件夹复制到已确认的目标。避免把新文件混入残留旧文件，或多嵌套一层目录。
+5. 开启新会话，让助手报告实际读取的版本与入口，并用虚构段落检查资料访问。
+
+更新不会自动迁移你正在写的稿件。发现问题时，先停用新版，再从自己的旧副本恢复。不要让助手无提示删除备份或合并存在冲突的文件。
 
 <p align="center"><img src="../assets/guild/next.svg" width="960" alt="下一段，从这里开始。" /></p>
 <p align="center"><a href="../README.md">返回首页</a> · <a href="guide.en.md">English guide</a> · <a href="../academic-manuscript-polish/references/beginner-guide.md">继续阅读新手教程</a></p>

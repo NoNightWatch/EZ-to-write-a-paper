@@ -1,4 +1,6 @@
-# Academic Manuscript Polish · v3.2 五轮修订版
+# Academic Manuscript Polish · v3.3 使用体验版
+
+[从这里开始](START-HERE.zh-CN.md) · [Start in English](START-HERE.en.md) · [虚构试用稿](assets/first-session-demo.md)
 
 一个面向学术写作初学者和已有稿件作者的便携 skill。从稿件、中文笔记或提纲开始，根据实际材料识别领域，匹配术语和写作资料，再按目标期刊与作者要求修改。可以直接交付修订，也可以带作者逐步练写。
 
@@ -9,6 +11,8 @@
 > 请使用 academic-manuscript-polish。下面是我的稿件或笔记，目标期刊是［刊名或未定］。这次先处理［一句／一段／一个章节／全文］，保持事实和原意。我是初学者，请先给可用修改，再解释重要改动。专业定义不明确时问我，我可以提供参考文献。
 
 期刊未定或文章类型不清楚也可以开始，先做通用修改。已有信息无需重复填写。支持显式技能调用的环境可用 `$academic-manuscript-polish`；其他环境可要求助手读取 [SKILL.md](SKILL.md) 并访问完整包内资料。调用说明中的 `$skill-name` 仅是通用占位写法。
+
+只给一个段落也可以开始，默认语言修改。正文语言与解释语言分别指定，例如“英文修订，中文解释”。想先诊断、看差异、保留用语或恢复某句，直接说即可。[本轮控制](references/session-controls.md) 集中说明这些方式。
 
 ## 这一版包含什么
 
@@ -25,6 +29,7 @@
 | 期刊资料 | 15 份官方资料卡，注明类型、核验范围、日期与缺口 |
 | 可选模板 | 稿件任务、补充文献、术语卡、期刊卡、修订交付及学习续接卡 |
 | 离线工具 | 词条检索、结构校验与自动测试，仅 Python 标准库 |
+| 首次体验与修回 | 中英启动页、虚构试用稿、修改控制、审稿意见回应流程与工作表 |
 
 基础词表与详细词条有交叉，数量不可简单相加为独立术语总数。52 个入口提供基础覆盖；细分学科仍需作者参考文献。基础短释义未逐条经外部专业核验，正式定义以稿件来源为准。
 
@@ -55,6 +60,7 @@
 - 想调整整体结构：[十类写作路径](references/writing-framework.md)。
 - 已有目标期刊：[适配流程](references/journal-adaptation.md) 与 [资料卡](references/journal-cards.md)。
 - 学科或词语缺失：[补充文献流程](references/author-literature.md)。
+- 收到审稿意见：[修回回应流程](references/reviewer-response.md) 与 [可选工作表](assets/reviewer-response-table.md)。
 
 不要一次让助手读取所有词表。先给已有文字或材料，选择主领域和必要的交叉领域即可。
 
@@ -68,7 +74,7 @@
 
 ## 放在哪里
 
-将完整的 `academic-manuscript-polish` 文件夹放入使用环境支持的 skill 目录。以支持项目 skills 的 Codex 环境为例，可采用项目下的 `.agents/skills/`；具体位置以当前宿主说明为准。[OpenAI 官方说明](https://learn.chatgpt.com/docs/build-skills)。本次交付只是库外分发包，未自动安装。
+可先把完整文件夹放到助手可读的工作目录，请它读取 `SKILL.md` 试用，暂不安装。经常使用时再放入宿主的 skill 目录，例如 Codex 项目下的 `.agents/skills/`；具体位置以当前宿主说明为准。[OpenAI 官方说明](https://learn.chatgpt.com/docs/build-skills)。下载本包不会自动安装。
 
 目录中的相对链接无需原知识库。不得只复制入口后丢弃 references。普通文本或 Markdown 阅读器也可查看所有教材；脚本是可选工具。
 
@@ -79,6 +85,7 @@
 ```text
 python scripts/search_terms.py "validity" --exact
 python scripts/search_terms.py "SOC" --exact
+python scripts/search_terms.py "SOC" --exact --format text
 python scripts/search_terms.py "yield" --domain agronomy-horticulture
 python scripts/search_terms.py --list-domains
 python scripts/validate_bundle.py
@@ -88,6 +95,14 @@ python tests/test_bundle.py
 检索覆盖基础词表和原有详细词条，显示匹配数、领域、释义与相对文件位置。缩写可以有多种解释，例如 SOC 同时指土壤有机碳或电池荷电状态；工具保留多个匹配，不替作者选义。
 
 检索接受全角英文、常见连字符变体和等价的重音字符编码，保留上下标与数学减号的区别。它未执行模糊拼写或全部同义词检索；没有命中不能证明本领域没有这个概念。命令行 JSON 统一使用 UTF-8，脚本仅查询本地资料。
+
+默认 JSON 输出保持兼容；加 `--format text` 可得到便于阅读的词条列表，`--list-domains --format text` 可查看领域目录。
+
+## v3.3 的使用体验修订
+
+新增中英启动页、无私人材料的首次试用、统一修改控制和修回回应流程；检索增加可读文本格式。可分开指定正文与解释语言，保留作者措辞，并依据可访问原稿局部恢复。修回工作明确区分完成与计划状态。
+
+[本轮走查与检查记录](tests/experience-audit.md) 说明发现、修补、测试与未验证部分。旧版本的五轮检查保留如下，不改写成新版本的效果证据。
 
 ## v3.2 的五轮修订
 
@@ -107,10 +122,10 @@ python tests/test_bundle.py
 
 期刊资料沿用 v2 中注明 2026-10-18 的核验记录，各卡覆盖范围不同；本轮导师升级未重新联网核验。实际使用必须重查与任务相关的当前要求。未访问成功的项目明确留为未核验。资料卡不承诺送审或录用。
 
-来源与限制见 [原资料记录](references/sources.md)、[通用来源说明](references/foundation-sources.md) 和 [综述教材评估](references/review-source-assessment.md)。教材与释义为编辑整理；引用题名不附带第三方全文再分发许可。本包未新增开源许可证，公开发布仍由维护者决定。
+来源与限制见 [原资料记录](references/sources.md)、[通用来源说明](references/foundation-sources.md) 和 [综述教材评估](references/review-source-assessment.md)。教材与释义为编辑整理；引用题名不附带第三方全文再分发许可。本包未新增开源许可证；公开可读不自动授予额外再分发权利。
 
 ## 维护与验证
 
-[分发清单](bundle-manifest.json) 记录数量和版本；[测试情景](tests/scenarios.md) 说明预期行为；[本轮检查记录](tests/release-checks.md) 区分实际测试与尚未验证的部分。
+[分发清单](bundle-manifest.json) 记录数量和版本；[测试情景](tests/scenarios.md) 说明预期行为；[v3.2 检查记录](tests/release-checks.md) 与 [v3.3 体验检查](tests/experience-audit.md) 区分各版本实际检查和未验证部分。
 
 结构脚本只检查计数、链接、路径、索引和文件结构。它无法证明专业释义全部正确，也不能替代真实稿件的编辑质量评估。导师对话为原创示范，未开展独立模型教学效果测试。

@@ -1,21 +1,17 @@
 <p align="center">
   <img src="assets/writing-guild.png" width="960" alt="Paper Quest · The Writing Guild：星夜图书馆里，初学者与导师一起修改稿件。" />
 </p>
-<p align="center">
-  <img src="assets/guild/invitation.svg" width="960" alt="How to write a paper · 从已有文字，走向下一段。" />
-</p>
-
-<h1 align="center">从第一段，写到一篇清楚的论文。</h1>
+<h1 align="center">带上你的稿件，先改好一个段落。</h1>
 
 <p align="center">
-  面向学术写作初学者与已有稿件作者的 AI 写作导师 skill。<br />
-  带上你的稿件、笔记或参考文献，让助手按学科、期刊与本轮需求帮助你修改，并讲清楚理由。
+  EZ to Write a Paper · 学术写作导师 skill<br />
+  改稿件、讲理由、理文献、回审稿。你决定改多少、怎样学。
 </p>
 
 <p align="center">
-  <a href="docs/guide.zh-CN.md"><img src="assets/guild/start.svg" width="280" alt="开始使用：中文用户指南" /></a>
+  <a href="#try-demo"><img src="assets/guild/try.svg" width="280" alt="先看一次试用：无需私人稿件" /></a>
   &nbsp;
-  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest"><img src="assets/guild/download.svg" width="280" alt="下载完整技能包 v3.2.0" /></a>
+  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip"><img src="assets/guild/download.svg" width="280" alt="直接下载完整技能包 ZIP" /></a>
 </p>
 <p align="center">
   <a href="docs/guide.zh-CN.md">中文指南</a> ·
@@ -24,13 +20,28 @@
   <a href="academic-manuscript-polish/SKILL.md">Skill 入口</a> ·
   <a href="#quick-start">快速开始</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.2.0 · 完整包可独立使用 · 中英用户指南 · 教材主体为中文</sub></p>
+<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.3.0 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
 
-<img src="assets/guild/inventory.svg" width="960" alt="52 个学科入口 · 2,080 条基础词表记录 · 10 类写作路径 · 15 份期刊资料卡" />
+<a id="try-demo"></a>
+<img src="assets/guild/first-quest.svg" width="960" alt="01 · 先看一次修改" />
 
-<sub>2,080 条记录含跨领域重复，英文词头字面去重为 2,043 项。学科入口提供基础覆盖；期刊卡为注明范围与日期的参考，实际投稿需查当前要求。</sub>
+## 先看看，你会拿到什么
 
-<img src="assets/guild/quests.svg" width="960" alt="01 · 选择当前任务" />
+以下是原创虚构试用材料，没有真实研究数据。可先阅读示范；下载后让助手读取完整包，再用[试用请求](academic-manuscript-polish/assets/first-session-demo.md)体验。
+
+**你给的段落**
+
+> We interviewed 18 students about feedback timing. 12 of them said it was too late. We wanted to know their views.
+
+**一版可用修订**
+
+> We interviewed 18 students about their views on feedback timing. Twelve participants reported that the feedback arrived too late.
+
+**你会读到的解释**：合并重复的目的表达；明确 `it` 指反馈；保留 18、12 和受访者陈述的身份，没有补写成绩影响。
+
+接着可以说：“第一句恢复原句，第二句保留。英文改稿，中文解释。”这是参考示范，实际模型措辞可能不同。[先读取文件试用](docs/guide.zh-CN.md#try-without-install) · [按步骤安装](docs/guide.zh-CN.md#install)
+
+<img src="assets/guild/quests.svg" width="960" alt="02 · 选择当前任务" />
 
 ## 你现在卡在哪里？
 
@@ -58,19 +69,24 @@
 | 跨学科词语容易混用 | “检查全文里的术语与缩写是否一致。” | 有上下文的术语核对 |
 | 准备投某本期刊 | “按目标刊的当前作者指南检查这部分。” | 已核验要求、修改与未决项 |
 | 想学会自己改 | “先示范一段，再给我一个可选练习。” | 修改、解释与练习参考 |
+| 收到审稿意见 | “对应当前稿件逐条整理，区分已做和计划。” | 回应草稿、修改位置与待办 |
 
 你可以随时说“直接给稿”或“讲细一点”。无需先学会写作分类，也无需填完一套表格。
 
 <a id="quick-start"></a>
-<img src="assets/guild/start-here.svg" width="960" alt="02 · 第一次使用" />
+<img src="assets/guild/start-here.svg" width="960" alt="03 · 第一次使用" />
 
-## 三步开始
+## 三步开始，不必先填一套表
 
 ### 1. 下载完整文件夹
 
-从 [Releases](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest) 下载技能 ZIP 并解压。保留完整的 `academic-manuscript-polish/` 文件夹，包括 `SKILL.md`、`references/`、`assets/` 和其他文件。也可使用 GitHub 的 **Code → Download ZIP** 下载整个仓库。
+[直接下载技能 ZIP](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip) 并解压。打开其中的 `START-HERE.zh-CN.md` 或 `START-HERE.en.md`。保留完整文件夹；[版本记录](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases)可查看旧版。GitHub 的 **Code → Download ZIP** 则会下载整个仓库。
 
-### 2. 放进助手能读取的位置
+### 2. 先试用，需要时再安装
+
+把完整文件夹放在助手能读取的工作目录，告诉它：“读取 `academic-manuscript-polish/SKILL.md`，按流程处理虚构试用稿，不安装、不改配置。”这种方式需要文件读取能力；聊天界面不能读目录时，需要另行提供相关内容。
+
+经常使用时，将完整文件夹放入对应项目位置：
 
 | 使用环境 | 项目内安装位置 |
 | :--- | :--- |
@@ -83,23 +99,21 @@
 ### 3. 给它一个真实片段
 
 ```text
-请使用 academic-manuscript-polish。
-
-材料：下面是我的稿件 / 中文笔记 / 提纲。
-目标期刊：［刊名；未定也可以］。
-本轮范围：［一句 / 一段 / 一个章节 / 全文］。
-输出语言：［中文 / 英文］。
-
-先给可用修订，再解释最重要的两三处。
-保留数字、引用和原意；专业内容不确定时请问我。
-［在这里粘贴材料，或提供可访问的文件］
+请使用 academic-manuscript-polish 修改下面这一段。
+只改语言，保留数字、引用和原意。
+英文修订，中文解释，先给干净稿。
+［粘贴文字］
 ```
 
-安装后，Codex 可使用 `$academic-manuscript-polish`；Claude Code 可使用 `/academic-manuscript-polish`。第一次建议选一个段落，确认修改幅度合适后再扩大范围。
+期刊未定也可开始。安装后，Codex CLI / IDE 可用 `$academic-manuscript-polish`，Claude Code 可用 `/academic-manuscript-polish`；桌面端可按宿主技能选择器或自然语言调用。先确认助手读到了文件，随后扩大范围。[已有旧版？查看更新方法](docs/guide.zh-CN.md#update)。
 
-<img src="assets/guild/library.svg" width="960" alt="03 · 技能包里有什么" />
+<img src="assets/guild/library.svg" width="960" alt="04 · 技能包里有什么" />
 
 ## 打开这间写作资料室
+
+<img src="assets/guild/inventory.svg" width="960" alt="52 个学科入口 · 2,080 条基础词表记录 · 10 类写作路径 · 15 份期刊资料卡" />
+
+<sub>2,080 条记录含跨领域重复，英文词头字面去重为 2,043 项。基础覆盖与专业核验范围见下表；数量不代表效果评分。</sub>
 
 | 资料 | 内容与入口 |
 | :--- | :--- |
@@ -111,6 +125,7 @@
 | **文献综述** | [阅读与综合流程](academic-manuscript-polish/references/literature-review-mentor.md)、[完整练习](academic-manuscript-polish/references/review-worked-example.md)、[四个跨学科练习](academic-manuscript-polish/references/review-transfer-cases.md) |
 | **期刊适配** | [15 份资料卡](academic-manuscript-polish/references/journal-cards.md)与[适配流程](academic-manuscript-polish/references/journal-adaptation.md)，区分刊方要求、样文观察和未核验内容 |
 | **你的领域尚未覆盖** | 用[作者补充文献流程](academic-manuscript-polish/references/author-literature.md)建立本稿专用术语与体裁参考 |
+| **修回与修改控制** | [逐条审稿回应](academic-manuscript-polish/references/reviewer-response.md)、[本轮控制](academic-manuscript-polish/references/session-controls.md)，保留作者决定与稿件对应 |
 
 基础释义是工作用短释义，未逐条经外部专家核验。详细词条与基础词表有重合。模型应按当前稿件选择相关资料，正式定义回到原始文献或标准核对。
 
@@ -134,29 +149,23 @@
 
 </details>
 
-<img src="assets/guild/field-notes.svg" width="960" alt="04 · 看一次具体修改" />
+<img src="assets/guild/controls.svg" width="960" alt="05 · 修改控制由你决定" />
 
-## 改完之后，你应该知道改了什么
+## 你可以改方向，也可以恢复原句
 
-以下为虚构教学示例，不可作为研究证据引用。
+| 想要什么 | 直接说 |
+| :--- | :--- |
+| 先了解问题 | “只诊断，不动文件，指出最影响理解的两处。” |
+| 保留自己的表达 | “只改必要语法，保留措辞和段落顺序。” |
+| 看清变化 | “先给干净稿，再列关键改前改后。” |
+| 局部恢复 | “第二句恢复原句，其他改动保留。” |
+| 调整教学量 | “先示范再让我练”或“直接给答案”。 |
 
-**作者给的材料**
+恢复需要可访问的原稿；纯文本比较不等于 Word 原生追踪修订。助手会区分必要修改和可选风格建议。
 
-> 我们访谈了 18 位学生。访谈中有 12 人说反馈来得太晚。我们想说明他们怎么看反馈的时间。
+**收到审稿意见时**：逐条对照意见、作者实际修改与稿件位置。计划工作保留待办状态，正式回应中的“已修改”需要当前材料支持。[修回使用方法](docs/guide.zh-CN.md#reviewer-response)
 
-**英文修订示例**
-
-> We interviewed 18 students about their perceptions of feedback timing. Twelve participants reported that feedback arrived too late.
-
-**导师解释**
-
-1. 第一句交代对象、人数和主题，读者可以立刻定位研究。
-2. 第二句保留 `reported`，明确这是受访者的陈述。
-3. 两个数字均保留。没有补写反馈对成绩的影响，因为材料没有提供这项结果。
-
-**下一步可选任务**：补充作者实际使用的访谈时间窗，再决定是否需要写进方法段。你也可以直接继续下一段。
-
-<img src="assets/guild/workflow.svg" width="960" alt="05 · 从材料到修订稿" />
+<img src="assets/guild/workflow.svg" width="960" alt="06 · 从材料到修订稿" />
 
 ## 每次修改都有清楚的范围
 
@@ -170,7 +179,7 @@
 
 综述任务会额外记录实际阅读范围，先核对每项主张的来源，再组织综合段落。长稿可分批推进；需要续接时可生成一张进度卡，保存须由作者提出。
 
-<img src="assets/guild/faq.svg" width="960" alt="06 · 常见问题与使用边界" />
+<img src="assets/guild/faq.svg" width="960" alt="07 · 常见问题与使用边界" />
 
 ## 出发前，先知道这些
 
@@ -218,7 +227,7 @@
 
 **写作边界**：保留作者事实与研究判断，不编造数据、引用、机制或伦理信息，不保证录用。期刊偏好要有来源；当前官方作者指南优先。医学内容限于阅读与学术表达，危险操作细节不由本包补全。
 
-**检查范围**：v3.2.0 完成五轮自审修补，38 项结构与检索测试通过。这些检查不运行语言模型，也不证明教学效果或全部专业定义正确。查看[检查记录](academic-manuscript-polish/tests/release-checks.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
+**检查范围**：v3.3.0 的 46 项结构与检索测试通过，并完成维护者使用情景走查。未开展独立模型评估或真实用户教学实验。查看[本轮检查记录](academic-manuscript-polish/tests/experience-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
 
 <details>
 <summary><strong>展开：目录与可选本地命令</strong></summary>
@@ -237,7 +246,7 @@ academic-manuscript-polish/
 在技能文件夹内运行：
 
 ```sh
-python scripts/search_terms.py "validity" --exact
+python scripts/search_terms.py "validity" --exact --format text
 python scripts/search_terms.py --list-domains
 python scripts/validate_bundle.py
 python -B tests/test_bundle.py
@@ -247,5 +256,5 @@ python -B tests/test_bundle.py
 
 <p align="center"><img src="assets/guild/next.svg" width="960" alt="下一段，从这里开始。" /></p>
 <p align="center"><strong>准备一个段落，选一个小目标，然后开始。</strong></p>
-<p align="center"><a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="docs/guide.en.md">Read the English guide</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest">下载技能包</a></p>
+<p align="center"><a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="docs/guide.en.md">Read the English guide</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip">直接下载技能包</a></p>
 <p align="center"><sub>觉得有用，可以 Star 收藏。发现问题，欢迎提交不含私人稿件的 <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/issues">Issue</a>。</sub></p>

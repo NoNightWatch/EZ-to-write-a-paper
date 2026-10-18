@@ -1,10 +1,21 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · Academic Manuscript Polish v3.2.0" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · Academic Manuscript Polish v3.3.0" /></p>
 
 # English user guide
 
-[Back to the homepage](../README.en.md) · [中文指南](guide.zh-CN.md) · [Download the skill](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest)
+[Back to the homepage](../README.en.md) · [中文指南](guide.zh-CN.md) · [Download ZIP directly](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip)
 
 This guide takes you from installation to your first revision with `academic-manuscript-polish`. Start with a sentence or bring a full draft. The author's materials support the technical content; the assistant handles expression, organization, and explanation within the agreed scope.
+
+**Choose the entry you need. You do not need to read this guide in order.**
+
+| What you want now | Go directly to |
+| :--- | :--- |
+| Try the workflow | [File-based trial without installation](#try-without-install) |
+| Use it regularly | [Install](#install) or [update an older version](#update) |
+| Revise a paragraph | [First session](#first-session) and [editing controls](#controls) |
+| Write a review | [Literature reviews](#review) |
+| Address reviewer comments | [Revision responses](#reviewer-response) |
+| Resume a long draft | [Versions and continuation](#long-drafts) |
 
 ## 1. What you are downloading
 
@@ -18,12 +29,29 @@ Prepare:
 
 You do not need Python to begin. Scripts are optional lookup and maintenance tools. Accounts, service costs, connectivity, and privacy settings belong to the AI service you choose.
 
+<a id="try-without-install"></a>
+### Try without changing a manuscript or settings
+
+Download and extract the complete bundle into a workspace your assistant can read. Open `START-HERE.en.md`, or send:
+
+```text
+Read academic-manuscript-polish/SKILL.md and follow its workflow.
+Confirm that the entry and required resources are accessible.
+Do not install anything or change settings.
+Use assets/first-session-demo.md inside that skill folder.
+Revise and explain in English. Do not save files.
+```
+
+This uses file access; the native skill is not installed yet. Supply the actual path if your working directory differs. If your chat tool cannot read folders, provide the relevant content or use a local-file assistant. A claim to know the skill does not prove that its files were loaded.
+
+Expect a clean revision and two explanations, with participant numbers and attribution preserved. Then ask to restore the first sentence while keeping the second revision. The [fictional demo](../academic-manuscript-polish/assets/first-session-demo.md) includes a reference output. No private manuscript is needed.
+
 <a id="install"></a>
 ## 2. Download and install
 
 ### Get the complete bundle
 
-Open [Releases](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest), download `academic-manuscript-polish-v3.2.0.zip`, and extract it. Alternatively, choose **Code → Download ZIP** on the repository homepage and take the `academic-manuscript-polish` folder from that download.
+[Download `academic-manuscript-polish.zip` directly](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip) and extract it. This points to the latest release; check its version in the folder's `bundle-manifest.json`. Alternatively, choose **Code → Download ZIP** on the repository homepage and take the `academic-manuscript-polish` folder from that download.
 
 Do not copy only `SKILL.md`. The other resources are loaded through relative paths, so preserve the folder hierarchy. Extract the ZIP before using the local-directory installation method.
 
@@ -45,6 +73,8 @@ my-paper/
     skills/
       academic-manuscript-polish/
         SKILL.md
+        START-HERE.en.md
+        START-HERE.zh-CN.md
         references/
         assets/
         scripts/
@@ -62,13 +92,29 @@ Paths were checked on 2026-10-18 against the official [OpenAI skill documentatio
 
 Start a session in the relevant project and try:
 
-- Codex: `$academic-manuscript-polish`
+- Codex CLI / IDE: `$academic-manuscript-polish`. In desktop hosts, use the supported skill selector or a natural-language request.
 - Claude Code: `/academic-manuscript-polish`
 
 You can also say: “Read the installed academic-manuscript-polish skill and use its workflow for the paragraph below.” If the list has not refreshed, check in a new session. Ask the assistant which entry file it actually read; saying it knows the skill is not evidence that it loaded your files.
 
 For another assistant with directory access, point it directly to `SKILL.md`. If it accepts only pasted chat text, provide the entry instructions and relevant resources manually, but automatic access to all relative links is not guaranteed. Ordinary chat uploads and native skill installation may have different capabilities.
 
+### Want your assistant to copy it for you?
+
+For Codex with local file permissions, you can send the request below. The corresponding Claude Code project directory is `.claude/skills/`.
+
+```text
+Install my extracted academic-manuscript-polish folder into this
+project's .agents/skills/ directory. Do not change other settings.
+Confirm the source and destination. If the destination already
+exists, report versions and differences without overwriting,
+deleting, or merging. Check the copied files and report the
+installed version and entry path.
+```
+
+This request authorizes copying to that location; downloading alone does not. Start with project scope unless you specifically want the skill across projects.
+
+<a id="first-session"></a>
 ## 3. First session: bring one paragraph
 
 Copy this and replace the bracketed parts:
@@ -80,7 +126,8 @@ I am new to academic writing.
 My material: [paste one paragraph or provide an accessible file].
 Target journal: [journal name / undecided].
 Scope: this paragraph only.
-Output language: English for both the revision and explanations.
+Draft language: [original language / English / Chinese].
+Explanation language: English.
 
 Give me a usable revision first, then explain the two most
 important changes. Preserve numbers, citations, and meaning.
@@ -91,6 +138,9 @@ Expect a revised paragraph, a few important explanations, and questions that gen
 
 If the output changes your meaning, be specific: “Here, X means […]. Restore that definition and keep the other changes.”
 
+If you prefer less setup, “Polish this paragraph and preserve its meaning” is enough. The default preserves the supplied passage's content and structure, keeps its language, and explains in the conversation's language. Add a journal later if needed.
+
+<a id="controls"></a>
 ## 4. Choose how you want to work
 
 | Your time and needs | What to request |
@@ -108,6 +158,18 @@ Specify the editing permission as well:
 - **Drafting from supplied material**: organize facts, explanations, and references already provided; list gaps for the author.
 
 With only a topic, request a working outline or a materials checklist. Without data or results, anticipated findings must not be written as completed research.
+
+### Control the output in ordinary language
+
+| What you want to change | What to say |
+| :--- | :--- |
+| Diagnose first | “Identify the two main obstacles to understanding. Do not edit files yet.” |
+| Preserve your voice | “Keep my wording and paragraph order; list optional style suggestions separately.” |
+| Compare changes | “Give a clean, copyable version, then the important before/after changes.” |
+| Restore a sentence | “Restore this version's second sentence from the original; keep the other changes.” |
+| Reduce explanation | “Explain only the most important change and skip the exercise.” |
+
+Restoring text requires the original. If the version is unclear, provide the sentence again. A plain-text comparison differs from native Word tracked changes, which require suitable host capabilities and an actual generated file. See [session controls](../academic-manuscript-polish/references/session-controls.md).
 
 ## 5. Match terminology to your manuscript
 
@@ -164,6 +226,7 @@ do not add novelty claims or promises of acceptance.
 
 The 15 reference cards offer a starting point; current official guidance controls the actual requirements. If browsing is unavailable, provide the guideline file. Unchecked items should remain labelled unverified. Searching journal rules requires public journal and policy information, not unpublished manuscript text.
 
+<a id="long-drafts"></a>
 ## 8. Long drafts, files, and continuing later
 
 Handle a long draft in batches, such as abstract, introduction, methods, results, and discussion. Maintain terminology decisions and a change list. Each batch should state the passages actually completed; unread sections must not be marked reviewed.
@@ -185,15 +248,17 @@ Provide that card and the correct manuscript version in the next session. If you
 With Python 3.9 or newer installed, open a terminal inside the skill folder:
 
 ```sh
-python scripts/search_terms.py "validity" --exact
-python scripts/search_terms.py "SOC" --exact
+python scripts/search_terms.py "validity" --exact --format text
+python scripts/search_terms.py "SOC" --exact --format text
 python scripts/search_terms.py "yield" --domain agronomy-horticulture
-python scripts/search_terms.py --list-domains
+python scripts/search_terms.py --list-domains --format text
 python scripts/validate_bundle.py
 python -B tests/test_bundle.py
 ```
 
 The search script reads local resources; it does not call a model or upload text. Results include domain, definition, and location. A term may have several meanings. If nothing matches, check spelling or word forms, or inspect the resources manually. Zero results do not establish that the concept is absent from the field.
+
+`--format text` is for direct reading. Omit it to retain the original JSON output for other programs.
 
 ## 10. Troubleshooting
 
@@ -218,7 +283,35 @@ The search script reads local resources; it does not call a model or upload text
 
 Review the host's data-processing rules and your authority to share the manuscript. Do not provide confidential information without permission or attach private drafts to public Issues. This bundle contains no third-party paper full texts. General writing guidance does not replace specialist judgment, clinical judgment, or review of high-risk operations.
 
-The 38 tests in this version check structure and search, not independent model performance or educational outcomes. See the [check record](../academic-manuscript-polish/tests/release-checks.md).
+The 46 tests in this version check structure and search, not independent model performance or educational outcomes. See the [check record](../academic-manuscript-polish/tests/experience-audit.md).
+
+<a id="reviewer-response"></a>
+## 12. After receiving reviewer comments
+
+Supply the original comment, the relevant current manuscript passage, and the changes you actually made. Start with one comment if that is all you have organized.
+
+```text
+Use academic-manuscript-polish for this reviewer comment.
+Original comment: [paste].
+Current manuscript passage: [paste or locate in an accessible file].
+Changes already made: [actual changes; say none if none].
+My intended response: [optional; undecided is acceptable].
+Draft a response with its manuscript location. Keep planned work
+separate from text that is ready to submit.
+```
+
+The assistant distinguishes completed changes, planned work, requests for clarification, and changes the author has decided not to make. Without real line numbers, it uses section and paragraph openings. Technical disagreements require your judgment and evidence; it must not invent experiments, analyses, or completed work. See the [reviewer-response workflow](../academic-manuscript-polish/references/reviewer-response.md).
+
+<a id="update"></a>
+## 13. Update while preserving your own work
+
+1. Download the new release to a separate temporary location and read the version in `bundle-manifest.json`.
+2. Confirm the skill directory you actually use. Compare and save custom edits separately before replacing anything.
+3. Back up the old version outside the host's skill-discovery folders, avoiding simultaneous loading of two same-name versions. Keep private manuscripts and temporary glossaries in your manuscript workspace.
+4. Copy the complete new folder to the confirmed destination. Avoid mixing new files with leftovers or creating an extra nested folder.
+5. Start a new session, ask which version and entry file were actually read, and use the fictional demo to check access.
+
+Updating does not migrate your manuscript. If a problem occurs, stop using the new version and restore from your own previous copy. Do not let an assistant silently delete backups or merge conflicting files.
 
 <p align="center"><img src="../assets/guild/next.svg" width="960" alt="Your next sentence starts here." /></p>
 <p align="center"><a href="../README.en.md">Back to the homepage</a> · <a href="guide.zh-CN.md">中文指南</a> · <a href="../academic-manuscript-polish/references/beginner-guide.md">Continue to the beginner resources</a></p>

@@ -1,7 +1,7 @@
 {
-  "version": "3.2.0",
+  "version": "3.3.0",
   "date": "2026-10-18",
-  "scope": "novice-mentor-review-five-round-refinement",
+  "scope": "first-session-controls-reviewer-response",
   "domains": [
     {
       "id": "g01",
@@ -379,6 +379,6 @@
   "review_core_resources": 5,
   "review_transfer_cases": 4,
   "audit_rounds": 5,
-  "automated_tests": 38,
+  "automated_tests": 46,
   "verification": "Foundation definitions are editorial working glosses, not individually externally verified."
 }

@@ -209,5 +209,64 @@ class BundleTests(unittest.TestCase):
             SEARCH(RECORDS, query)
         self.assertEqual(json.dumps(RECORDS, ensure_ascii=False, sort_keys=True), before)
 
+    def run_search_cli(self, *args, env=None):
+        return subprocess.run([sys.executable, "-B", str(ROOT / "scripts" / "search_terms.py"), *args],
+                              capture_output=True, env=env)
+
+    def test_39_readable_lookup(self):
+        proc = self.run_search_cli("SOC", "--exact", "--format", "text")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        output = proc.stdout.decode("utf-8")
+        self.assertIn("Matches: 2 | Shown: 2", output)
+        for row in SEARCH(RECORDS, "SOC", exact=True):
+            for field in ("english", "chinese", "path"):
+                self.assertIn(row[field], output)
+
+    def test_40_readable_domains(self):
+        proc = self.run_search_cli("--list-domains", "--format", "text")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        lines = proc.stdout.decode("utf-8").splitlines()
+        self.assertEqual(len(lines), 62)
+        self.assertIn("n01 | mathematics | 数学", lines)
+
+    def test_41_readable_limit_keeps_total(self):
+        proc = self.run_search_cli("SOC", "--exact", "--limit", "1", "--format", "text")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        output = proc.stdout.decode("utf-8")
+        self.assertIn("Matches: 2 | Shown: 1", output)
+        self.assertEqual(output.count("Source: references/"), 1)
+
+    def test_42_readable_empty_result(self):
+        proc = self.run_search_cli("zz-unlisted-term-zz", "--format", "text")
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        output = proc.stdout.decode("utf-8")
+        self.assertIn("Matches: 0 | Shown: 0", output)
+        self.assertIn("No match.", output)
+
+    def test_43_invalid_format_rejected(self):
+        proc = self.run_search_cli("SOC", "--format", "html")
+        self.assertEqual(proc.returncode, 2)
+
+    def test_44_explicit_json_keeps_default(self):
+        default = self.run_search_cli("SOC", "--exact")
+        explicit = self.run_search_cli("SOC", "--exact", "--format", "json")
+        self.assertEqual(default.returncode, 0, default.stderr)
+        self.assertEqual(explicit.returncode, 0, explicit.stderr)
+        self.assertEqual(json.loads(default.stdout), json.loads(explicit.stdout))
+
+    def test_45_readable_unicode_in_ascii_environment(self):
+        proc = self.run_search_cli("ＳＯＣ", "--exact", "--format", "text",
+                                   env=dict(os.environ, PYTHONIOENCODING="ascii"))
+        self.assertEqual(proc.returncode, 0, proc.stderr)
+        self.assertIn("土壤有机碳", proc.stdout.decode("utf-8"))
+
+    def test_46_readable_does_not_mutate_result(self):
+        rows = SEARCH(RECORDS, "SOC", exact=True)
+        result = {"query": "SOC", "total_matches": len(rows), "shown": 1,
+                  "results": rows[:1], "note": "Working definitions."}
+        before = json.dumps(result, ensure_ascii=False, sort_keys=True)
+        searcher["render_text"](result)
+        self.assertEqual(json.dumps(result, ensure_ascii=False, sort_keys=True), before)
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

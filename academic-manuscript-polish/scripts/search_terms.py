@@ -111,6 +111,23 @@ def search(records, query, domain=None, exact=False):
             matches.append((rank, row))
     return [row for _, row in sorted(matches, key=lambda item: (item[0], item[1]["path"]))]
 
+def render_text(result):
+    """Readable output with the same counts, records, and order as JSON."""
+    if "domains" in result:
+        lines = [f"Domains: {len(result['domains'])}"]
+        lines.extend(f"{domain_id} | {slug} | {name}" for domain_id, slug, name in result["domains"])
+        return "\n".join(lines)
+    lines = [f"Query: {result['query']}",
+             f"Matches: {result['total_matches']} | Shown: {result['shown']}"]
+    if not result["results"]:
+        lines.append("No match. Try a different spelling or consult the relevant source.")
+    for i, row in enumerate(result["results"], 1):
+        lines.extend(["", f"{i}. {row['english']} | {row['chinese']}",
+                      f"Domain: {row['domain']} ({row['slug']})",
+                      row["meaning"], f"Source: {row['path']}"])
+    lines.extend(["", result["note"]])
+    return "\n".join(lines)
+
 def main():
     # JSON is UTF-8 even when redirected from a legacy Windows terminal.
     for stream in (sys.stdout, sys.stderr):
@@ -122,6 +139,8 @@ def main():
     parser.add_argument("--exact", action="store_true", help="Match complete headword or abbreviation mapping")
     parser.add_argument("--limit", type=int, default=10)
     parser.add_argument("--list-domains", action="store_true")
+    parser.add_argument("--format", choices=("json", "text"), default="json",
+                        help="JSON for tools (default), or readable text")
     args = parser.parse_args()
     if not 1 <= args.limit <= 200:
         parser.error("--limit must be between 1 and 200")
@@ -139,7 +158,7 @@ def main():
             result = {"query": args.query, "total_matches": len(found), "shown": min(len(found), args.limit),
                       "results": found[:args.limit],
                       "note": "Working reading aids. Confirm specialist meanings in author sources."}
-        print(json.dumps(result, ensure_ascii=False, indent=2))
+        print(render_text(result) if args.format == "text" else json.dumps(result, ensure_ascii=False, indent=2))
         return 0
     except (OSError, ValueError, KeyError) as exc:
         print(json.dumps({"error": str(exc)}, ensure_ascii=False), file=sys.stderr)

@@ -1,21 +1,17 @@
 <p align="center">
   <img src="assets/writing-guild.png" width="960" alt="Paper Quest · The Writing Guild: a beginner and mentor revise a manuscript in a starlit library." />
 </p>
-<p align="center">
-  <img src="assets/guild/invitation.svg" width="960" alt="How to write a paper. Bring your draft. Find your next sentence." />
-</p>
-
-<h1 align="center">From a first paragraph to a clearer paper.</h1>
+<h1 align="center">Bring a draft. Start with one clearer paragraph.</h1>
 
 <p align="center">
-  An academic writing mentor skill for first-time writers and authors with a draft.<br />
-  Bring your manuscript, notes, or references. Get editing informed by your field, target journal, and immediate task, with the reasons explained.
+  EZ to Write a Paper · An academic writing mentor skill<br />
+  Revise drafts, understand edits, organize sources, and respond to reviewers. You choose the editing scope and learning pace.
 </p>
 
 <p align="center">
-  <a href="docs/guide.en.md"><img src="assets/guild/start.svg" width="280" alt="Start writing: read the English user guide" /></a>
+  <a href="#try-demo"><img src="assets/guild/try.svg" width="280" alt="Try an example without sharing a private draft" /></a>
   &nbsp;
-  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest"><img src="assets/guild/download.svg" width="280" alt="Download the complete skill, v3.2.0" /></a>
+  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip"><img src="assets/guild/download.svg" width="280" alt="Download the complete skill ZIP directly" /></a>
 </p>
 <p align="center">
   <a href="docs/guide.en.md">English guide</a> ·
@@ -24,13 +20,28 @@
   <a href="academic-manuscript-polish/SKILL.md">Skill entry</a> ·
   <a href="#quick-start">Quick start</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.2.0 · Self-contained bundle · Chinese and English user guides · Teaching resources primarily in Chinese</sub></p>
+<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.3.0 · Try through file access before installing · Chinese and English start pages included · Teaching resources primarily in Chinese</sub></p>
 
-<img src="assets/guild/inventory.svg" width="960" alt="52 domain entries · 2,080 foundation term records · 10 writing paths · 15 journal reference cards" />
+<a id="try-demo"></a>
+<img src="assets/guild/first-quest.svg" width="960" alt="01 · Try one paragraph" />
 
-<sub>The 2,080 records include terms repeated across fields, with 2,043 distinct English headwords by literal deduplication. Domain entries provide foundation coverage. Journal cards have dated, limited verification; check current requirements before submitting.</sub>
+## See what you would receive
 
-<img src="assets/guild/quests.svg" width="960" alt="01 · Choose your current task" />
+This original fictional example contains no real research data. Read it first, then download the bundle and have your assistant use the [demo request](academic-manuscript-polish/assets/first-session-demo.md).
+
+**Your paragraph**
+
+> We interviewed 18 students about feedback timing. 12 of them said it was too late. We wanted to know their views.
+
+**One usable revision**
+
+> We interviewed 18 students about their views on feedback timing. Twelve participants reported that the feedback arrived too late.
+
+**The explanation**: combine the repeated purpose; clarify that `it` refers to feedback; preserve 18, 12, and the attribution to participants. Add no claim about grades.
+
+Then try: “Restore the original first sentence and keep the revised second sentence. Explain in English.” This is a reference example; actual model wording may differ. [Try through file access](docs/guide.en.md#try-without-install) · [Install step by step](docs/guide.en.md#install)
+
+<img src="assets/guild/quests.svg" width="960" alt="02 · Choose your current task" />
 
 ## Where are you stuck?
 
@@ -58,19 +69,24 @@
 | Check cross-field terminology | “Check terms and abbreviations for consistency.” | Terminology checks in context |
 | Prepare for a target journal | “Check this section against the journal's current author guidelines.” | Verified requirements, edits, and unresolved items |
 | Learn to revise independently | “Show me one revision, then offer a short exercise.” | Editing, explanation, and an optional practice answer |
+| Respond to reviewers | “Work through these comments against the current draft; separate completed and planned work.” | Response drafts, manuscript locations, and remaining work |
 
 Switch between “just give me the revision” and “explain in more detail” whenever you want. You do not need to learn a writing taxonomy or complete a form before starting.
 
 <a id="quick-start"></a>
-<img src="assets/guild/start-here.svg" width="960" alt="02 · Your first session" />
+<img src="assets/guild/start-here.svg" width="960" alt="03 · Your first session" />
 
-## Start in three steps
+## Three steps, without a long intake form
 
 ### 1. Download the complete folder
 
-Download the skill ZIP from [Releases](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest) and extract it. Keep the complete `academic-manuscript-polish/` folder, including `SKILL.md`, `references/`, `assets/`, and the remaining files. You can also download the entire repository with GitHub's **Code → Download ZIP**.
+[Download the skill ZIP directly](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip) and extract it. Open `START-HERE.en.md` or `START-HERE.zh-CN.md` inside. Keep the complete folder. [Release history](https://github.com/NoNightWatch/EZ-to-write-a-paper/releases) provides earlier versions; GitHub's **Code → Download ZIP** downloads the entire repository instead.
 
-### 2. Put it where your assistant can read it
+### 2. Try it first; install when useful
+
+Place the complete folder in a workspace your assistant can read. Ask: “Read `academic-manuscript-polish/SKILL.md` and follow its workflow for the fictional demo. Do not install anything or change settings.” This needs file access. A chat interface that cannot read directories requires the relevant content separately.
+
+For regular use, put the complete folder in the relevant project location:
 
 | Environment | Project installation path |
 | :--- | :--- |
@@ -83,24 +99,21 @@ Availability depends on your host and organization settings. [Installation and t
 ### 3. Bring a real piece of writing
 
 ```text
-Please use academic-manuscript-polish.
-
-Material: my draft / notes / outline below.
-Target journal: [journal name, or undecided].
-Scope for this session: [one sentence / paragraph / section / full draft].
-Output language: English.
-
-Give me a usable revision first, then explain the two or three
-most important changes. Preserve numbers, citations, and meaning.
-Ask me when a technical point needs clarification.
-[Paste your material or provide an accessible file.]
+Use academic-manuscript-polish to edit this paragraph.
+Change only the language. Preserve numbers, citations, and meaning.
+Revise and explain in English. Give the clean version first.
+[Paste text.]
 ```
 
-After installation, you can invoke `$academic-manuscript-polish` in Codex or `/academic-manuscript-polish` in Claude Code. Start with one paragraph to check that the editing level suits you, then expand the scope.
+You can start without a target journal. After installation, use `$academic-manuscript-polish` in Codex CLI / IDE or `/academic-manuscript-polish` in Claude Code. In desktop hosts, use the skill selector or a natural-language request supported there. Confirm file access before expanding the task. [Already installed an older version?](docs/guide.en.md#update)
 
-<img src="assets/guild/library.svg" width="960" alt="03 · Inside the skill bundle" />
+<img src="assets/guild/library.svg" width="960" alt="04 · Inside the skill bundle" />
 
 ## Open the writing library
+
+<img src="assets/guild/inventory.svg" width="960" alt="52 domain entries · 2,080 foundation term records · 10 writing paths · 15 journal reference cards" />
+
+<sub>The 2,080 records include cross-field repetitions, with 2,043 distinct English headwords by literal deduplication. Counts describe coverage, not performance scores. See scope and verification limits below.</sub>
 
 | Resource | Contents and entry point |
 | :--- | :--- |
@@ -112,6 +125,7 @@ After installation, you can invoke `$academic-manuscript-polish` in Codex or `/a
 | **Literature reviews** | [Reading and synthesis workflow](academic-manuscript-polish/references/literature-review-mentor.md), a [worked exercise](academic-manuscript-polish/references/review-worked-example.md), and [four cross-disciplinary exercises](academic-manuscript-polish/references/review-transfer-cases.md) |
 | **Journal adaptation** | [15 journal cards](academic-manuscript-polish/references/journal-cards.md) and an [adaptation workflow](academic-manuscript-polish/references/journal-adaptation.md), distinguishing publisher requirements, observations from sample articles, and unverified points |
 | **A field that is not covered** | Use the [author-supplied literature workflow](academic-manuscript-polish/references/author-literature.md) to build a manuscript-specific terminology and genre reference |
+| **Revisions and editing controls** | [Point-by-point reviewer responses](academic-manuscript-polish/references/reviewer-response.md) and [session controls](academic-manuscript-polish/references/session-controls.md), preserving author decisions and manuscript correspondence |
 
 Foundation definitions are short working glosses, without entry-by-entry external expert verification. Detailed and foundation entries overlap. The assistant should load resources relevant to the current draft and check formal definitions against original sources or standards.
 
@@ -135,29 +149,23 @@ Paths can be combined. They support textual organization; technical theory and r
 
 </details>
 
-<img src="assets/guild/field-notes.svg" width="960" alt="04 · Watch a revision" />
+<img src="assets/guild/controls.svg" width="960" alt="05 · You control the revision" />
 
-## Understand what changed
+## Change direction or restore a sentence
 
-This is a fictional teaching example, not research evidence.
+| What you want | What to say |
+| :--- | :--- |
+| Understand the problems first | “Diagnose only. Do not edit files. Identify the two main obstacles to understanding.” |
+| Preserve your voice | “Correct necessary grammar; keep my wording and paragraph order.” |
+| Inspect changes | “Give a clean version first, followed by important before/after changes.” |
+| Restore a local passage | “Restore the original second sentence and keep the other edits.” |
+| Change the teaching pace | “Show me, then let me practise” or “Give me the answer directly.” |
 
-**Material from the author**
+Restoring text requires access to the original. Plain-text comparisons are not native Word tracked changes. The assistant distinguishes necessary corrections from optional style preferences.
 
-> We interviewed 18 students. In the interviews, 12 said feedback came too late. We want to describe their views about feedback timing.
+**For reviewer comments**: connect each comment to the author's actual changes and the current manuscript location. Planned work remains pending; a response saying “we have revised” needs support from the supplied material. [Using the reviewer-response workflow](docs/guide.en.md#reviewer-response)
 
-**Example revision**
-
-> We interviewed 18 students about their perceptions of feedback timing. Twelve participants reported that feedback arrived too late.
-
-**The mentor's explanation**
-
-1. The first sentence establishes participants, sample size, and topic.
-2. `Reported` makes clear that the second sentence describes participants' accounts.
-3. Both numbers remain unchanged. No claim about grades has been added because the material provides no such finding.
-
-**Optional next step**: supply the actual interview time window, then decide whether it belongs in the methods paragraph. You can also move straight to the next paragraph.
-
-<img src="assets/guild/workflow.svg" width="960" alt="05 · From material to revised draft" />
+<img src="assets/guild/workflow.svg" width="960" alt="06 · From material to revised draft" />
 
 ## A clear scope for each revision
 
@@ -171,7 +179,7 @@ This is a fictional teaching example, not research evidence.
 
 Review tasks also record the actual reading scope and check source support for each claim before assembling a synthesis. Long drafts can be handled in batches. A progress card can support a later session; saving one requires the author's request.
 
-<img src="assets/guild/faq.svg" width="960" alt="06 · Frequently asked questions and boundaries" />
+<img src="assets/guild/faq.svg" width="960" alt="07 · Frequently asked questions and boundaries" />
 
 ## Before you set out
 
@@ -219,7 +227,7 @@ The instructions require preserving the original and prohibit publication, submi
 
 **Writing boundaries**: preserve author-supplied facts and research judgments. Do not fabricate data, citations, mechanisms, or ethics information. Acceptance is not guaranteed. Claims about journal preferences require sources; current official author guidelines take priority. Medical content is for reading and academic expression; the bundle does not supply hazardous operational details.
 
-**Verification scope**: v3.2.0 underwent five rounds of self-review and repair, with 38 passing structure and search tests. These tests do not run language models or establish teaching effectiveness or the correctness of every technical definition. See the [check record](academic-manuscript-polish/tests/release-checks.md) and [source record](academic-manuscript-polish/references/sources.md).
+**Verification scope**: v3.3.0 has 46 passing structure and search tests plus a maintainer walkthrough of usage scenarios. No independent model evaluation or real-user teaching experiment was conducted. See the [current check record](academic-manuscript-polish/tests/experience-audit.md) and [source record](academic-manuscript-polish/references/sources.md).
 
 <details>
 <summary><strong>Folder structure and optional local commands</strong></summary>
@@ -238,7 +246,7 @@ academic-manuscript-polish/
 Run from inside the skill folder:
 
 ```sh
-python scripts/search_terms.py "validity" --exact
+python scripts/search_terms.py "validity" --exact --format text
 python scripts/search_terms.py --list-domains
 python scripts/validate_bundle.py
 python -B tests/test_bundle.py
@@ -248,5 +256,5 @@ python -B tests/test_bundle.py
 
 <p align="center"><img src="assets/guild/next.svg" width="960" alt="Your next sentence starts here." /></p>
 <p align="center"><strong>Bring one paragraph. Choose one small goal. Begin.</strong></p>
-<p align="center"><a href="docs/guide.en.md">Read the English guide</a> · <a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest">Download the skill</a></p>
+<p align="center"><a href="docs/guide.en.md">Read the English guide</a> · <a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip">Download the skill directly</a></p>
 <p align="center"><sub>Find it useful? Star the repository to keep it handy. Report problems in an <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/issues">Issue</a> without including private manuscript content.</sub></p>
