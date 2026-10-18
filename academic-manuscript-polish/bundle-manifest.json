@@ -1,0 +1,384 @@
+{
+  "version": "3.2.0",
+  "date": "2026-10-18",
+  "scope": "novice-mentor-review-five-round-refinement",
+  "domains": [
+    {
+      "id": "g01",
+      "group": "通用",
+      "zh": "学术写作与出版",
+      "slug": "academic-writing",
+      "count": 40
+    },
+    {
+      "id": "g02",
+      "group": "通用",
+      "zh": "研究设计与统计表达",
+      "slug": "research-reporting",
+      "count": 40
+    },
+    {
+      "id": "n01",
+      "group": "自然科学",
+      "zh": "数学",
+      "slug": "mathematics",
+      "count": 40
+    },
+    {
+      "id": "n02",
+      "group": "自然科学",
+      "zh": "物理与天文学",
+      "slug": "physics-astronomy",
+      "count": 40
+    },
+    {
+      "id": "n03",
+      "group": "自然科学",
+      "zh": "化学",
+      "slug": "chemistry",
+      "count": 40
+    },
+    {
+      "id": "n04",
+      "group": "自然科学",
+      "zh": "地球科学与自然地理",
+      "slug": "earth-geography",
+      "count": 40
+    },
+    {
+      "id": "n05",
+      "group": "自然科学",
+      "zh": "大气与气候科学",
+      "slug": "atmosphere-climate",
+      "count": 40
+    },
+    {
+      "id": "n06",
+      "group": "自然科学",
+      "zh": "海洋与水文",
+      "slug": "ocean-hydrology",
+      "count": 40
+    },
+    {
+      "id": "n07",
+      "group": "自然科学",
+      "zh": "细胞与分子生物学",
+      "slug": "cell-molecular-biology",
+      "count": 40
+    },
+    {
+      "id": "n08",
+      "group": "自然科学",
+      "zh": "遗传与进化",
+      "slug": "genetics-evolution",
+      "count": 40
+    },
+    {
+      "id": "n09",
+      "group": "自然科学",
+      "zh": "生态与保护",
+      "slug": "ecology-conservation",
+      "count": 40
+    },
+    {
+      "id": "n10",
+      "group": "自然科学",
+      "zh": "计算机与人工智能",
+      "slug": "computing-ai",
+      "count": 40
+    },
+    {
+      "id": "e01",
+      "group": "工程与技术",
+      "zh": "电气电子与通信",
+      "slug": "electrical-communications",
+      "count": 40
+    },
+    {
+      "id": "e02",
+      "group": "工程与技术",
+      "zh": "控制与机器人",
+      "slug": "control-robotics",
+      "count": 40
+    },
+    {
+      "id": "e03",
+      "group": "工程与技术",
+      "zh": "机械与制造",
+      "slug": "mechanical-manufacturing",
+      "count": 40
+    },
+    {
+      "id": "e04",
+      "group": "工程与技术",
+      "zh": "土木与结构工程",
+      "slug": "civil-structural",
+      "count": 40
+    },
+    {
+      "id": "e05",
+      "group": "工程与技术",
+      "zh": "建筑与城市规划",
+      "slug": "architecture-urban",
+      "count": 40
+    },
+    {
+      "id": "e06",
+      "group": "工程与技术",
+      "zh": "材料科学",
+      "slug": "materials",
+      "count": 40
+    },
+    {
+      "id": "e07",
+      "group": "工程与技术",
+      "zh": "能源工程",
+      "slug": "energy",
+      "count": 40
+    },
+    {
+      "id": "e08",
+      "group": "工程与技术",
+      "zh": "化学工程",
+      "slug": "chemical-process",
+      "count": 40
+    },
+    {
+      "id": "e09",
+      "group": "工程与技术",
+      "zh": "交通与航空航天",
+      "slug": "transport-aerospace",
+      "count": 40
+    },
+    {
+      "id": "e10",
+      "group": "工程与技术",
+      "zh": "环境工程",
+      "slug": "environmental-engineering",
+      "count": 40
+    },
+    {
+      "id": "m01",
+      "group": "医学与健康",
+      "zh": "基础医学",
+      "slug": "basic-medicine",
+      "count": 40
+    },
+    {
+      "id": "m02",
+      "group": "医学与健康",
+      "zh": "临床研究",
+      "slug": "clinical-research",
+      "count": 40
+    },
+    {
+      "id": "m03",
+      "group": "医学与健康",
+      "zh": "公共卫生与流行病学",
+      "slug": "public-health",
+      "count": 40
+    },
+    {
+      "id": "m04",
+      "group": "医学与健康",
+      "zh": "药学与毒理学",
+      "slug": "pharmacology-toxicology",
+      "count": 40
+    },
+    {
+      "id": "m05",
+      "group": "医学与健康",
+      "zh": "护理与康复",
+      "slug": "nursing-rehabilitation",
+      "count": 40
+    },
+    {
+      "id": "m06",
+      "group": "医学与健康",
+      "zh": "营养与食品科学",
+      "slug": "nutrition-food",
+      "count": 40
+    },
+    {
+      "id": "m07",
+      "group": "医学与健康",
+      "zh": "口腔医学",
+      "slug": "dentistry",
+      "count": 40
+    },
+    {
+      "id": "a01",
+      "group": "农业与兽医",
+      "zh": "农学与园艺",
+      "slug": "agronomy-horticulture",
+      "count": 40
+    },
+    {
+      "id": "a02",
+      "group": "农业与兽医",
+      "zh": "土壤与土地管理",
+      "slug": "soil-land",
+      "count": 40
+    },
+    {
+      "id": "a03",
+      "group": "农业与兽医",
+      "zh": "林学",
+      "slug": "forestry",
+      "count": 40
+    },
+    {
+      "id": "a04",
+      "group": "农业与兽医",
+      "zh": "渔业与水产",
+      "slug": "fisheries-aquaculture",
+      "count": 40
+    },
+    {
+      "id": "a05",
+      "group": "农业与兽医",
+      "zh": "动物科学与兽医",
+      "slug": "animal-veterinary",
+      "count": 40
+    },
+    {
+      "id": "s01",
+      "group": "社会科学",
+      "zh": "经济学",
+      "slug": "economics",
+      "count": 40
+    },
+    {
+      "id": "s02",
+      "group": "社会科学",
+      "zh": "金融与会计",
+      "slug": "finance-accounting",
+      "count": 40
+    },
+    {
+      "id": "s03",
+      "group": "社会科学",
+      "zh": "管理与市场营销",
+      "slug": "management-marketing",
+      "count": 40
+    },
+    {
+      "id": "s04",
+      "group": "社会科学",
+      "zh": "教育学",
+      "slug": "education",
+      "count": 40
+    },
+    {
+      "id": "s05",
+      "group": "社会科学",
+      "zh": "心理与认知",
+      "slug": "psychology-cognition",
+      "count": 40
+    },
+    {
+      "id": "s06",
+      "group": "社会科学",
+      "zh": "社会学与人类学",
+      "slug": "sociology-anthropology",
+      "count": 40
+    },
+    {
+      "id": "s07",
+      "group": "社会科学",
+      "zh": "政治与公共管理",
+      "slug": "politics-administration",
+      "count": 40
+    },
+    {
+      "id": "s08",
+      "group": "社会科学",
+      "zh": "法学",
+      "slug": "law",
+      "count": 40
+    },
+    {
+      "id": "s09",
+      "group": "社会科学",
+      "zh": "新闻与传播",
+      "slug": "journalism-communication",
+      "count": 40
+    },
+    {
+      "id": "s10",
+      "group": "社会科学",
+      "zh": "图书情报与档案",
+      "slug": "information-archives",
+      "count": 40
+    },
+    {
+      "id": "s11",
+      "group": "社会科学",
+      "zh": "人文地理与人口",
+      "slug": "human-geography-population",
+      "count": 40
+    },
+    {
+      "id": "h01",
+      "group": "人文与艺术",
+      "zh": "历史与考古",
+      "slug": "history-archaeology",
+      "count": 40
+    },
+    {
+      "id": "h02",
+      "group": "人文与艺术",
+      "zh": "哲学与伦理",
+      "slug": "philosophy-ethics",
+      "count": 40
+    },
+    {
+      "id": "h03",
+      "group": "人文与艺术",
+      "zh": "宗教学",
+      "slug": "religious-studies",
+      "count": 40
+    },
+    {
+      "id": "h04",
+      "group": "人文与艺术",
+      "zh": "语言学",
+      "slug": "linguistics",
+      "count": 40
+    },
+    {
+      "id": "h05",
+      "group": "人文与艺术",
+      "zh": "文学与翻译",
+      "slug": "literature-translation",
+      "count": 40
+    },
+    {
+      "id": "h06",
+      "group": "人文与艺术",
+      "zh": "艺术史与设计",
+      "slug": "art-design",
+      "count": 40
+    },
+    {
+      "id": "h07",
+      "group": "人文与艺术",
+      "zh": "音乐影视与表演",
+      "slug": "music-film-performance",
+      "count": 40
+    }
+  ],
+  "foundation_term_records": 2080,
+  "unique_english_headwords": 2043,
+  "legacy_detailed_terms": 308,
+  "journal_cards": 15,
+  "domain_examples": 52,
+  "worked_examples": 12,
+  "writing_paths": 10,
+  "review_teaching_sources_assessed": 9,
+  "review_core_resources": 5,
+  "review_transfer_cases": 4,
+  "audit_rounds": 5,
+  "automated_tests": 38,
+  "verification": "Foundation definitions are editorial working glosses, not individually externally verified."
+}

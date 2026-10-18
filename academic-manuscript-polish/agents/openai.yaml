@@ -1,0 +1,4 @@
+interface:
+  display_name: "学术写作新手导师"
+  short_description: "从中文笔记到论文修订，按稿件阶段讲解术语与章节写法，支持目标期刊适配"
+  default_prompt: "使用 $academic-manuscript-polish，从我已有的稿件或笔记开始，识别领域和当前阶段，帮我完成本轮写作并解释关键修改；期刊未定或专业资料不足时先处理能确认的部分。"
