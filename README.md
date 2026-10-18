@@ -1,29 +1,29 @@
 <p align="center">
-  <img src="assets/writing-guild.png" width="960" alt="Paper Quest · The Writing Guild：星夜图书馆里，初学者与导师一起修改稿件。" />
+  <img src="assets/writing-guild.zh-CN.png" width="960" alt="论文之旅 · 学术写作工坊：星夜图书馆里，初学者与导师一起修改稿件。" />
 </p>
 <h1 align="center">带上你的稿件，先改好一个段落。</h1>
 
 <p align="center">
-  EZ to Write a Paper · 学术写作导师 skill<br />
+  EZ to Write a Paper · 学术写作导师技能包<br />
   改稿件、讲理由、理文献、回审稿。你决定改多少、怎样学。
 </p>
 
 <p align="center">
-  <a href="#try-demo"><img src="assets/guild/try.svg" width="280" alt="先看一次试用：无需私人稿件" /></a>
+  <a href="#try-demo"><img src="assets/guild/zh-CN/try.svg" width="280" alt="先试改一段：无需提供私人稿件" /></a>
   &nbsp;
-  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip"><img src="assets/guild/download.svg" width="280" alt="直接下载完整技能包 ZIP" /></a>
+  <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip"><img src="assets/guild/zh-CN/download.svg" width="280" alt="直接下载完整技能包 ZIP" /></a>
 </p>
 <p align="center">
   <a href="docs/guide.zh-CN.md">中文指南</a> ·
   <a href="README.en.md">English</a> ·
   <a href="docs/guide.en.md">English guide</a> ·
-  <a href="academic-manuscript-polish/SKILL.md">Skill 入口</a> ·
+  <a href="academic-manuscript-polish/SKILL.md">技能入口</a> ·
   <a href="#quick-start">快速开始</a>
 </p>
 <p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.4.0 · 可先读取文件试用 · 中英启动页随包提供 · 教材主体为中文</sub></p>
 
 <a id="try-demo"></a>
-<img src="assets/guild/first-quest.svg" width="960" alt="01 · 先看一次修改" />
+<img src="assets/guild/zh-CN/first-quest.svg" width="960" alt="01 · 先试改一段" />
 
 ## 先看看，你会拿到什么
 
@@ -41,20 +41,20 @@
 
 接着可以说：“第一句恢复原句，第二句保留。英文改稿，中文解释。”这是参考示范，实际模型措辞可能不同。[先读取文件试用](docs/guide.zh-CN.md#try-without-install) · [按步骤安装](docs/guide.zh-CN.md#install)
 
-<img src="assets/guild/quests.svg" width="960" alt="02 · 选择当前任务" />
+<img src="assets/guild/zh-CN/quests.svg" width="960" alt="02 · 选择当前任务" />
 
 ## 你现在卡在哪里？
 
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="assets/guild/mentor.svg" width="460" alt="写作导师：先给可用修改，再解释关键处" />
+<img src="assets/guild/zh-CN/mentor.svg" width="460" alt="和导师一起写：先给修订，再讲理由" />
 <h3>有东西想说，却不知道怎样写</h3>
 <p>从中文笔记、零散句子或一个段落开始。先得到一版可用修改，再了解一两处关键改动。愿意练习时，导师带你完成一个小目标。</p>
 <p><a href="academic-manuscript-polish/references/beginner-guide.md">新手入口</a> · <a href="academic-manuscript-polish/references/mentor-lessons.md">九节小课</a></p>
 </td>
 <td width="50%" valign="top">
-<img src="assets/guild/review.svg" width="460" alt="综述写作：比较材料，组织有来源的段落" />
+<img src="assets/guild/zh-CN/review.svg" width="460" alt="写好文献综述：比较材料，连贯表达" />
 <h3>读了很多文献，还是写成逐篇介绍</h3>
 <p>围绕一个具体问题比较材料，把相同点、差异与适用范围组织进段落。先区分引言小段、学位论文章节和独立综述，再选择对应流程。</p>
 <p><a href="academic-manuscript-polish/references/literature-review-mentor.md">综述导师</a> · <a href="academic-manuscript-polish/references/review-worked-example.md">完整练习</a></p>
@@ -74,7 +74,7 @@
 你可以随时说“直接给稿”或“讲细一点”。无需先学会写作分类，也无需填完一套表格。
 
 <a id="quick-start"></a>
-<img src="assets/guild/start-here.svg" width="960" alt="03 · 第一次使用" />
+<img src="assets/guild/zh-CN/start-here.svg" width="960" alt="03 · 第一次使用" />
 
 ## 三步开始，不必先填一套表
 
@@ -107,11 +107,11 @@
 
 期刊未定也可开始。安装后，Codex CLI / IDE 可用 `$academic-manuscript-polish`，Claude Code 可用 `/academic-manuscript-polish`；桌面端可按宿主技能选择器或自然语言调用。先确认助手读到了文件，随后扩大范围。[已有旧版？查看更新方法](docs/guide.zh-CN.md#update)。
 
-<img src="assets/guild/library.svg" width="960" alt="04 · 技能包里有什么" />
+<img src="assets/guild/zh-CN/library.svg" width="960" alt="04 · 写作资料室" />
 
 ## 打开这间写作资料室
 
-<img src="assets/guild/inventory.svg" width="960" alt="52 个学科入口 · 2,080 条基础词表记录 · 10 类写作路径 · 15 份期刊资料卡" />
+<img src="assets/guild/zh-CN/inventory.svg" width="960" alt="52 个学科入口 · 2,080 条基础词表记录 · 10 类写作路径 · 15 份期刊资料卡" />
 
 <sub>2,080 条记录含跨领域重复，英文词头字面去重为 2,043 项。基础覆盖与专业核验范围见下表；数量不代表效果评分。</sub>
 
@@ -149,7 +149,7 @@
 
 </details>
 
-<img src="assets/guild/controls.svg" width="960" alt="05 · 修改控制由你决定" />
+<img src="assets/guild/zh-CN/controls.svg" width="960" alt="05 · 修改由你决定" />
 
 ## 你可以改方向，也可以恢复原句
 
@@ -167,7 +167,7 @@
 
 **收到审稿意见时**：逐条对照意见、作者实际修改与稿件位置。计划工作保留待办状态，正式回应中的“已修改”需要当前材料支持。[修回使用方法](docs/guide.zh-CN.md#reviewer-response)
 
-<img src="assets/guild/workflow.svg" width="960" alt="06 · 从材料到修订稿" />
+<img src="assets/guild/zh-CN/workflow.svg" width="960" alt="06 · 从材料到修订稿" />
 
 ## 每次修改都有清楚的范围
 
@@ -181,7 +181,7 @@
 
 综述任务会额外记录实际阅读范围，先核对每项主张的来源，再组织综合段落。长稿可分批推进；需要续接时可生成一张进度卡，保存须由作者提出。
 
-<img src="assets/guild/faq.svg" width="960" alt="07 · 常见问题与使用边界" />
+<img src="assets/guild/zh-CN/faq.svg" width="960" alt="07 · 开始前先看看" />
 
 ## 出发前，先知道这些
 
@@ -216,7 +216,7 @@
 <details>
 <summary><strong>需要 Python 吗？能离线使用吗？</strong></summary>
 
-阅读教材和让助手按流程编辑无需运行脚本。离线查词与校验工具需要 Python 3.9+，只用标准库。AI 助手是否联网、如何处理稿件，由你使用的宿主和账户设置决定；本地存放 skill 不意味着模型在本地运行。
+阅读教材和让助手按流程编辑无需运行脚本。离线查词与校验工具需要 Python 3.9+，只用标准库。AI 助手是否联网、如何处理稿件，由你使用的宿主和账户设置决定；本地存放技能包不意味着模型在本地运行。
 
 </details>
 
@@ -256,7 +256,7 @@ python -B tests/test_bundle.py
 
 </details>
 
-<p align="center"><img src="assets/guild/next.svg" width="960" alt="下一段，从这里开始。" /></p>
+<p align="center"><img src="assets/guild/zh-CN/next.svg" width="960" alt="下一段，从这里开始。" /></p>
 <p align="center"><strong>准备一个段落，选一个小目标，然后开始。</strong></p>
-<p align="center"><a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="docs/guide.en.md">Read the English guide</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip">直接下载技能包</a></p>
-<p align="center"><sub>觉得有用，可以 Star 收藏。发现问题，欢迎提交不含私人稿件的 <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/issues">Issue</a>。</sub></p>
+<p align="center"><a href="docs/guide.zh-CN.md">阅读中文指南</a> · <a href="docs/guide.en.md">English guide</a> · <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/releases/latest/download/academic-manuscript-polish.zip">直接下载技能包</a></p>
+<p align="center"><sub>觉得有用，可以点击 Star 收藏。发现问题，欢迎提交不含私人稿件的 <a href="https://github.com/NoNightWatch/EZ-to-write-a-paper/issues">问题反馈</a>。</sub></p>

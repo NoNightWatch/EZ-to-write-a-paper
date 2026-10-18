@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="用户指南 · Academic Manuscript Polish v3.4.0" /></p>
+<p align="center"><img src="../assets/guild/zh-CN/guide.svg" width="960" alt="使用指南 · 学术写作导师 v3.4.0" /></p>
 
 # 中文用户指南
 
@@ -20,11 +20,11 @@
 
 ## 1. 先理解你下载的是什么
 
-Skill 是一组给 AI 助手读取的指令与资料。本包包含写作流程、术语、教材、期刊参考与可选脚本。它需要能读取文件的助手来执行，也可以作为普通 Markdown 教材阅读。
+技能（skill）是一组给 AI 助手读取的指令与资料。本包包含写作流程、术语、教材、期刊参考与可选脚本。它需要能读取文件的助手来执行，也可以作为普通 Markdown 教材阅读。
 
 你需要准备：
 
-- 支持本地 skill 或文件读取的 AI 助手。
+- 支持本地技能或文件读取的 AI 助手。
 - 一段文字、笔记、提纲，或你有权提供的文献。
 - 目标期刊如已确定，给出刊名与文章类型；未定也可以开始。
 
@@ -86,7 +86,7 @@ my-paper/
 
 Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位于 `academic-manuscript-polish/` 里，避免多套一层同名文件夹。
 
-路径于 2026-10-18 对照 [OpenAI 官方 skill 文档](https://learn.chatgpt.com/docs/build-skills)和 [Claude Code 官方文档](https://code.claude.com/docs/en/skills)核对。组织策略、云会话与本地会话可能采用不同加载方式，请以宿主当前说明为准。
+路径于 2026-10-18 对照 [OpenAI 官方技能文档](https://learn.chatgpt.com/docs/build-skills)和 [Claude Code 官方文档](https://code.claude.com/docs/en/skills)核对。组织策略、云会话与本地会话可能采用不同加载方式，请以宿主当前说明为准。
 
 ### 确认助手能读到
 
@@ -97,7 +97,7 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 
 也可用自然语言说明：“请读取已安装的 academic-manuscript-polish，按它的流程处理下面的段落。”若列表尚未更新，开启新会话后检查。请助手说明实际读取的入口路径；只回答“我知道这个技能”不足以确认加载成功。
 
-其他助手可以读取完整文件夹时，请直接指定 `SKILL.md` 的位置。如果它只能接收聊天文字，可手动提供入口和当前需要的资料，但这种方式无法保证自动读取所有相对链接。普通聊天界面与原生 skill 安装的能力范围可能不同。
+其他助手可以读取完整文件夹时，请直接指定 `SKILL.md` 的位置。如果它只能接收聊天文字，可手动提供入口和当前需要的资料，但这种方式无法保证自动读取所有相对链接。普通聊天界面与原生技能安装的能力范围可能不同。
 
 ### 想让助手帮你复制文件？
 
@@ -172,7 +172,7 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 <a id="field-style"></a>
 ### 让表达贴近本领域，也保留自己的声音
 
-可以要求自然、native-like 的学术表达。助手会具体检查主语承接、句子主干、限定位置和段落节奏，保留清楚的长句，合并重复起头，也保留承担转折或范围提醒的短句。没有统一的句长分数，不会为了简洁删去条件或引用。
+可以要求自然、贴近本领域成熟论文的学术表达。助手会具体检查主语承接、句子主干、限定位置和段落节奏，保留清楚的长句，合并重复起头，也保留承担转折或范围提醒的短句。没有统一的句长分数，不会为了简洁删去条件或引用。
 
 ```text
 请按本领域成熟论文的表达方式润色这一段，保留我的语气。
@@ -202,7 +202,7 @@ Claude Code 项目对应的目录名为 `.claude`。确认 `SKILL.md` 直接位�
 <a id="review"></a>
 ## 6. 文献综述怎么用
 
-先说明你要写的是哪种任务：引言的一段、学位论文的一章、独立综述或 related work。小段任务可以从几篇已有材料开始。
+先说明你要写的是哪种任务：引言的一段、学位论文的一章、独立综述或相关工作章节（related work）。小段任务可以从几篇已有材料开始。
 
 ```text
 下面是我已读的文献和笔记。我要写引言中的一个综述段。
@@ -322,5 +322,5 @@ python -B tests/test_bundle.py
 
 更新不会自动迁移你正在写的稿件。发现问题时，先停用新版，再从自己的旧副本恢复。不要让助手无提示删除备份或合并存在冲突的文件。
 
-<p align="center"><img src="../assets/guild/next.svg" width="960" alt="下一段，从这里开始。" /></p>
+<p align="center"><img src="../assets/guild/zh-CN/next.svg" width="960" alt="下一段，从这里开始。" /></p>
 <p align="center"><a href="../README.md">返回首页</a> · <a href="guide.en.md">English guide</a> · <a href="../academic-manuscript-polish/references/beginner-guide.md">继续阅读新手教程</a></p>
