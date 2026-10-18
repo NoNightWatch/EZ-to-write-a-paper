@@ -1,6 +1,6 @@
 ---
 name: academic-manuscript-polish
-description: Edit academic drafts, teach beginners through a complete-paper case with practice and feedback, and organize literature reviews or reviewer responses using supplied evidence. Use for manuscript polishing, section coaching, discipline-sensitive word choice, terminology consistency, and journal adaptation. 学术润色、整篇带写、练习反馈、综述写作与期刊适配。
+description: Edit academic drafts, help beginners start with one clear statement or complete-paper practice, and organize literature reviews or reviewer responses using supplied evidence. Use for manuscript polishing, section coaching, discipline-sensitive word choice, terminology consistency, and journal adaptation. 学术润色、一句话起步、整篇带写、练习反馈与期刊适配。
 ---
 
 # PAPER QUEST · 学术写作执行指南
@@ -18,6 +18,8 @@ description: Edit academic drafts, teach beginners through a complete-paper case
 一段文字加“帮我润色”已经足够开始：默认只改所给片段的语言，修订稿沿用原稿语言，解释沿用对话语言。作者指定的语言优先。只要求诊断或点评时给建议，不直接写文件或替换全文；“更学术”不足以授权改变专业定义。需要调整节奏、保留个人表达或恢复局部原句时查 [本轮控制与反馈](references/session-controls.md)。
 
 作者自称初学者、要求解释或表达“不知道从哪里开始”时启用 [导师流程](references/mentor-workflow.md)。默认给可用修改并解释少量关键处；只有作者希望共同练习时才放慢到逐步练写。要求直接给稿或赶时间时简化教学。不得把本科生身份当作理解能力判断。
+
+学生表达畏难、担心写不好或无法开始，且没有优先的明确改稿要求时，读[一句话起步流程](references/gentle-start-mentor.md)，从现成句子或一个日常问题开始。暂不自动展示整篇课程和资料目录；先让学生参与说清一句，再按其意愿展开。面向学生可提供[中文短入口](references/one-clear-thing.md)或 [English entry](references/one-clear-thing.en.md)。这一短路径优先于下面的整篇路线建议，但不能截断学生明确要求的改稿、示范或课程任务。
 
 明确要求从零学写整篇时，进入[整篇课程](references/first-paper-course.md)或 [English course](references/first-paper-course.en.md)。可用虚构案例起步，无需私人稿件。按学生选择走“示范、尝试、具体反馈、重写、新材料练习”，不要在学生作答前自动展开答案；要求看答案或直接交稿时立即切换。没材料可查[缺口桥接](references/missing-materials.md)，给出查找位置和询问示例。教学材料不得移植为真实研究结果。
 
@@ -70,4 +72,4 @@ description: Edit academic drafts, teach beginners through a complete-paper case
 
 版本与边界见 [README](README.md)、[来源说明](references/sources.md)、[通用分类与资料来源](references/foundation-sources.md)。本包基于既有资料重新组织，基础词表是编辑整理的入门材料。
 
-维护时运行 `python -B scripts/validate_bundle.py`、`python -B tests/test_bundle.py`、`python -B tests/test_usage.py`、`python -B tests/test_paper_course.py`，并参照 [情景检查](tests/scenarios.md)、[用词及期刊检查](tests/usage-journal-audit.md)与[整篇课程检查](tests/paper-course-audit.md)。私人稿件不随包分发。作者提供的文献仅用于当前稿件，进入共享版本须另有明确授权。
+维护时运行 `python -B scripts/validate_bundle.py`、`python -B tests/test_bundle.py`、`python -B tests/test_usage.py`、`python -B tests/test_paper_course.py`，并参照 [情景检查](tests/scenarios.md)、[用词及期刊检查](tests/usage-journal-audit.md)、[整篇课程检查](tests/paper-course-audit.md)与[一句话入口检查](tests/gentle-start-audit.md)。私人稿件不随包分发。作者提供的文献仅用于当前稿件，进入共享版本须另有明确授权。

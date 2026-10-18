@@ -6,6 +6,8 @@ Use a fictional case before working on your own research, or bring your existing
 
 ## Start a session
 
+If the full route feels difficult to start, try [Say one clear thing](one-clear-thing.en.md). One description or question is a valid stopping point. If you later choose this course, reuse confirmed work instead of repeating completed steps. You may also skip the short entry and follow the route below directly.
+
 ```text
 Read first-paper-course.en.md in the PAPER QUEST bundle.
 I want to learn to write a complete paper from the beginning.

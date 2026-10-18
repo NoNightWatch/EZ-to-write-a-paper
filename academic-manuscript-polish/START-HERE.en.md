@@ -4,6 +4,8 @@
 
 This folder contains writing instructions and resources for an AI assistant. You do not need to learn the terminology or choose a writing category first. Resources and lookup tools work locally; AI processing depends on your host's settings. Most teaching resources are in Chinese, with bilingual terms. Ask for English output and explanations.
 
+If you are unsure how to begin, open [Say one clear thing](references/one-clear-thing.en.md), or ask: “Start by asking about one thing in my materials. Let me answer in everyday language. Do not show the whole course yet.” One sentence can be this session's output. If you already have a specific task, continue directly below.
+
 ## Try it before installing
 
 Extract the ZIP into a workspace your assistant can read, then send:

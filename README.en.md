@@ -1,7 +1,7 @@
 <p align="center">
   <img src="assets/writing-guild.png" width="960" alt="Paper Quest · The Writing Guild: a beginner and mentor revise a manuscript in a starlit library." />
 </p>
-<h1 align="center">From one paragraph to a complete paper.</h1>
+<h1 align="center">Say one clear thing. Build from there.</h1>
 
 <p align="center">
   PAPER QUEST · An academic writing guide<br />
@@ -20,7 +20,8 @@
   <a href="academic-manuscript-polish/SKILL.md">Workflow guide</a> ·
   <a href="#quick-start">Quick start</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.6.0 · Bilingual course entries and workbooks · Complete English model paper · Teaching commentary primarily in Chinese</sub></p>
+<p align="center"><strong>Codex · Claude Code · AI assistants with local file access</strong><br /><sub>v3.7.0 · Bilingual one-sentence entry, course, and workbooks · Complete English model paper · Teaching commentary primarily in Chinese</sub></p>
+<p align="center">Unsure how to begin? <a href="academic-manuscript-polish/references/one-clear-thing.en.md">Say one clear thing</a>. One sentence can be enough for this session.</p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/first-quest.svg" width="960" alt="01 · Try one paragraph" />
@@ -48,9 +49,9 @@ Then try: “Restore the original first sentence and keep the revised second sen
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="assets/guild/mentor.svg" width="460" alt="Write with a mentor: try, revise, and learn, from one task to a whole paper" />
+<img src="assets/guild/mentor.svg" width="460" alt="Write with a mentor: start with one clear thing" />
 <h3>You know what you mean, but cannot get it onto the page</h3>
-<p>Edit an existing draft directly, or learn through eight stages using one fictional evidence packet. Read a complete model, try writing yourself, and revise with specific feedback.</p>
+<p>If starting feels difficult, say one thing from your materials in everyday language or a few words. Form a supported sentence, then decide whether to continue. Existing drafts can be edited directly; the complete-paper course is available when you want structured practice.</p>
 <p><a href="academic-manuscript-polish/references/first-paper-course.en.md">Complete-paper course</a> · <a href="academic-manuscript-polish/references/paper-workbook.en.md">English workbook</a></p>
 </td>
 <td width="50%" valign="top">
@@ -72,6 +73,12 @@ Then try: “Restore the original first sentence and keep the revised second sen
 | Respond to reviewers | “Work through these comments against the current draft; separate completed and planned work.” | Response drafts, manuscript locations, and remaining work |
 
 Switch between “just give me the revision” and “explain in more detail” whenever you want. You do not need to learn a writing taxonomy or complete a form before starting.
+
+### Say one clear thing
+
+Leave the whole paper aside for a moment. The assistant begins with: “What is one thing you already know from the material you have?” It uses your answer, identifies what is already clear, and helps with one point affecting understanding. If you only have a topic, you can begin with a question.
+
+A rough draft can be untidy; facts and sources still need checking. Stop after one sentence, or continue by adding a source, another sentence, or the full course. There are no grades, countdowns, or compulsory learning checklists. [See how this entry works](docs/guide.en.md#one-clear-thing).
 
 ### Writing your first whole paper? Start here.
 
@@ -243,7 +250,7 @@ The instructions require preserving the original and prohibit publication, submi
 
 **Writing boundaries**: preserve author-supplied facts and research judgments. Do not fabricate data, citations, mechanisms, or ethics information. Acceptance is not guaranteed. Claims about journal preferences require sources; current official author guidelines take priority. Medical content is for reading and academic expression; the bundle does not supply hazardous operational details.
 
-**Verification scope**: all 86 package tests and 9 public-page locale tests passed, covering structure, search, teaching data, and language-specific entry points. No independent model evaluation or student learning-outcome study was conducted. See the [course check record](academic-manuscript-polish/tests/paper-course-audit.md), [usage and journal checks](academic-manuscript-polish/tests/usage-journal-audit.md), and [source record](academic-manuscript-polish/references/sources.md).
+**Verification scope**: all 86 package tests and 10 public-page locale tests passed, covering structure, search, teaching data, and language-specific entry points. No independent model evaluation or student learning-outcome study was conducted. See the [one-sentence entry checks](academic-manuscript-polish/tests/gentle-start-audit.md), [course checks](academic-manuscript-polish/tests/paper-course-audit.md), [usage and journal checks](academic-manuscript-polish/tests/usage-journal-audit.md), and [source record](academic-manuscript-polish/references/sources.md).
 
 <details>
 <summary><strong>Folder structure and optional local commands</strong></summary>

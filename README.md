@@ -1,7 +1,7 @@
 <p align="center">
   <img src="assets/writing-guild.zh-CN.png" width="960" alt="论文之旅 · 学术写作工坊：星夜图书馆里，初学者与导师一起修改稿件。" />
 </p>
-<h1 align="center">从一个段落，写到一篇论文。</h1>
+<h1 align="center">先说清一件事，再逐步写成文章。</h1>
 
 <p align="center">
   PAPER QUEST · 学术写作指南<br />
@@ -20,7 +20,8 @@
   <a href="academic-manuscript-polish/SKILL.md">执行指南</a> ·
   <a href="#quick-start">快速开始</a>
 </p>
-<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.6.0 · 中英课程入口与练习册 · 完整英文范文 · 教学讲解主体为中文</sub></p>
+<p align="center"><strong>Codex · Claude Code · 可读取本地资料的 AI 助手</strong><br /><sub>v3.7.0 · 中英一句话入口、课程与练习册 · 完整英文范文 · 教学讲解主体为中文</sub></p>
+<p align="center">还不知怎样开头？<a href="academic-manuscript-polish/references/one-clear-thing.md">先说清一件事</a>，这一轮可以只写一句。</p>
 
 <a id="try-demo"></a>
 <img src="assets/guild/zh-CN/first-quest.svg" width="960" alt="01 · 先试改一段" />
@@ -48,9 +49,9 @@
 <table>
 <tr>
 <td width="50%" valign="top">
-<img src="assets/guild/zh-CN/mentor.svg" width="460" alt="和导师一起写：自己尝试，反馈后重写" />
+<img src="assets/guild/zh-CN/mentor.svg" width="460" alt="和导师一起写：从一句普通话开始" />
 <h3>有东西想说，却不知道怎样写</h3>
-<p>有稿件就直接修改；想从零学，可以用同一份虚构材料走完八阶段，读完整范文，自己尝试，再根据具体反馈重写。</p>
+<p>难以开头时，先说一件材料里的事，中文和几个词都可以。得到一句有依据的话，再决定是否继续。已有稿件可直接修改，想系统练习时进入整篇课程。</p>
 <p><a href="academic-manuscript-polish/references/first-paper-course.md">整篇课程</a> · <a href="academic-manuscript-polish/references/paper-workbook.zh-CN.md">中文练习册</a></p>
 </td>
 <td width="50%" valign="top">
@@ -72,6 +73,12 @@
 | 收到审稿意见 | “对应当前稿件逐条整理，区分已做和计划。” | 回应草稿、修改位置与待办 |
 
 你可以随时说“直接给稿”或“讲细一点”。无需先学会写作分类，也无需填完一套表格。
+
+### 先说清一件事
+
+暂时不用考虑整篇。助手先问：“你手上的材料里，有哪一件事是你已经知道的？”它会使用你的回答，指出已经写清的内容，只补当前影响理解的一点。只有选题时，也可以先得到一句问题。
+
+粗稿可以不整齐，事实和来源仍需核实。完成一句就可以停，想继续时再补来源、添一句或展开课程。没有成绩、倒计时或必须完成的学习清单。[看看这个入口怎样用](docs/guide.zh-CN.md#one-clear-thing)
 
 ### 第一次写整篇，从这里开始
 
@@ -243,7 +250,7 @@
 
 **写作边界**：保留作者事实与研究判断，不编造数据、引用、机制或伦理信息，不保证录用。期刊偏好要有来源；当前官方作者指南优先。医学内容限于阅读与学术表达，危险操作细节不由本包补全。
 
-**检查范围**：86 项包内测试、9 项中英页面测试通过，覆盖结构、检索、教学数据与语言入口。未开展独立模型评估或真实学生教学实验。查看[本轮课程检查](academic-manuscript-polish/tests/paper-course-audit.md)、[用词及期刊检查](academic-manuscript-polish/tests/usage-journal-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
+**检查范围**：86 项包内测试、10 项中英页面测试通过，覆盖结构、检索、教学数据与语言入口。未开展独立模型评估或真实学生教学实验。查看[一句话入口检查](academic-manuscript-polish/tests/gentle-start-audit.md)、[课程检查](academic-manuscript-polish/tests/paper-course-audit.md)、[用词及期刊检查](academic-manuscript-polish/tests/usage-journal-audit.md)与[资料来源](academic-manuscript-polish/references/sources.md)。
 
 <details>
 <summary><strong>展开：目录与可选本地命令</strong></summary>

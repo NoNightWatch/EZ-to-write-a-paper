@@ -1,4 +1,4 @@
-<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.6.0" /></p>
+<p align="center"><img src="../assets/guild/guide.svg" width="960" alt="User guide · PAPER QUEST v3.7.0" /></p>
 
 # English user guide
 
@@ -10,6 +10,7 @@ This guide takes you from installation to your first revision with `academic-man
 
 | What you want now | Go directly to |
 | :--- | :--- |
+| Find starting a paper difficult | [Say one clear thing](#one-clear-thing) |
 | Try the workflow | [File-based trial without installation](#try-without-install) |
 | Use it regularly | [Install](#install) or [update an older version](#update) |
 | Revise a paragraph | [First session](#first-session) and [editing controls](#controls) |
@@ -25,7 +26,7 @@ PAPER QUEST is an academic writing guide for use with an AI assistant or for sel
 Prepare:
 
 - An AI assistant that can read the guide and your writing.
-- Some text, notes, an outline, or references you have permission to share.
+- Some text, notes, an outline, or references you have permission to share. Without materials, you can practice with an explicitly fictional example.
 - Your target journal and article type, if decided. You can start without them.
 
 You do not need Python to begin. Scripts are optional lookup and maintenance tools. Accounts, service costs, connectivity, and privacy settings belong to the AI service you choose.
@@ -140,6 +141,25 @@ Expect a revised paragraph, a few important explanations, and questions that gen
 If the output changes your meaning, be specific: “Here, X means […]. Restore that definition and keep the other changes.”
 
 If you prefer less setup, “Polish this paragraph and preserve its meaning” is enough. The default preserves the supplied passage's content and structure, keeps its language, and explains in the conversation's language. Add a journal later if needed.
+
+<a id="one-clear-thing"></a>
+### Say one clear thing
+
+If thinking about a whole paper makes it difficult to begin, open the [short English entry](../academic-manuscript-polish/references/one-clear-thing.en.md), or send:
+
+```text
+Help me begin with “Say one clear thing.” Teach in English.
+Do not show the whole course, glossary, or journal requirements yet.
+Ask about one thing in my materials and let me answer in everyday language.
+Use my answer, identify what it already communicates, and address one key point.
+I may request a demonstration, direct editing, or a pause at any time.
+```
+
+Use an existing sentence if you have one; there is no need to start it again. With materials, describe an observation. With only a topic, form a question. Without materials, you may choose a fictional example. Findings must not be invented to complete a task.
+
+The assistant explains what the sentence can do and retains usable wording. If numbers, units, or sources are missing, it asks about what needs checking now; untidy language can be revised gradually. It does not give a total score, a countdown, or a demand to complete every part of the paper at once.
+
+One sentence is a valid stopping point. If you want to continue, add a source or related sentence, then expand into paragraphs or the course as appropriate. You can request the full course directly without resubmitting confirmed work. This entry helps organize a start to writing; it is not a psychological assessment and has not been tested for emotional or learning outcomes.
 
 <a id="first-paper"></a>
 ### Learn to write a whole paper from the beginning

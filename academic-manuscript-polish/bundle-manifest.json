@@ -1,7 +1,7 @@
 {
-  "version": "3.6.0",
+  "version": "3.7.0",
   "date": "2026-10-18",
-  "scope": "complete-paper-beginner-course",
+  "scope": "one-clear-thing-beginner-entry",
   "domains": [
     {
       "id": "g01",
@@ -385,6 +385,7 @@
   "guided_paper_tasks": 8,
   "independent_transfer_tasks": 1,
   "learner_workbook_languages": ["zh-CN", "en"],
+  "one_clear_thing_languages": ["zh-CN", "en"],
   "automated_tests": 86,
   "verification": "Definitions and usage rows are editorial working aids, not individually externally verified or corpus-frequency claims. Journal cards distinguish verified scope from gaps; current official requirements must be checked per task."
 }

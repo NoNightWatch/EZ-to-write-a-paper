@@ -146,6 +146,25 @@ class PageLocaleTests(unittest.TestCase):
             dimensions.append((width,height))
         self.assertEqual(dimensions[0][0]*dimensions[1][1], dimensions[1][0]*dimensions[0][1])
 
+    def test_one_sentence_entry_and_exits_follow_locale(self):
+        bundle = ROOT/'academic-manuscript-polish'
+        for locale, (home, guide) in PAGES.items():
+            entry = 'one-clear-thing.en.md' if locale == 'en' else 'one-clear-thing.md'
+            other = 'one-clear-thing.md' if locale == 'en' else 'one-clear-thing.en.md'
+            course = 'first-paper-course.en.md' if locale == 'en' else 'first-paper-course.md'
+            home_links = Page((ROOT/home).read_text(encoding='utf-8')).links
+            guide_links = Page((ROOT/guide).read_text(encoding='utf-8')).links
+            self.assertIn(f'academic-manuscript-polish/references/{entry}', home_links)
+            self.assertIn(f'{guide}#one-clear-thing', home_links)
+            self.assertIn(f'../academic-manuscript-polish/references/{entry}', guide_links)
+            start_links = Page((bundle/f'START-HERE.{locale}.md').read_text(encoding='utf-8')).links
+            self.assertIn(f'references/{entry}', start_links)
+            course_links = Page((bundle/'references'/course).read_text(encoding='utf-8')).links
+            self.assertIn(entry, course_links)
+            entry_links = Page((bundle/'references'/entry).read_text(encoding='utf-8')).links
+            self.assertIn(course, entry_links)
+            self.assertIn(other, entry_links)
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
